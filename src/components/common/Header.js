@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import { MdMenu } from "react-icons/md";
-import { FaTwitter, FaDiscord, FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
                 className="header-icon"
                 target="_blank"
                 rel="noreferrer"
-                href="https://twitter.com/Kriso3D https://linktr.ee/kriso3d"
+                href="https://twitter.com/Kriso3D"
               >
                 <FaTwitter />
               </a>

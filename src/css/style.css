@@ -8,7 +8,7 @@ html {
   background-color: #161616;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .logo {
@@ -135,7 +135,6 @@ html {
 
 .contentheader {
   margin-top: 20px;
-  margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -152,7 +151,7 @@ html {
 
 .primary-hero {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -173,41 +172,6 @@ html {
   text-align: center;
 }
 
-.fade-img {
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.button {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  fill: #262262;
-  color: #262262;
-  background-color: #fff;
-  border-color: #262262;
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.button:disabled {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-}
-
 .content {
   padding-bottom: 80px;
 }
@@ -225,70 +189,7 @@ html {
   min-width: 450px;
 }
 
-/* .item-img:hover {
-  -webkit-filter: grayscale(0); 
-  filter: grayscale(0);
-} */
-
-.design-card {
-  position: relative;
-}
-
-.card-info {
-  opacity: 0;
-}
-
-.card-info:hover {
-  opacity: 1;
-}
-
-.member-title {
-  font-size: 15px;
-  color: white;
-  margin-bottom: 5px;
-  position: absolute;
-  top: 80%;
-  left: 20px;
-}
-
-.member-name {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  position: absolute;
-  top: 87%;
-  left: 20px;
-  right: 0;
-}
-
-.member-icon {
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  top: 0;
-  right: 25px;
-}
-
-.member-icon:hover {
-  color: white;
-  scale: 1.3 !important;
-}
-
 @media screen and (max-width: 767.98px) {
-  .member-icon {
-    right: 45px;
-  }
-  .member-title {
-    left: 30px;
-    top: 82%;
-    font-size: 16px;
-  }
-  .member-name {
-    left: 30px;
-    top: 88%;
-    font-size: 28px;
-  }
   .floating-btn {
     font-size: 1rem !important;
   }
@@ -302,60 +203,21 @@ html {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .member-icon {
-    right: 25px;
-  }
-  .member-title {
-    left: 20px;
-    top: 78%;
-    font-size: 18px;
-  }
-  .member-name {
-    left: 20px;
-    top: 85%;
-    font-size: 30px;
-  }
   .text {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-  .member-icon {
-    right: 25px;
-  }
-  .member-title {
-    left: 20px;
-    top: 82%;
-    font-size: 18px;
-  }
-  .member-name {
-    left: 20px;
-    top: 88%;
-    font-size: 35px;
-  }
-
-  .icon-group {
-    margin-top: 0.1rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .member-icon {
-    right: 25px;
-  }
-  .member-title {
-    left: 20px;
-  }
-  .member-name {
-    left: 20px;
-  }
 }
 
 .footer {
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-title {
@@ -365,14 +227,20 @@ html {
   font-weight: 600;
   line-height: 1.2em;
   letter-spacing: 0.5px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .footer-text {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer-sub-text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .footer-social {
@@ -384,29 +252,14 @@ html {
 }
 
 .footer-icon {
-  font-size: 40px;
+  font-size: 30px;
   margin: 20px;
   color: white;
   text-transform: capitalize;
   text-decoration: none;
+  scale: 1;
 }
 
 .footer-icon:hover {
-  color: white;
-  scale: 1.3;
-}
-
-.footer-link {
-  font-size: 14px;
-  font-weight: 600;
-  color: #262262;
-}
-
-.marquee-text {
-  color: #262262;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  overflow: hidden;
+  color: white !important;
 }
