@@ -138,7 +138,7 @@ function HomePage() {
               </p>
               <HelioPay
                 cluster={cluster}
-                payButtonTitle="Pay in $Dust"
+                payButtonTitle="Pay in $DUST"
                 paymentRequestId={paymentRequest1Id}
                 // supportedCurrencies={["SOL"]}
                 // totalAmount={0.01}
