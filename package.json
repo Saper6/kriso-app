@@ -1,7 +1,7 @@
 {
   "name": "kriso-app",
   "description": "kriso workshop app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "@alch/alchemy-web3": "^1.4.2",
     "@babel/core": "^7.16.0",
@@ -171,5 +171,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
