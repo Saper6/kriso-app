@@ -11,6 +11,22 @@ html {
   overflow: hidden;
 }
 
+.modal-dialog {
+  max-width: none !important;
+  margin: 5rem !important;
+}
+
+.btn-close {
+  font-size: 24px;
+  top: 10px !important;
+  right: 10px !important;
+  position: absolute !important;
+  /* box-shadow: 0 0 14px 0 rgb(255, 255, 255); */
+  z-index: 1000;
+  /* background: transparent !important; */
+  /* background-color: transparent !important; */
+}
+
 .logo {
   margin-left: 20px;
   z-index: 1000;
