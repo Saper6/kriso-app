@@ -247,7 +247,7 @@ function HomePage() {
                 src={image1}
                 alt="img1"
                 onClick={(e) => {
-                  href="https://twitter.com/Kriso3D"
+                  href="/pages/MidPlaques"
                 
                 }}
               ></img>
