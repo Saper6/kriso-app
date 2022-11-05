@@ -86,7 +86,7 @@ function HomePage() {
     "634031bc2b4b05063fde3cc1"
   );
   const [paymentRequest2Id, setPaymentRequest2Id] = useState(
-    "634031b52b4b05063fde19f5"
+    "634031cc2b4b05063fdea3b3"
   );
   const [paymentRequest3Id, setPaymentRequest3Id] = useState(
     "635431d30ffed8cd8db6d6e0"
@@ -290,16 +290,10 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">30x20cm Wooden Plaque</p>
+              <p className="title">Large Plaque With Stand</p>
               <p className="text">
-             Custom wooden plaque of your NFT
-             - Carefully handcrafted from a high quality birch wood
-             - Picture of your NFT deeply engraved into the wood using a powerful, high precision CO2 Laser
-             - Logo and text etched with a Diode Laser resulting in sharp, high contrast details
-             - Finished with multiple coats of clear wood varnish to preserve the engraving
-             - Easy to hang frame
-             - Size: 34x24cm / 13.3x9.4 inch
-             If your NFT project is not on the list and you'd like to place a custom order or you have any questions - feel free to contact me on Twitter @Kriso3D, DMs are open.
+                30x20cm (12x8 inch), included stand and two swappable magnetic
+                tokens.
               </p>
               <HelioPay
                 cluster={cluster}
