@@ -15,6 +15,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Modal } from "bootstrap";
 import "@solana/wallet-adapter-react-ui/styles.css";
+import { Link } from 'react-router-dom';
 //section 1 imgages
 import section_img1_1 from "../../images/section_img1_1.png";
 import section_img1_2 from "../../images/section_img1_2.png";
@@ -532,6 +533,16 @@ function HomePage() {
         </div>
       </div>
     </>
+  );
+}
+
+{
+  return (
+    <div>
+      <Link to="/pages/midplaques">
+        <button>Plaques</button>
+      </Link>
+    </div>
   );
 }
 
