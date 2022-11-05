@@ -70,7 +70,7 @@ const elemText = {
 
 const Button = styled.button`
   background-color: black;
-  color: #F100F5;
+  color: white;
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
@@ -223,6 +223,11 @@ function HomePage2() {
   function ErrorPayment(event) {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
+  }
+  function GoToHomePage()
+  {
+    <Link to="/home/HomePage2">
+      </Link>   
   }
   return (
     <>
