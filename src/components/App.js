@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route index element={<HomePage2 />} />
-      <Route exact path="/" element={<SubPage1 />} />
+      <Route exact path="/home/SubPage1" element={<SubPage1 />} />
       <Route element={<ToastContainer autoClose={3000} hideProgressBar />} />
     </Routes>
   );
