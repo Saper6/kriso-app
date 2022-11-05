@@ -77,8 +77,8 @@ const toastStyle = {
   progress: undefined,
   theme: "dark",
 };
-
 function SubPage1() {
+
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
@@ -531,4 +531,4 @@ function SubPage1() {
   );
 }
 
-export default SubPage1;
+export default HomePage2;
