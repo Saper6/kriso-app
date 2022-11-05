@@ -214,7 +214,10 @@ function HomePage2() {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
   }
-
+  function GoToHomePage()
+  {
+    window.location = '/';   
+  }
   return (
     <>
       <ToastContainer />
@@ -224,6 +227,9 @@ function HomePage2() {
           id="bgHeroImage"
           className="img-fluid primary-hero"
           alt="hero-bg"
+          onClick={(e) => {
+            GoToHomePage;
+          }}
         />
       </div>
       <div id="content1" className="content">
