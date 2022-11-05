@@ -78,7 +78,7 @@ const toastStyle = {
   theme: "dark",
 };
 
-function HomePage() {
+function HomePage2() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
@@ -532,4 +532,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage2;
