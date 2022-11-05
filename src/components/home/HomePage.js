@@ -215,7 +215,7 @@ function HomePage() {
     toast.error(event.errorMessage, toastStyle);
   }
 
-  function button1() {
+  function button() {
     return (
       <nav>
         <ul>
@@ -247,7 +247,7 @@ function HomePage() {
                 src={image1}
                 alt="img1"
                 onClick={(e) => {
-                  button1
+                  showItem("section1");
                 
                 }}
               ></img>
@@ -256,7 +256,10 @@ function HomePage() {
               <p className="title">3D Printed Keychain</p>
               <p className="text">
                 Double-sided keychain, comes in a gift box.
+            
               </p>
+              <button />
+              
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $DUST"
