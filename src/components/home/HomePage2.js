@@ -216,8 +216,7 @@ function HomePage2() {
   }
   function GoToHomePage()
   {
-    <Link to="/home/HomePage2">
-      </Link>   
+    window.location = '/';   
   }
   return (
     <>
