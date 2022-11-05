@@ -7,7 +7,6 @@ function App() {
   return (
     <Routes>
       <Route exact path="/" element={<HomePage />} />
-      <Route path="pages/MidPlaques" element={<MidPlaques />} />
       <Route element={<ToastContainer autoClose={3000} hideProgressBar />} />
     </Routes>
   );

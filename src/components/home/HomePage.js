@@ -30,7 +30,6 @@ import section_img4_2 from "../../images/section_img4_2.png";
 //section 5 imgages
 import section_img5_1 from "../../images/section_img5_1.png";
 import section_img5_2 from "../../images/section_img5_2.png";
-import { Link } from 'react-router-dom';
 var imgModal;
 const elemImages = {
   section1: [
@@ -215,18 +214,6 @@ function HomePage() {
     toast.error(event.errorMessage, toastStyle);
   }
 
-  function button() {
-    return (
-      <nav>
-        <ul>
-          <li>
-            <Link to="/pages/MidPlaques">plaques</Link>
-          </li>
-        </ul>
-      </nav>
-    );
-  }
-
   return (
     <>
       <ToastContainer />
@@ -258,8 +245,6 @@ function HomePage() {
                 Double-sided keychain, comes in a gift box.
             
               </p>
-              <button />
-              
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $DUST"
