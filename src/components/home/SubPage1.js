@@ -223,11 +223,6 @@ function SubPage1() {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
   }
-  function GoToHomePage()
-  {
-    <Link to="/home/HomePage2">
-      </Link>   
-  }
   return (
     <>
       <ToastContainer />
