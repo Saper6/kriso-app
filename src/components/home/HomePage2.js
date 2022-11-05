@@ -68,15 +68,6 @@ const elemText = {
     "section5 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };
 
-const Button = styled.button`
-  background-color: black;
-  color: #F100F5;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-`;
 
 const toastStyle = {
   position: "top-right",
@@ -224,10 +215,6 @@ function HomePage2() {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 59c8e30 (Update HomePage2.js)
   return (
     <>
       <ToastContainer />
