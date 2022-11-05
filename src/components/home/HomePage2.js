@@ -68,16 +68,6 @@ const elemText = {
     "section5 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };
 
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-`;
-
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -238,6 +228,9 @@ function HomePage2() {
           id="bgHeroImage"
           className="img-fluid primary-hero"
           alt="hero-bg"
+          onClick={(e) => {
+            GoToHomePage;
+          }}
         />
       </div>
       <div id="content1" className="content">
@@ -262,7 +255,7 @@ function HomePage2() {
               return (
     <div>
       <Link to="/home/SubPage1">
-        <Button>See more</Button>
+        <button>See more</button>
       </Link>
     </div>
   );
