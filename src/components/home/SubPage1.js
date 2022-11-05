@@ -77,8 +77,18 @@ const toastStyle = {
   progress: undefined,
   theme: "dark",
 };
-function SubPage1() {
 
+const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
+
+function SubPage1() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
@@ -239,9 +249,9 @@ function SubPage1() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">3D Printed Keychain</p>
+              <p className="title">That's different!</p>
               <p className="text">
-                Double-sided keychain, comes in a gift box.
+                WTF
             
               </p>
               <HelioPay
@@ -531,4 +541,4 @@ function SubPage1() {
   );
 }
 
-export default HomePage2;
+export default SubPage1;
