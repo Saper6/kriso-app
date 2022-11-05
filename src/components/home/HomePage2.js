@@ -30,6 +30,7 @@ import section_img4_2 from "../../images/section_img4_2.png";
 //section 5 imgages
 import section_img5_1 from "../../images/section_img5_1.png";
 import section_img5_2 from "../../images/section_img5_2.png";
+import { Link } from 'react-router-dom';
 var imgModal;
 const elemImages = {
   section1: [
@@ -235,7 +236,6 @@ function HomePage2() {
                 alt="img1"
                 onClick={(e) => {
                   showItem("section1");
-                
                 }}
               ></img>
             </div>
@@ -245,27 +245,13 @@ function HomePage2() {
                 Double-sided keychain, comes in a gift box.
             
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $DUST"
-                paymentRequestId={paymentRequest1Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              return (
+    <div>
+      <Link to="/home/SubPage1">
+        <button>See more</button>
+      </Link>
+    </div>
+  );
             </div>
           </div>
         </div>
