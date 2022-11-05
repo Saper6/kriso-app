@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./home/HomePage";
-import MidPlaques from "./pages/MidPlaques";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
