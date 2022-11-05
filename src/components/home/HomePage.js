@@ -247,7 +247,7 @@ function HomePage() {
                 src={image1}
                 alt="img1"
                 onClick={(e) => {
-                  showItem("section1");
+                  <Link to="/pages/MidPlaques">plaques</Link>
                 }}
               ></img>
             </div>
