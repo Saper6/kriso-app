@@ -247,7 +247,7 @@ function HomePage() {
                 src={image1}
                 alt="img1"
                 onClick={(e) => {
-                  href="/pages/MidPlaques"
+                  button1
                 
                 }}
               ></img>
