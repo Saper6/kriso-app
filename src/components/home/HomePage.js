@@ -247,7 +247,8 @@ function HomePage() {
                 src={image1}
                 alt="img1"
                 onClick={(e) => {
-                  <Link to="/pages/MidPlaques">plaques</Link>
+                  href="https://twitter.com/Kriso3D"
+                
                 }}
               ></img>
             </div>
