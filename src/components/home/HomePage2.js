@@ -224,10 +224,6 @@ function HomePage2() {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 59c8e30 (Update HomePage2.js)
   return (
     <>
       <ToastContainer />
