@@ -33,13 +33,12 @@ const Button = styled.button`
   color: white;
   font-size: 15px;
   padding: 10px 60px;
+  border-radius: 6px;
+  border: none;
   margin: 10px 0px;
   cursor: pointer;
   box-shadow: 0px 4px 4px #F100F5;
   transition: ease background-color 250ms;
-  lineHeight: 21;
-  fontWeight: bold;
-  letterSpacing: 0.25;
   &:hover {
     background-color: #e80b07;
   }
