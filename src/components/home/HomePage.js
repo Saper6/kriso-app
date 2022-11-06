@@ -42,6 +42,7 @@ const Button = styled.button`
   transition: ease background-color 250ms;
   &:hover {
     background-color: #e80b07;
+    box-shadow: 0px 3px 3px #e80b07;
   }
 `;
 
@@ -174,7 +175,7 @@ function HomePage() {
               </p>
           <div className="text">
       <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
+        <Button><b>VIEW ALL</b></Button>
       </Link>
     </div>
             </div>
