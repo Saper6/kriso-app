@@ -186,7 +186,7 @@ function Keychains() {
 
   function carouselBtns() {
     let btns = modalImgs.map((item) => (
-      <Button
+      <button
         key={item.id}
         type="button"
         data-bs-target="#carouselModal"
@@ -194,7 +194,7 @@ function Keychains() {
         className={item.id == 0 ? "active" : ""}
         aria-current={item.id == 0 ? "true" : "false"}
         aria-label={`Slide ${item.id + 1}`}
-      ></Button>
+      ></button>
     ));
     return btns;
   }
@@ -223,14 +223,6 @@ function Keychains() {
   border: none;
   margin: 10px 0px;
   cursor: pointer;
-  font-family: Trebuchet MS;
-  font-weight: 600;
-  box-shadow: 0px 3px 3px #F100F5;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #e80b07;
-    box-shadow: 0px 3px 3px #e80b07;
-  }
 `;
   return (
     <>
