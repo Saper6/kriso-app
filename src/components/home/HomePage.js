@@ -36,9 +36,11 @@ const Button = styled.button`
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
-  fontWeight: bold;
   box-shadow: 0px 4px 4px #F100F5;
   transition: ease background-color 250ms;
+  lineHeight: 21;
+  fontWeight: 'bold';
+  letterSpacing: 0.25;
   &:hover {
     background-color: #e80b07;
   }
@@ -171,7 +173,7 @@ function HomePage() {
               <p className="text">
                 High quality keychains in a gift box. Rep your favourite NFT project IRL
               </p>
-              <div style="text-align:center">
+          <div>
       <Link to="/home/Keychains">
         <Button>VIEW ALL</Button>
       </Link>
