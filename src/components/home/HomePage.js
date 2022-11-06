@@ -192,33 +192,14 @@ function HomePage() {
             <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="text">
-              <div>-30x20cm (12x8 inch)</div>
-              <div>-Handcrafted from high quality birch wood</div>
-              <div>-Easy to hang frame</div>
+              <div>30x20cm (12x8 inch)</div>
+              <div>Handcrafted from high quality birch wood</div>
+              <div>Easy to hang frame</div>
                 
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest2Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-                
-              />
+              <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -247,27 +228,9 @@ function HomePage() {
                 Custom RGB neon sign of your NFT, controlled with a wireless
                 remote.
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest3Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+      <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
             </div>
           </div>
         </div>
@@ -362,7 +325,7 @@ function HomePage() {
           <div className="row">
             <div className="col">
               <p className="title">About me</p>
-              <p className="text">
+              <p className="title">
                 Hi
               </p>
             </div>
