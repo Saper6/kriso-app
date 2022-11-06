@@ -68,8 +68,6 @@ const toastStyle = {
 
 
 function HomePage() {
-  const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
-  const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
     "634031bc2b4b05063fde3cc1"
   );
@@ -142,52 +140,6 @@ function HomePage() {
     });
   });
 
-  useEffect(() => {
-    imgModal = new Modal("#imgModal", {
-      backdrop: true,
-    });
-  });
-
-  function showItem(element) {
-    console.log("showItem()");
-    console.log(element);
-    setModalImgs(elemImages[element]);
-    setModalText(elemText[element]);
-    imgModal.show();
-  }
-
-  function carouselItems() {
-    let items = modalImgs.map((item) => (
-      <div
-        className={item.id == 0 ? "carousel-item active" : "carousel-item"}
-        key={item.id}
-      >
-        <img src={item.img} className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Section</h5>
-          <p>{modalText}</p>
-        </div>
-      </div>
-    ));
-
-    return items;
-  }
-
-  function carouselBtns() {
-    let btns = modalImgs.map((item) => (
-      <button
-        key={item.id}
-        type="button"
-        data-bs-target="#carouselModal"
-        data-bs-slide-to={item.id}
-        className={item.id == 0 ? "active" : ""}
-        aria-current={item.id == 0 ? "true" : "false"}
-        aria-label={`Slide ${item.id + 1}`}
-      ></button>
-    ));
-    return btns;
-  }
-
   function SuccessPayment(event) {
     console.log("onSuccess", event);
     toast.success(event.content, toastStyle);
@@ -222,9 +174,6 @@ function HomePage() {
                 className="img-fluid"
                 src={image1}
                 alt="img1"
-                onClick={(e) => {
-                  showItem("section1");
-                }}
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -282,9 +231,6 @@ function HomePage() {
                 className="img-fluid "
                 src={image2}
                 alt="img2"
-                onClick={(e) => {
-                  showItem("section2");
-                }}
               ></img>
             </div>
           </div>
@@ -299,9 +245,6 @@ function HomePage() {
                 className="img-fluid item-img"
                 src={image3}
                 alt="img3"
-                onClick={(e) => {
-                  showItem("section3");
-                }}
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -372,9 +315,6 @@ function HomePage() {
                 className="img-fluid item-img"
                 src={image4}
                 alt="img4"
-                onClick={(e) => {
-                  showItem("section4");
-                }}
               ></img>
             </div>
           </div>
@@ -389,9 +329,6 @@ function HomePage() {
                 className="img-fluid item-img"
                 src={image5}
                 alt="img5"
-                onClick={(e) => {
-                  showItem("section5");
-                }}
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -473,35 +410,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      <div className="container-fluid" style={{ padding: 0 }}>
-        <div
-          className="modal fade"
-          id="imgModal"
-          tabIndex="-1"
-          aria-labelledby="modalLabel"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-              <div
-                id="carouselModal"
-                className="carousel slide carousel-fade"
-                data-bs-ride="carousel"
-                data-bs-pause="false"
-              >
-                <div className="carousel-indicators">{carouselBtns()}</div>
-                <div className="carousel-inner">{carouselItems()}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
