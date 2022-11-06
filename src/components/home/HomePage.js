@@ -152,7 +152,7 @@ function HomePage() {
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/home/HomePage">
+      <Link to="HomePage">
         <img
           src={logo}
           id="bgHeroImage"

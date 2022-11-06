@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path='/' index element={<HomePage />} />
       <Route exact path="/home/Keychains" element={<Keychains />} />
       <Route element={<ToastContainer autoClose={3000} hideProgressBar />} />
     </Routes>
