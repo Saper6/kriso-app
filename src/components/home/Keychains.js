@@ -480,7 +480,7 @@ function Keychains() {
           <div className="row">
             <div className="col">
               <p className="title">Didn't find a project you're interested in?</p>
-              <p className="description">
+              <p className="text">
                 Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you! DM's are always open
                 <a
                 className="footer-icon"
