@@ -13,10 +13,9 @@ html {
 
 .modal-dialog {
   max-width: 70% !important;
-  margin: 5rem !important;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-close {
