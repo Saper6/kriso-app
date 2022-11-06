@@ -184,15 +184,6 @@ function Keychains() {
     return items;
   }
 
-  const Button = styled.button`
-  background-color: #F100F5;
-  padding: 10px 10px;
-  border-radius: 10px;
-  border: none;
-  margin: 0px 5px;
-  cursor: pointer;
-`;
-
   function carouselBtns() {
     let btns = modalImgs.map((item) => (
       <button
@@ -227,14 +218,12 @@ function Keychains() {
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/">
         <img
           src={logo}
           id="bgHeroImage"
           className="img-fluid primary-hero"
           alt="hero-bg"
         />
-        </Link>
       </div>
       <div id="content1" className="content">
         <div className="container">
