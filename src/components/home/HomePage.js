@@ -13,23 +13,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Modal } from "bootstrap";
 import "@solana/wallet-adapter-react-ui/styles.css";
-//section 1 imgages
-import section_img1_1 from "../../images/section_img1_1.png";
-import section_img1_2 from "../../images/section_img1_2.png";
-//section 2 imgages
-import section_img2_1 from "../../images/section_img2_1.png";
-import section_img2_2 from "../../images/section_img2_2.png";
-//section 3 imgages
-import section_img3_1 from "../../images/section_img3_1.png";
-import section_img3_2 from "../../images/section_img3_2.png";
-//section 4 imgages
-import section_img4_1 from "../../images/section_img4_1.png";
-import section_img4_2 from "../../images/section_img4_2.png";
-//section 5 imgages
-import section_img5_1 from "../../images/section_img5_1.png";
-import section_img5_2 from "../../images/section_img5_2.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
