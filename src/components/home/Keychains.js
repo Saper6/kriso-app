@@ -186,13 +186,23 @@ function Keychains() {
     return items;
   }
 
-const Button = styled.button`
+ const Button = styled.button`
   background-color: #F100F5;
-  padding: 10px 10px;
-  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 60px;
+  border-radius: 6px;
   border: none;
-  margin: 0px 5px;
+  margin: 10px 0px;
   cursor: pointer;
+  font-family: Trebuchet MS;
+  font-weight: 800;
+  box-shadow: 0px 3px 3px #F100F5;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: #e80b07;
+    box-shadow: 0px 3px 3px #e80b07;
+  }
 `;
 
   function carouselBtns() {
