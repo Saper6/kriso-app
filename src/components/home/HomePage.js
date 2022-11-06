@@ -245,27 +245,9 @@ function HomePage() {
                 Description: 15x10cm (5.9x3.9 inch), engraved into 5mm thick
                 birch wood.
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest4Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -294,27 +276,9 @@ function HomePage() {
                 80x30cm (31x12 inch), perfect for a twitter banner, but any
                 picture in simillar format will work.
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest5Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
             </div>
           </div>
         </div>

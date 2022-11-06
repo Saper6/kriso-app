@@ -119,10 +119,10 @@ html {
   color: white;
   font-family: Helvetica, sans-serif;
   font-size: 1.6rem;
-  /* font-weight: 600; */
-  line-height: 1.2em;
-  letter-spacing: 0.5px;
-  text-align: left;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.6px;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
   display: block;
