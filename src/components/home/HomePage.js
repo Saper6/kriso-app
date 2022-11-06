@@ -190,10 +190,11 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Large Plaque With Stand</p>
+              <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="text">
-                30x20cm (12x8 inch), included stand and two swappable magnetic
-                tokens.
+                -30x20cm (12x8 inch)
+                -Handcrafted from high quality birch wood
+                -Easy to hang frame
               </p>
               <HelioPay
                 cluster={cluster}
@@ -361,17 +362,7 @@ function HomePage() {
             <div className="col">
               <p className="title">About me</p>
               <p className="text">
-                Just a lucky degen with a passion for diy, It all started with
-                some simple degods keychains I made not long after mint and gave
-                away to anyone interested. To my surprise, the community
-                absolutely loved it, and because of that warm welcome, I started
-                experimenting with what else can I make in my little workshop to
-                contribute to the project. Since then I've been constantly
-                learning, improving and coming up with new gadgets to bring your
-                nfts to the real world, all thanks to the encouragement received
-                from amazing degods community, for which I'm forever grateful.
-                Thank you all for this incredible journey, and by the looks of
-                it - it's only just getting started...
+                Hi
               </p>
             </div>
           </div>

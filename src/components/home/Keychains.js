@@ -197,11 +197,11 @@ function Keychains() {
   cursor: pointer;
   font-family: Trebuchet MS;
   font-weight: 800;
-  box-shadow: 3px 3px 3px #F100F5;
+  box-shadow: 4px 4px 4px #F100F5;
   transition: ease background-color 250ms;
   &:hover {
     background-color: #e80b07;
-    box-shadow: 0px 3px 3px #e80b07;
+    box-shadow: 4px 4px 4px #e80b07;
   }
 `;
 
