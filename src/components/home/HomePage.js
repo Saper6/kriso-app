@@ -38,6 +38,7 @@ const Button = styled.button`
   margin: 10px 0px;
   cursor: pointer;
   font-family: Trebuchet MS;
+  font-weight: 600;
   box-shadow: 0px 3px 3px #F100F5;
   transition: ease background-color 250ms;
   &:hover {
@@ -171,11 +172,11 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Custom Keychains</p>
               <p className="text">
-                High quality keychains in a gift box. Rep your favourite NFT project IRL
+                High quality keychains in a gift box. Rep your favourite NFT projects IRL
               </p>
           <div className="text">
       <Link to="/home/Keychains">
-        <Button><b>VIEW ALL</b></Button>
+        <Button>VIEW ALL</Button>
       </Link>
     </div>
             </div>
