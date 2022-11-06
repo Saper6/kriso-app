@@ -479,19 +479,17 @@ function Keychains() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">About me</p>
+              <p className="title">Didn't find a project you're interested in?</p>
               <p className="text">
-                Just a lucky degen with a passion for diy, It all started with
-                some simple degods keychains I made not long after mint and gave
-                away to anyone interested. To my surprise, the community
-                absolutely loved it, and because of that warm welcome, I started
-                experimenting with what else can I make in my little workshop to
-                contribute to the project. Since then I've been constantly
-                learning, improving and coming up with new gadgets to bring your
-                nfts to the real world, all thanks to the encouragement received
-                from amazing degods community, for which I'm forever grateful.
-                Thank you all for this incredible journey, and by the looks of
-                it - it's only just getting started...
+                Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you! DM's are always open.
+                <a
+                className="footer-icon"
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/Kriso3D"
+                >
+                  <FaTwitter />
+                  </a>
               </p>
             </div>
           </div>

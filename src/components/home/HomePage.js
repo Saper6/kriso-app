@@ -192,11 +192,10 @@ function HomePage() {
             <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="text">
-              <text>
-                -30x20cm (12x8 inch){"\n"}
-                -Handcrafted from high quality birch wood{"\n"}
-                -Easy to hang frame{"\n"}
-                </text>
+              <div>-30x20cm (12x8 inch)</div>
+              <div>-Handcrafted from high quality birch wood</div>
+              <div>-Easy to hang frame</div>
+                
               </p>
               <HelioPay
                 cluster={cluster}
