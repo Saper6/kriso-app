@@ -196,6 +196,11 @@ function HomePage() {
               <div>Handcrafted from high quality birch wood</div>
               <div>Easy to hang frame</div>
               </p>
+              <div className="text">
+      <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
+    </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -203,11 +208,6 @@ function HomePage() {
                 src={image2}
                 alt="img2"
               ></img>
-          <div className="text">
-      <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
-      </Link>
-    </div>
             </div>
           </div>
         </div>
@@ -248,6 +248,11 @@ function HomePage() {
                 Description: 15x10cm (5.9x3.9 inch), engraved into 5mm thick
                 birch wood.
               </p>
+              <div className="text">
+      <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
+    </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -255,11 +260,6 @@ function HomePage() {
                 src={image4}
                 alt="img4"
               ></img>
-                        <div className="text">
-      <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
-      </Link>
-    </div>
             </div>
           </div>
         </div>
