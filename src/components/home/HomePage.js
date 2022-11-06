@@ -192,8 +192,8 @@ function HomePage() {
             <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="text">
-                -30x20cm (12x8 inch)
-                -Handcrafted from high quality birch wood
+                -30x20cm (12x8 inch){"\n"}
+                -Handcrafted from high quality birch wood{"\n"}
                 -Easy to hang frame
               </p>
               <HelioPay
