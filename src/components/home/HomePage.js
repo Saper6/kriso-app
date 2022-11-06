@@ -79,7 +79,19 @@ const toastStyle = {
   theme: "dark",
 };
 
-function HomePage2() {
+const styles = StyleSheet.create({
+  container: {
+     flex: 1
+  },
+  button: {
+     backgroundColor: '#00aeef',
+     borderColor: 'red',
+     borderWidth: 5,
+     borderRadius: 15       
+  }
+})
+
+function HomePage() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
@@ -247,7 +259,8 @@ function HomePage2() {
               </p>
               return (
     <div>
-      <Link to="/home/SubPage1">
+      
+      <Link to="/home/Keychains">
         <button>See more</button>
       </Link>
     </div>
@@ -518,4 +531,4 @@ function HomePage2() {
   );
 }
 
-export default HomePage2;
+export default HomePage;

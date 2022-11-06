@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage2 from "./home/HomePage2";
-import SubPage1 from "./home/SubPage1";
+import HomePage from "./home/HomePage";
+import Keychains from "./home/Keychains";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <Routes>
-      <Route index element={<HomePage2 />} />
-      <Route exact path="/home/SubPage1" element={<SubPage1 />} />
+      <Route index element={<HomePage />} />
+      <Route exact path="/home/Keychains" element={<Keychains />} />
       <Route element={<ToastContainer autoClose={3000} hideProgressBar />} />
     </Routes>
   );
