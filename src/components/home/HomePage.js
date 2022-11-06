@@ -195,11 +195,7 @@ function HomePage() {
               <div>30x20cm (12x8 inch)</div>
               <div>Handcrafted from high quality birch wood</div>
               <div>Easy to hang frame</div>
-                
               </p>
-              <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
-      </Link>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -207,6 +203,11 @@ function HomePage() {
                 src={image2}
                 alt="img2"
               ></img>
+          <div className="text">
+      <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
+    </div>
             </div>
           </div>
         </div>
@@ -228,9 +229,11 @@ function HomePage() {
                 Custom RGB neon sign of your NFT, controlled with a wireless
                 remote.
               </p>
+              <div className="text">
       <Link to="/home/Keychains">
         <Button>VIEW ALL</Button>
       </Link>
+    </div>
             </div>
           </div>
         </div>
@@ -245,9 +248,6 @@ function HomePage() {
                 Description: 15x10cm (5.9x3.9 inch), engraved into 5mm thick
                 birch wood.
               </p>
-              <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
-      </Link>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -255,6 +255,11 @@ function HomePage() {
                 src={image4}
                 alt="img4"
               ></img>
+                        <div className="text">
+      <Link to="/home/Keychains">
+        <Button>VIEW ALL</Button>
+      </Link>
+    </div>
             </div>
           </div>
         </div>
@@ -276,9 +281,11 @@ function HomePage() {
                 80x30cm (31x12 inch), perfect for a twitter banner, but any
                 picture in simillar format will work.
               </p>
-              <Link to="/home/Keychains">
+              <div className="text">
+      <Link to="/home/Keychains">
         <Button>VIEW ALL</Button>
       </Link>
+    </div>
             </div>
           </div>
         </div>
