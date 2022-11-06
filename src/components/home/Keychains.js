@@ -186,7 +186,7 @@ function Keychains() {
 
   function carouselBtns() {
     let btns = modalImgs.map((item) => (
-      <Button
+      <button
         key={item.id}
         type="button"
         data-bs-target="#carouselModal"
@@ -194,7 +194,7 @@ function Keychains() {
         className={item.id == 0 ? "active" : ""}
         aria-current={item.id == 0 ? "true" : "false"}
         aria-label={`Slide ${item.id + 1}`}
-      ></Button>
+      ></button>
     ));
     return btns;
   }
