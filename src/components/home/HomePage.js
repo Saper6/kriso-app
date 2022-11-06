@@ -32,29 +32,6 @@ import section_img5_1 from "../../images/section_img5_1.png";
 import section_img5_2 from "../../images/section_img5_2.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
-var imgModal;
-const elemImages = {
-  section1: [
-    { id: 0, img: section_img1_1 },
-    { id: 1, img: section_img1_2 },
-  ],
-  section2: [
-    { id: 0, img: section_img2_1 },
-    { id: 1, img: section_img2_2 },
-  ],
-  section3: [
-    { id: 0, img: section_img3_1 },
-    { id: 1, img: section_img3_2 },
-  ],
-  section4: [
-    { id: 0, img: section_img4_1 },
-    { id: 1, img: section_img4_2 },
-  ],
-  section5: [
-    { id: 0, img: section_img5_1 },
-    { id: 1, img: section_img5_2 },
-  ],
-};
 
 const theme = {
   blue: {
@@ -77,18 +54,6 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const elemText = {
-  section1:
-    "section1 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  section2:
-    "section2 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  section3:
-    "section3 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  section4:
-    "section4 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  section5:
-    "section5 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
-};
 
 const toastStyle = {
   position: "top-right",
@@ -263,14 +228,16 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">3D Printed Keychain</p>
+              <p className="title">Custom Keychains</p>
               <p className="text">
-                Double-sided keychain, comes in a gift box.
+                High quality keychains in a gift box. Rep your favourite NFT project IRL
+
+            
             
               </p>
     <div>
       <Link to="/home/Keychains">
-        <Button>View All</Button>
+        <Button>VIEW ALL</Button>
       </Link>
     </div>
             </div>
