@@ -14,6 +14,8 @@ html {
 .modal-dialog {
   max-width: 70% !important;
   margin: 5rem !important;
+  position: center;
+  vertical-align: middle;
 }
 
 .btn-close {
