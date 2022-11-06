@@ -199,7 +199,7 @@ const Button = styled.button`
     let btns = modalImgs.map((item) => (
       <Button
         key={item.id}
-        type="button"
+        type="Button"
         data-bs-target="#carouselModal"
         data-bs-slide-to={item.id}
         className={item.id == 0 ? "active" : ""}
