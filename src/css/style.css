@@ -12,12 +12,14 @@ html {
 }
 
 .modal-dialog {
-  max-width: 80% !important;
+  max-width: 70% !important;
   margin: 5rem !important;
+  position: center;
+  vertical-align: middle;
 }
 
 .btn-close {
-  font-size: 44px;
+  font-size: 24px;
   top: 10px !important;
   right: 10px !important;
   position: absolute !important;
