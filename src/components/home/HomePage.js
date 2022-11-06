@@ -172,12 +172,10 @@ function HomePage() {
               <p className="text">
                 High quality keychains in a gift box. Rep your favourite NFT project IRL
               </p>
-          <div>
-          <p className="text">
+          <div className="text">
       <Link to="/home/Keychains">
         <Button>VIEW ALL</Button>
       </Link>
-      </p>
     </div>
             </div>
           </div>
