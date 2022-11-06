@@ -272,7 +272,7 @@ function HomePage() {
     <div>
 
       <Link to="/home/Keychains">
-        <button>View All</button>
+        <Button>View All</Button>
       </Link>
     </div>
   );
