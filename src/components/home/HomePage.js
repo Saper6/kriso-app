@@ -38,7 +38,7 @@ const Button = styled.button`
   margin: 10px 0px;
   cursor: pointer;
   font-family: Trebuchet MS;
-  font-weight: 600;
+  font-weight: 800;
   box-shadow: 0px 3px 3px #F100F5;
   transition: ease background-color 250ms;
   &:hover {
@@ -152,12 +152,14 @@ function HomePage() {
     <>
       <ToastContainer />
       <div className="hero" id="home">
+      <Link to="/home/HomePage">
         <img
           src={logo}
           id="bgHeroImage"
           className="img-fluid primary-hero"
           alt="hero-bg"
         />
+        </Link>
       </div>
       <div id="content1" className="content">
         <div className="container">
