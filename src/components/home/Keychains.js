@@ -216,7 +216,6 @@ function Keychains() {
 
   const Button = styled.button`
   background-color: #F100F5;
-  color: white;
   font-size: 15px;
   padding: 15px 15px;
   border-radius: 15px;
