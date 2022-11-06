@@ -31,6 +31,7 @@ import section_img4_2 from "../../images/section_img4_2.png";
 import section_img5_1 from "../../images/section_img5_1.png";
 import section_img5_2 from "../../images/section_img5_2.png";
 import { Link } from 'react-router-dom';
+import styled from "styled-components";
 var imgModal;
 const elemImages = {
   section1: [
@@ -54,6 +55,27 @@ const elemImages = {
     { id: 1, img: section_img5_2 },
   ],
 };
+
+const theme = {
+  blue: {
+    default: "#3f51b5",
+    hover: "#283593"
+  },
+  pink: {
+    default: "#e91e63",
+    hover: "#ad1457"
+  }
+};
+
+const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
 
 const elemText = {
   section1:
@@ -250,7 +272,7 @@ function HomePage() {
     <div>
 
       <Link to="/home/Keychains">
-        <button>See more</button>
+        <button>View All</button>
       </Link>
     </div>
   );
