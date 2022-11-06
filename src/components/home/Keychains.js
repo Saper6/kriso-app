@@ -213,13 +213,13 @@ function Keychains() {
     console.log("onError", event);
     toast.error(event.errorMessage, toastStyle);
   }
-
+  
   const Button = styled.button`
   background-color: #F100F5;
   color: white;
   font-size: 15px;
-  padding: 15px 15px;
-  border-radius: 15px;
+  padding: 10px 60px;
+  border-radius: 6px;
   border: none;
   margin: 10px 0px;
   cursor: pointer;
