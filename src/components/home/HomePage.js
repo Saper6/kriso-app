@@ -24,18 +24,23 @@ const theme = {
   },
   pink: {
     default: "#F100F5",
-    hover: "#ad1457"
+    hover: "#e80b07"
   }
 };
 
 const Button = styled.button`
   background-color: #F100F5;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 60px;
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: ${(props) => theme[props.theme].hover};
+  }
 `;
 
 
