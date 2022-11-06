@@ -30,6 +30,8 @@ import section_img4_2 from "../../images/section_img4_2.png";
 //section 5 imgages
 import section_img5_1 from "../../images/section_img5_1.png";
 import section_img5_2 from "../../images/section_img5_2.png";
+import { Link } from 'react-router-dom';
+import styled from "styled-components";
 var imgModal;
 const elemImages = {
   section1: [
@@ -184,9 +186,18 @@ function Keychains() {
     return items;
   }
 
+const Button = styled.button`
+  background-color: #F100F5;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 0px 5px;
+  cursor: pointer;
+`;
+
   function carouselBtns() {
     let btns = modalImgs.map((item) => (
-      <button
+      <Button
         key={item.id}
         type="button"
         data-bs-target="#carouselModal"
@@ -194,7 +205,7 @@ function Keychains() {
         className={item.id == 0 ? "active" : ""}
         aria-current={item.id == 0 ? "true" : "false"}
         aria-label={`Slide ${item.id + 1}`}
-      ></button>
+      ></Button>
     ));
     return btns;
   }
@@ -218,12 +229,14 @@ function Keychains() {
     <>
       <ToastContainer />
       <div className="hero" id="home">
+      <Link to="/">
         <img
           src={logo}
           id="bgHeroImage"
           className="img-fluid primary-hero"
           alt="hero-bg"
         />
+        </Link>
       </div>
       <div id="content1" className="content">
         <div className="container">
