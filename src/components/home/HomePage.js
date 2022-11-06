@@ -36,10 +36,11 @@ const Button = styled.button`
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
+  fontWeight: bold;
   box-shadow: 0px 2px 2px lightgray;
   transition: ease background-color 250ms;
   &:hover {
-    background-color: ${(props) => theme[props.theme].hover};
+    background-color: #e80b07;
   }
 `;
 
@@ -169,9 +170,6 @@ function HomePage() {
               <p className="title">Custom Keychains</p>
               <p className="text">
                 High quality keychains in a gift box. Rep your favourite NFT project IRL
-
-            
-            
               </p>
     <div>
       <Link to="/home/Keychains">
