@@ -193,11 +193,11 @@ function Keychains() {
   padding: 25px 25px;
   border-radius: 25px;
   border: none;
-  margin: 10px 0px;
+  margin: 0px 0px;
   cursor: pointer;
   font-family: Trebuchet MS;
   font-weight: 800;
-  box-shadow: 0px 3px 3px #F100F5;
+  box-shadow: 3px 3px 3px #F100F5;
   transition: ease background-color 250ms;
   &:hover {
     background-color: #e80b07;
