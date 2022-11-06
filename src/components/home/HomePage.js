@@ -62,13 +62,13 @@ const theme = {
     hover: "#283593"
   },
   pink: {
-    default: "#e91e63",
+    default: "#F100F5",
     hover: "#ad1457"
   }
 };
 
 const Button = styled.button`
-  background-color: black;
+  background-color: #F100F5;
   color: white;
   font-size: 20px;
   padding: 10px 60px;
@@ -268,14 +268,11 @@ function HomePage() {
                 Double-sided keychain, comes in a gift box.
             
               </p>
-              return (
     <div>
-
       <Link to="/home/Keychains">
         <Button>View All</Button>
       </Link>
     </div>
-  );
             </div>
           </div>
         </div>
