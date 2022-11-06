@@ -79,17 +79,6 @@ const toastStyle = {
   theme: "dark",
 };
 
-const styles = StyleSheet.create({
-  container: {
-     flex: 1
-  },
-  button: {
-     backgroundColor: '#00aeef',
-     borderColor: 'red',
-     borderWidth: 5,
-     borderRadius: 15       
-  }
-})
 
 function HomePage() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
@@ -259,7 +248,7 @@ function HomePage() {
               </p>
               return (
     <div>
-      
+
       <Link to="/home/Keychains">
         <button>See more</button>
       </Link>
