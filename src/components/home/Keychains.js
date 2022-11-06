@@ -190,8 +190,8 @@ function Keychains() {
   background-color: #F100F5;
   color: white;
   font-size: 15px;
-  padding: 10px 60px;
-  border-radius: 6px;
+  padding: 25px 25px;
+  border-radius: 25px;
   border: none;
   margin: 10px 0px;
   cursor: pointer;
