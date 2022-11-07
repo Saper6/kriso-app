@@ -229,9 +229,11 @@ function Keychains() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">DeGods and MickeyDeGods Keychains</p>
+              <p className="title">DeGods</p>
               <p className="text">
-                3D printed, double sided keychains
+                3D printed keychains
+                <div>Multiple variations available: </div>
+                <div>OG DeGods, MickeyDeGods, DeGods Anniversary</div>
                 <div>Comes in a gift box</div>
             
               </p>
@@ -265,7 +267,7 @@ function Keychains() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Liberty Square Keychains</p>
+              <p className="title">Liberty Square</p>
               <p className="text">
                 3D printed, then filled with clear epoxy resin and hand polished for a shiny finish
               </p>
@@ -320,10 +322,12 @@ function Keychains() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">y00ts Keychains</p>
+              <p className="title">y00ts</p>
               <p className="text">
-                3D printed base, each letter and background carefully hand filled with different colors of epoxy resin
-                <div>Every keychain has a unique colour or pattern, shipped at random - mint style</div>
+                3D printed base
+                <div>Each letter and background carefully hand filled with different colors of epoxy resin</div>
+                <div>Every keychain with a unique colour or pattern</div>
+                <div>Shipped at random - mint style</div>
               </p>
               <HelioPay
                 cluster={cluster}
