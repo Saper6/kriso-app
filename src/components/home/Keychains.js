@@ -46,14 +46,6 @@ const elemImages = {
     { id: 0, img: section_img3_1 },
     { id: 1, img: section_img3_2 },
   ],
-  section4: [
-    { id: 0, img: section_img4_1 },
-    { id: 1, img: section_img4_2 },
-  ],
-  section5: [
-    { id: 0, img: section_img5_1 },
-    { id: 1, img: section_img5_2 },
-  ],
 };
 
 const elemText = {
@@ -62,10 +54,6 @@ const elemText = {
   section2:
     "",
   section3:
-    "",
-  section4:
-    "",
-  section5:
     "",
 };
 
@@ -92,12 +80,6 @@ function Keychains() {
   const [paymentRequest3Id, setPaymentRequest3Id] = useState(
     "635431d30ffed8cd8db6d6e0"
   );
-  const [paymentRequest4Id, setPaymentRequest4Id] = useState(
-    "634031c92b4b05063fde9249"
-  );
-  const [paymentRequest5Id, setPaymentRequest5Id] = useState(
-    "634031c92b4b05063fde92c5"
-  );
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -123,22 +105,6 @@ function Keychains() {
     gsap.from("#content3", {
       scrollTrigger: {
         trigger: "#content3",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: -200,
-    });
-    gsap.from("#content4", {
-      scrollTrigger: {
-        trigger: "#content4",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: 200,
-    });
-    gsap.from("#content5", {
-      scrollTrigger: {
-        trigger: "#content5",
         toggleActions: "restart none restart none",
       },
       duration: 1,
