@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import HomeKeychains from "../../images/HomeKeychains.webp";
+import HomeKeychains from "../../images/HomeKeychains.png";
 import image1 from "../../images/image1.png";
 import image2 from "../../images/image2.png";
 import image3 from "../../images/image3.png";
