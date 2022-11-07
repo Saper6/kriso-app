@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
+import HomeKeychains from "../../images/HomeKeychains.webp";
 import image1 from "../../images/image1.png";
 import image2 from "../../images/image2.png";
 import image3 from "../../images/image3.png";
@@ -168,8 +169,8 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={image1}
-                alt="img1"
+                src={HomeKeychains}
+                alt="HomeKeychains"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -301,7 +302,7 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Made For Degens - By Degen</p>
+              <p className="title">About</p>
               <p className="text">
                 I'm just a lucky degen with a passion for DIY, 3D printers and lasers
                 <div>All items are designed and carefully crafted by myself and I'm fully open to customizing any product to suit your needs</div>
