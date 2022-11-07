@@ -4,8 +4,8 @@ import logo from "../../images/logo.png";
 import image1 from "../../images/image1.png";
 import image2 from "../../images/image2.png";
 import image3 from "../../images/image3.png";
-import image4 from "../../images/image4.png";
-import image5 from "../../images/image5.png";
+//import image4 from "../../images/image4.png";
+//import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { HelioPay } from "@heliofi/react";
@@ -25,11 +25,11 @@ import section_img2_2 from "../../images/section_img2_2.png";
 import section_img3_1 from "../../images/section_img3_1.png";
 import section_img3_2 from "../../images/section_img3_2.png";
 //section 4 imgages
-import section_img4_1 from "../../images/section_img4_1.png";
-import section_img4_2 from "../../images/section_img4_2.png";
+//import section_img4_1 from "../../images/section_img4_1.png";
+//import section_img4_2 from "../../images/section_img4_2.png";
 //section 5 imgages
-import section_img5_1 from "../../images/section_img5_1.png";
-import section_img5_2 from "../../images/section_img5_2.png";
+//import section_img5_1 from "../../images/section_img5_1.png";
+//import section_img5_2 from "../../images/section_img5_2.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 var imgModal;
@@ -58,15 +58,15 @@ const elemImages = {
 
 const elemText = {
   section1:
-    "section1 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "",
   section2:
-    "section2 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "",
   section3:
-    "section3 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "",
   section4:
-    "section4 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "",
   section5:
-    "section5 ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "",
 };
 
 const toastStyle = {
