@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import HomeKeychains from "../../images/HomeKeychains.png";
-import Home3020Plaques from "../../images/Home3020Plaques.png";
-import HomeSmallPlaques from "../../images/HomeSmallPlaques.png";
-import HomeNeon from "../../images/HomeNeon.png";
-import HomeOther from "../../images/HomeOther.png";
+import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
+import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
+import HomeSmallPlaques from "../../images/HomePage/HomeSmallPlaques.png";
+import HomeNeon from "../../images/HomePage/HomeNeon.png";
+import HomeOther from "../../images/HomePage/HomeOther.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
