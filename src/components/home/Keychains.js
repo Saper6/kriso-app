@@ -415,14 +415,6 @@ function Keychains() {
             <div className="col">
               <p className="footer-text">
                 © Kriso's Workshop 2022, All rights reserved
-                <a
-                  className="footer-icon"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://twitter.com/Kriso3D"
-                >
-                  <FaTwitter />
-                </a>
               </p>
               <p className="footer-sub-text">By @kevincaughman</p>
             </div>
