@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomeKeychains.png";
 import Home3020Plaques from "../../images/Home3020Plaques.png";
-import image3 from "../../images/image3.png";
+import HomeSmallPlaques from "../../images/HomeSmallPlaques.png";
 import HomeNeon from "../../images/HomeNeon.png";
 import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
@@ -211,8 +211,8 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={image3}
-                alt="img3"
+                src={HomeSmallPlaques}
+                alt="HomeSmallPlaques"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
