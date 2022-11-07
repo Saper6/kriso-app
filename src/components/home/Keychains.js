@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
-import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
+import LibertySquareMainPic from "../../keychains/LibertySquareMainPic.png";
 import y00tsMainPic from "../../keychains/y00tsMainPic.png";
 //import image4 from "../../images/image4.png";
 //import image5 from "../../images/image5.png";
