@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
-import LibertySquareMainPic from "../../keychains/LibertySquareMainPic.png";
-import y00tsMainPic from "../../keychains/y00tsMainPic.png";
+import image1 from "../../images/image1.png";
+import image2 from "../../images/image2.png";
+import image3 from "../../images/image3.png";
 //import image4 from "../../images/image4.png";
 //import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
@@ -220,8 +220,8 @@ function Keychains() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={DegodsMainPic}
-                alt="DegodsMainPic"
+                src={image1}
+                alt="img1"
                 onClick={(e) => {
                   showItem("section1");
                 
@@ -297,8 +297,8 @@ function Keychains() {
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={LibertySquareMainPic}
-                alt="LibertySquareMainPic"
+                src={image2}
+                alt="img2"
                 onClick={(e) => {
                   showItem("section2");
                 }}
@@ -314,8 +314,8 @@ function Keychains() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={y00tsMainPic}
-                alt="y00tsMainPic"
+                src={image3}
+                alt="img3"
                 onClick={(e) => {
                   showItem("section3");
                 }}
