@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import HomeKeychains from "../../images/HomeKeychains.jpg";
-import Home3020Plaques from "../../images/Home3020Plaques.jpg";
-import HomeSmallPlaques from "../../images/HomeSmallPlaques.jpg";
-import HomeNeon from "../../images/HomeNeon.jpg";
-import image5 from "../../images/image5.png";
+import HomeKeychains from "../../images/HomeKeychains.png";
+import Home3020Plaques from "../../images/Home3020Plaques.png";
+import HomeSmallPlaques from "../../images/HomeSmallPlaques.png";
+import HomeNeon from "../../images/HomeNeon.png";
+import HomeOther from "../../images/HomeOther.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -264,8 +264,8 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={image5}
-                alt="img5"
+                src={HomeOther}
+                alt="HomeOther"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
