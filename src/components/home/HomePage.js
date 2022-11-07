@@ -2,8 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomeKeychains.png";
-import image1 from "../../images/image1.png";
-import image2 from "../../images/image2.png";
+import Home3020Plaques from "../../images/Home3020Plaques.png";
 import image3 from "../../images/image3.png";
 import image4 from "../../images/image4.png";
 import image5 from "../../images/image5.png";
@@ -209,8 +208,8 @@ function HomePage() {
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={image2}
-                alt="img2"
+                src={Home3020Plaques}
+                alt="Home3020Plaques"
               ></img>
             </div>
           </div>
