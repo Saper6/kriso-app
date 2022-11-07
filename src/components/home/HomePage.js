@@ -1,10 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import HomeKeychains from "../../images/HomeKeychains.png";
-import Home3020Plaques from "../../images/Home3020Plaques.png";
-import HomeSmallPlaques from "../../images/HomeSmallPlaques.png";
-import HomeNeon from "../../images/HomeNeon.png";
+import HomeKeychains from "../../images/HomeKeychains.jpg";
+import Home3020Plaques from "../../images/Home3020Plaques.jpg";
+import HomeSmallPlaques from "../../images/HomeSmallPlaques.jpg";
+import HomeNeon from "../../images/HomeNeon.jpg";
 import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
