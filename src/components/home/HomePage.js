@@ -175,7 +175,9 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Custom Keychains</p>
               <p className="text">
-                High quality keychains in a gift box. Rep your favourite NFT projects IRL
+                High quality keychains in a gift box
+                <div>Rep your favourite NFT projects IRL</div>
+                <div>Perfect for your Lambo keys</div>
               </p>
           <div className="text">
       <Link to="/home/Keychains">
@@ -225,10 +227,10 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">LED EDGE LIT SIGNS</p>
+              <p className="title">Small Wooden Plaques</p>
               <p className="text">
-                Custom RGB neon sign of your NFT, controlled with a wireless
-                remote.
+              <div>size here</div>
+              <div>Choose any picture and text</div>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -244,10 +246,11 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Small Plaques</p>
+              <p className="title">LED Edge Lit Signs</p>
               <p className="text">
-                Description: 15x10cm (5.9x3.9 inch), engraved into 5mm thick
-                birch wood.
+              <div>Custom RGB neon sign of your NFT</div>
+              <div>Controlled with a wireless remote</div>
+              <div>Multiple preprogrammed lighting modes</div>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -277,10 +280,12 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Twitter Banner Engravings</p>
+              <p className="title">Other Gadgets - some NFT related, some not</p>
               <p className="text">
-                80x30cm (31x12 inch), perfect for a twitter banner, but any
-                picture in simillar format will work.
+              <div>Pistol adapters for Quest 2 controller</div>
+              <div>Personalised wooden coasters</div>
+              <div>Custom XPS Foam letters and logos</div>
+              <div>And many more...</div>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -296,9 +301,11 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">About me</p>
+              <p className="title">Made For Degens - By Degen</p>
               <p className="title">
-                Hi
+                I'm just a lucky degen with a passion for DIY, 3D printers and lasers
+                <div>All items are designed and carefully crafted by myself and I'm fully open to customizing any product to suit your needs</div>
+                <div>If you have any questions, ideas or custom requests - feel free to shoot me a DM anytime</div>
               </p>
             </div>
           </div>
