@@ -27,7 +27,7 @@ const elemImages = {
   section1: [
     { id: 0, img: degodsmodal1 },
     { id: 1, img: degodsmodal2 },
-    { id: 1, img: degodsmodal3 },
+    { id: 2, img: degodsmodal3 },
   ],
   section2: [
     { id: 0, img: section_img2_1 },
