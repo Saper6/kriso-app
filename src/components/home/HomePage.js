@@ -4,11 +4,10 @@ import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomeKeychains.png";
 import Home3020Plaques from "../../images/Home3020Plaques.png";
 import image3 from "../../images/image3.png";
-import image4 from "../../images/image4.png";
+import HomeNeon from "../../images/HomeNeon.png";
 import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
-import { HelioPay } from "@heliofi/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
@@ -17,23 +16,13 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
-const theme = {
-  blue: {
-    default: "#3f51b5",
-    hover: "#283593"
-  },
-  pink: {
-    default: "#F100F5",
-    hover: "#e80b07"
-  }
-};
 
 const Button = styled.button`
   background-color: #F100F5;
   color: white;
   font-size: 15px;
   padding: 10px 60px;
-  border-radius: 6px;
+  border-radius: 9px;
   border: none;
   margin: 10px 0px;
   cursor: pointer;
@@ -261,8 +250,8 @@ function HomePage() {
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid item-img"
-                src={image4}
-                alt="img4"
+                src={HomeNeon}
+                alt="HomeNeon"
               ></img>
             </div>
           </div>
