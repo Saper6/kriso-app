@@ -263,9 +263,10 @@ function Keychains() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">That's different!</p>
+              <p className="title">DeGods and MickeyDeGods Keychains</p>
               <p className="text">
-                WTF
+                3D printed, double sided keychains
+                <div>Comes in a gift box</div>
             
               </p>
               <HelioPay
@@ -298,10 +299,9 @@ function Keychains() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Large Plaque With Stand</p>
+              <p className="title">Liberty Square Keychains</p>
               <p className="text">
-                30x20cm (12x8 inch), included stand and two swappable magnetic
-                tokens.
+                3D printed, then filled with clear epoxy resin and hand polished for a shiny finish
               </p>
               <HelioPay
                 cluster={cluster}
@@ -354,10 +354,10 @@ function Keychains() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">LED EDGE LIT SIGNS</p>
+              <p className="title">y00ts Keychains</p>
               <p className="text">
-                Custom RGB neon sign of your NFT, controlled with a wireless
-                remote.
+                3D printed base, each letter and background carefully hand filled with different colors of epoxy resin
+                <div>Every keychain has a unique colour or pattern, shipped at random - mint style</div>
               </p>
               <HelioPay
                 cluster={cluster}
@@ -384,104 +384,13 @@ function Keychains() {
           </div>
         </div>
       </div>
-
-      <div id="content4" className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6">
-              <p className="title">Small Plaques</p>
-              <p className="text">
-                Description: 15x10cm (5.9x3.9 inch), engraved into 5mm thick
-                birch wood.
-              </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest4Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
-            </div>
-            <div className="col-12 col-lg-6 align-self-start">
-              <img
-                className="img-fluid item-img"
-                src={image4}
-                alt="img4"
-                onClick={(e) => {
-                  showItem("section4");
-                }}
-              ></img>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="content5" className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img
-                className="img-fluid item-img"
-                src={image5}
-                alt="img5"
-                onClick={(e) => {
-                  showItem("section5");
-                }}
-              ></img>
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Twitter Banner Engravings</p>
-              <p className="text">
-                80x30cm (31x12 inch), perfect for a twitter banner, but any
-                picture in simillar format will work.
-              </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest5Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div id="about">
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Didn't find a project you're interested in?</p>
+              <p className="title">Didn't find a design you're interested in?</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you! DM's are always open
+                Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you or your project! DM's are always open
                 <a
                 className="footer-icon"
                 target="_blank"
