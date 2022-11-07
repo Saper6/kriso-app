@@ -50,6 +50,23 @@ const toastStyle = {
 
 
 function HomePage() {
+    const [paymentRequest1Id, setPaymentRequest1Id] = useState(
+    "634031bc2b4b05063fde3cc1"
+  );
+  const [paymentRequest2Id, setPaymentRequest2Id] = useState(
+    "634031cc2b4b05063fdea3b3"
+  );
+  const [paymentRequest3Id, setPaymentRequest3Id] = useState(
+    "635431d30ffed8cd8db6d6e0"
+  );
+  const [paymentRequest4Id, setPaymentRequest4Id] = useState(
+    "634031c92b4b05063fde9249"
+  );
+  const [paymentRequest5Id, setPaymentRequest5Id] = useState(
+    "634031c92b4b05063fde92c5"
+  );
+  const [cluster, setCluster] = useState("mainnet-beta");
+  const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -104,7 +121,21 @@ function HomePage() {
       y: 200,
     });
   });
+  
+  function SuccessPayment(event) {
+    console.log("onSuccess", event);
+    toast.success(event.content, toastStyle);
+  }
 
+  function PendingPayment(event) {
+    console.log("onPending", event);
+    toast.info(`Pending transaction: ${event.transaction}`, toastStyle);
+  }
+
+  function ErrorPayment(event) {
+    console.log("onError", event);
+    toast.error(event.errorMessage, toastStyle);
+  }
   return (
     <>
       <ToastContainer />
