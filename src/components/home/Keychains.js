@@ -4,8 +4,6 @@ import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
 import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
 import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
-//import image4 from "../../images/image4.png";
-//import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { HelioPay } from "@heliofi/react";
@@ -15,28 +13,21 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Modal } from "bootstrap";
 import "@solana/wallet-adapter-react-ui/styles.css";
-//section 1 imgages
-import section_img1_1 from "../../images/section_img1_1.png";
-import section_img1_2 from "../../images/section_img1_2.png";
-//section 2 imgages
+import degodsmodal1 from "../../images/keychains/modal/degodsmodal1.png";
+import degodsmodal2 from "../../images/keychains/modal/degodsmodal2.png";
+import degodsmodal3 from "../../images/keychains/modal/degodsmodal3.png";
 import section_img2_1 from "../../images/section_img2_1.png";
 import section_img2_2 from "../../images/section_img2_2.png";
-//section 3 imgages
 import section_img3_1 from "../../images/section_img3_1.png";
 import section_img3_2 from "../../images/section_img3_2.png";
-//section 4 imgages
-//import section_img4_1 from "../../images/section_img4_1.png";
-//import section_img4_2 from "../../images/section_img4_2.png";
-//section 5 imgages
-//import section_img5_1 from "../../images/section_img5_1.png";
-//import section_img5_2 from "../../images/section_img5_2.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 var imgModal;
 const elemImages = {
   section1: [
-    { id: 0, img: section_img1_1 },
-    { id: 1, img: section_img1_2 },
+    { id: 0, img: degodsmodal1 },
+    { id: 1, img: degodsmodal2 },
+    { id: 1, img: degodsmodal3 },
   ],
   section2: [
     { id: 0, img: section_img2_1 },
