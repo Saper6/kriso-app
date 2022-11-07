@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
 import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
-import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
+import y00tsMainPic from "../../keychains/y00tsMainPic.png";
 //import image4 from "../../images/image4.png";
 //import image5 from "../../images/image5.png";
 import footerline from "../../images/footer.png";
