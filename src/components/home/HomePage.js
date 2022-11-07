@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
-import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
-import HomeSmallPlaques from "../../images/HomePage/HomeSmallPlaques.png";
-import HomeNeon from "../../images/HomePage/HomeNeon.png";
-import HomeOther from "../../images/HomePage/HomeOther.png";
+import HomeKeychains from "../../images/homepage/HomeKeychains.png";
+import Home3020Plaques from "../../images/homepage/Home3020Plaques.png";
+import HomeSmallPlaques from "../../images/homepage/HomeSmallPlaques.png";
+import HomeNeon from "../../images/homepage/HomeNeon.png";
+import HomeOther from "../../images/homepage/HomeOther.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -50,23 +50,6 @@ const toastStyle = {
 
 
 function HomePage() {
-  const [paymentRequest1Id, setPaymentRequest1Id] = useState(
-    "634031bc2b4b05063fde3cc1"
-  );
-  const [paymentRequest2Id, setPaymentRequest2Id] = useState(
-    "634031cc2b4b05063fdea3b3"
-  );
-  const [paymentRequest3Id, setPaymentRequest3Id] = useState(
-    "635431d30ffed8cd8db6d6e0"
-  );
-  const [paymentRequest4Id, setPaymentRequest4Id] = useState(
-    "634031c92b4b05063fde9249"
-  );
-  const [paymentRequest5Id, setPaymentRequest5Id] = useState(
-    "634031c92b4b05063fde92c5"
-  );
-  const [cluster, setCluster] = useState("mainnet-beta");
-  const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -121,21 +104,6 @@ function HomePage() {
       y: 200,
     });
   });
-
-  function SuccessPayment(event) {
-    console.log("onSuccess", event);
-    toast.success(event.content, toastStyle);
-  }
-
-  function PendingPayment(event) {
-    console.log("onPending", event);
-    toast.info(`Pending transaction: ${event.transaction}`, toastStyle);
-  }
-
-  function ErrorPayment(event) {
-    console.log("onError", event);
-    toast.error(event.errorMessage, toastStyle);
-  }
 
   return (
     <>
