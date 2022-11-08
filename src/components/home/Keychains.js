@@ -41,14 +41,6 @@ const elemImages = {
   ],
 };
 
-const elemText = {
-  section1:
-    "",
-  section2:
-    "",
-  section3:
-    "",
-};
 
 const toastStyle = {
   position: "top-right",
