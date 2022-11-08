@@ -37,7 +37,9 @@ const Button = styled.button`
 `;
 
 function refreshPage() {
-  window.location.reload(false);
+  handleRefresh = () => {
+    this.setState({});
+  };
 }
 
 const toastStyle = {
