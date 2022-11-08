@@ -76,7 +76,7 @@ function Keychains() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.from("#bgHeroImage", { duration: 2, y: -200 });
+    gsap.from("#KeychainSelection", { duration: 2, y: -200 });
     gsap.from("#content1", {
       scrollTrigger: {
         trigger: "#content1",
@@ -197,12 +197,9 @@ function Keychains() {
       <ToastContainer />
       <div className="hero" id="home">
       <Link to="/">
-        <img
-          src={logo}
-          id="bgHeroImage"
-          className="img-fluid primary-hero"
-          alt="hero-bg"
-        />
+        <text
+          id="KeychainSelection"
+          className="title">Keychain Selection</text>
         </Link>
       </div>
       <div id="content1" className="content">

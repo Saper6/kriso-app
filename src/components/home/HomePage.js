@@ -133,10 +133,12 @@ function HomePage() {
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Custom Keychains</p>
-              <p className="text">
-                High quality keychains in a gift box
-                <div>Rep your favourite NFT projects IRL</div>
-                <div>Perfect for your Lambo keys</div>
+              <p className="textl">
+                <ul>
+              <li><div>High quality keychains in a gift box</div></li>
+              <li><div>Rep your favourite NFT projects IRL</div></li>
+              <li><div>Perfect for your Lambo keys</div></li>
+              </ul>
               </p>
           <div className="text">
       <Link to="/home/Keychains">
@@ -153,10 +155,12 @@ function HomePage() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
-              <p className="text">
-              <div>30x20cm (12x8 inch)</div>
-              <div>Handcrafted from high quality birch wood</div>
-              <div>Easy to hang frame</div>
+              <p className="textl">
+              <ul>
+              <li><div>30x20cm (12x8 inch)</div></li>
+              <li><div>Handcrafted from high quality birch wood</div></li>
+              <li><div>Easy to hang frame</div></li>
+              </ul>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -187,9 +191,11 @@ function HomePage() {
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Small Wooden Plaques</p>
-              <p className="text">
-              <div>size here</div>
-              <div>Choose any picture and text</div>
+              <p className="textl">
+              <ul>
+              <li><div>size here</div></li>
+              <li><div>Choose any picture and text</div></li>
+              </ul>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -206,10 +212,12 @@ function HomePage() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">LED Edge Lit Signs</p>
-              <p className="text">
-              <div>Custom RGB neon sign of your NFT</div>
-              <div>Controlled with a wireless remote</div>
-              <div>Multiple preprogrammed lighting modes</div>
+              <p className="textl">
+              <ul>
+              <li><div>Custom RGB neon sign of your NFT</div></li>
+              <li><div>Controlled with a wireless remote</div></li>
+              <li><div>Multiple preprogrammed lighting modes</div></li>
+              </ul>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
@@ -239,7 +247,7 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Other Gadgets <div>some NFT related, some not</div></p>
+              <p className="title">Other Gadgets</p>
               <p className="textl">
                 <ul>
               <li><div>Pistol adapters for Quest 2 controller</div></li>
@@ -264,7 +272,7 @@ function HomePage() {
             <div className="col">
               <p className="title">About</p>
               <p className="text">
-                I'm just a lucky degen with a passion for DIY, 3D printers and lasers
+                I'm just a lucky degen with a passion for DIY
                 <div>All items are designed and carefully crafted by myself and I'm fully open to customizing any product to suit your needs</div>
                 <div>If you have any questions, ideas or custom requests - feel free to shoot me a DM anytime</div>
               </p>
