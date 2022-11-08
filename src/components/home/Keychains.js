@@ -222,10 +222,12 @@ function Keychains() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">DeGods</p>
               <p className="text">
+              <ul>
                 3D printed keychains
-                <div>Multiple variations available: </div>
-                <div>OG DeGods, MickeyDeGods, DeGods Anniversary</div>
-                <div>Comes in a gift box</div>
+                <li><div>Multiple variations available: </div> </li>
+                <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
+                <li><div>Comes in a gift box</div> </li>
+                </ul>
             
               </p>
               <HelioPay
