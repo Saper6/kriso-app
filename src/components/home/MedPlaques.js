@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
-import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
-import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
+import degodsmedplaque from "../../images/medplaques/degodsmedplaque.png";
+import y00tsmedplaque from "../../images/medplaques/y00tsmedplaque.png";
+import mtcmedplaque from "../../images/medplaques/mtcmedplaque.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { HelioPay } from "@heliofi/react";
@@ -212,8 +212,8 @@ function MedPlaques() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={DegodsMainPic}
-                alt="DegodsMainPic"
+                src={degodsmedplaque}
+                alt="degodsmedplaque"
                 onClick={(e) => {
                   showItem("section1");
                 
@@ -293,8 +293,8 @@ function MedPlaques() {
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={LibertySquareMainPic}
-                alt="LibertySquareMainPic"
+                src={y00tsmedplaque}
+                alt="y00tsmedplaque"
                 onClick={(e) => {
                   showItem("section2");
                 }}
@@ -310,8 +310,8 @@ function MedPlaques() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={y00tsMainPic}
-                alt="y00tsMainPic"
+                src={mtcmedplaque}
+                alt="mtcmedplaque"
                 onClick={(e) => {
                   showItem("section3");
                 }}
