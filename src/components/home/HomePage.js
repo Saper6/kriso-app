@@ -252,7 +252,7 @@ function HomePage() {
                 <ul>
               <li><div>Pistol adapters for Quest 2 controller</div></li>
               <li><div>Personalised wooden coasters</div></li>
-              <li><div>Custom XPS Foam letters and logos</div></li>
+              <li><div>Custom 3D letters and logos</div></li>
               <li><div>And many more...</div></li>
               </ul>
               </p>
