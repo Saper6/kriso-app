@@ -157,13 +157,13 @@ function HomePage() {
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="textl">
               <ul>
-              <li><div>30x20cm (12x8 inch)</div></li>
+              <li><div>Size: 34x24cm (13.3x9.4 inch)</div></li>
               <li><div>Handcrafted from high quality birch wood</div></li>
               <li><div>Easy to hang frame</div></li>
               </ul>
               </p>
               <div className="text">
-      <Link to="/home/Keychains">
+      <Link to="/home/MedPlaques">
         <Button>VIEW ALL</Button>
       </Link>
     </div>
