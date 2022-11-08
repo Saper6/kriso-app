@@ -115,6 +115,34 @@ html {
   vertical-align: middle;
 }
 
+.textr {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.6px;
+  text-align: right;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 80%;
+}
+
+.textl {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 80%;
+}
+
 .text {
   color: white;
   font-family: Helvetica, sans-serif;

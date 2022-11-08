@@ -221,9 +221,9 @@ function Keychains() {
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">DeGods</p>
-              <p className="text">
+              <p className="textl">
               <ul>
-                3D printed keychains
+                <li>3D printed keychains</li>
                 <li><div>Multiple variations available: </div> </li>
                 <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
                 <li><div>Comes in a gift box</div> </li>
@@ -261,8 +261,11 @@ function Keychains() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">Liberty Square</p>
-              <p className="text">
-                3D printed, then filled with clear epoxy resin and hand polished for a shiny finish
+              <p className="textr">
+              <ul>
+                <li>3D printed, then filled with clear epoxy resin</li>
+                <li>Hand polished for a shiny finish</li>
+                </ul>
               </p>
               <HelioPay
                 cluster={cluster}
@@ -316,11 +319,13 @@ function Keychains() {
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">y00ts</p>
-              <p className="text">
-                3D printed base
-                <div>Each letter and background carefully hand filled with different colors of epoxy resin</div>
-                <div>Every keychain with a unique colour or pattern</div>
-                <div>Shipped at random - mint style</div>
+              <p className="textl">
+                <ul>
+                <li>3D printed base</li>
+                <li><div>Each letter and background carefully hand filled with different colors of epoxy resin</div></li>
+                <li><div>Every keychain with a unique colour or pattern</div></li>
+                <li><div>Shipped at random - mint style</div></li>
+                </ul>
               </p>
               <HelioPay
                 cluster={cluster}
