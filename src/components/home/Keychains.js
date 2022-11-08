@@ -261,7 +261,7 @@ function Keychains() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">Liberty Square</p>
-              <p className="textr">
+              <p className="textl">
               <ul>
                 <li>3D printed, then filled with clear epoxy resin</li>
                 <li>Hand polished for a shiny finish</li>

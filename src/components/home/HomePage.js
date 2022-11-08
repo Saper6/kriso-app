@@ -239,12 +239,14 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Other Gadgets - some NFT related, some not</p>
-              <p className="text">
-              <div>Pistol adapters for Quest 2 controller</div>
-              <div>Personalised wooden coasters</div>
-              <div>Custom XPS Foam letters and logos</div>
-              <div>And many more...</div>
+              <p className="title">Other Gadgets <div>some NFT related, some not</div></p>
+              <p className="textl">
+                <ul>
+              <li><div>Pistol adapters for Quest 2 controller</div></li>
+              <li><div>Personalised wooden coasters</div></li>
+              <li><div>Custom XPS Foam letters and logos</div></li>
+              <li><div>And many more...</div></li>
+              </ul>
               </p>
               <div className="text">
       <Link to="/home/Keychains">
