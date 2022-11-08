@@ -111,7 +111,7 @@ function HomePage() {
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/" onClick={this.forceUpdate}> 
+      <Link to="/">
         <img
           src={logo}
           id="bgHeroImage"
@@ -141,7 +141,7 @@ function HomePage() {
               </ul>
               </p>
           <div className="text">
-      <Link to="/home/Keychains" onClick={this.forceUpdate}>
+      <Link to="/home/Keychains">
         <Button>VIEW ALL</Button>
       </Link>
     </div>
@@ -163,7 +163,7 @@ function HomePage() {
               </ul>
               </p>
               <div className="text">
-      <Link to="/home/MedPlaques" onClick={this.forceUpdate}>
+      <Link to="/home/MedPlaques">
         <Button>VIEW ALL</Button>
       </Link>
     </div>
