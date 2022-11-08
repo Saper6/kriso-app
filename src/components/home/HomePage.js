@@ -36,6 +36,9 @@ const Button = styled.button`
   }
 `;
 
+function refreshPage() {
+  window.location.reload(false);
+}
 
 const toastStyle = {
   position: "top-right",
@@ -142,7 +145,7 @@ function HomePage() {
               </p>
           <div className="text">
       <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
+        <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
             </div>
@@ -164,7 +167,7 @@ function HomePage() {
               </p>
               <div className="text">
       <Link to="/home/MedPlaques">
-        <Button>VIEW ALL</Button>
+        <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
             </div>
@@ -199,7 +202,7 @@ function HomePage() {
               </p>
               <div className="text">
       <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
+        <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
             </div>
@@ -221,7 +224,7 @@ function HomePage() {
               </p>
               <div className="text">
       <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
+        <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
             </div>
@@ -258,7 +261,7 @@ function HomePage() {
               </p>
               <div className="text">
       <Link to="/home/Keychains">
-        <Button>VIEW ALL</Button>
+        <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
             </div>
