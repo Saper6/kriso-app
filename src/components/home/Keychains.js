@@ -136,7 +136,7 @@ function Keychains() {
       >
         <img src={item.img} className="d-block w-100" alt="..." />
         <div className="carousel-caption d-none d-md-block">
-          <h5>Section</h5>
+          <h5></h5>
           <p>{modalText}</p>
         </div>
       </div>
