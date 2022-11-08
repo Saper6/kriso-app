@@ -16,10 +16,11 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import degodsmodal1 from "../../images/keychains/modal/degodsmodal1.png";
 import degodsmodal2 from "../../images/keychains/modal/degodsmodal2.png";
 import degodsmodal3 from "../../images/keychains/modal/degodsmodal3.png";
-import section_img2_1 from "../../images/section_img2_1.png";
-import section_img2_2 from "../../images/section_img2_2.png";
-import section_img3_1 from "../../images/section_img3_1.png";
-import section_img3_2 from "../../images/section_img3_2.png";
+import libertymodal1 from "../../images/keychains/modal/libertymodal1.png";
+import libertymodal2 from "../../images/keychains/modal/libertymodal2.png";
+import y00tsmodal1 from "../../images/keychains/modal/y00tsmodal1.png";
+import y00tsmodal2 from "../../images/keychains/modal/y00tsmodal2.png";
+import y00tsmodal3 from "../../images/keychains/modal/y00tsmodal3.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 var imgModal;
@@ -30,12 +31,13 @@ const elemImages = {
     { id: 2, img: degodsmodal3 },
   ],
   section2: [
-    { id: 0, img: section_img2_1 },
-    { id: 1, img: section_img2_2 },
+    { id: 0, img: libertymodal1 },
+    { id: 1, img: libertymodal2 },
   ],
   section3: [
-    { id: 0, img: section_img3_1 },
-    { id: 1, img: section_img3_2 },
+    { id: 0, img: y00tsmodal1 },
+    { id: 1, img: y00tsmodal2 },
+    { id: 2, img: y00tsmodal3 },
   ],
 };
 
