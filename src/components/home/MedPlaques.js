@@ -260,11 +260,11 @@ function MedPlaques() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Liberty Square</p>
+              <p className="title">y00ts</p>
               <p className="textl">
               <ul>
-                <li>3D printed, then filled with clear epoxy resin</li>
-                <li>Hand polished for a shiny finish</li>
+                <li>text</li>
+                <li>text</li>
                 </ul>
               </p>
               <HelioPay
@@ -318,13 +318,13 @@ function MedPlaques() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">y00ts</p>
+              <p className="title">MetaTattooClub</p>
               <p className="textl">
                 <ul>
-                <li>3D printed base</li>
-                <li><div>Each letter and background carefully hand filled with different colors of epoxy resin</div></li>
-                <li><div>Every keychain with a unique colour or pattern</div></li>
-                <li><div>Shipped at random - mint style</div></li>
+                <li>text</li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
                 </ul>
               </p>
               <HelioPay
