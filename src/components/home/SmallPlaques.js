@@ -93,7 +93,14 @@ function SmallPlaques() {
       duration: 1,
       x: 200,
     });
-
+    gsap.from("#content3", {
+      scrollTrigger: {
+        trigger: "#content3",
+        toggleActions: "restart none restart none",
+      },
+      duration: 1,
+      x: -200,
+    });
     gsap.from("#about", {
       scrollTrigger: {
         trigger: "#about",
@@ -197,12 +204,7 @@ function SmallPlaques() {
           alt="hero-bg"
         />
         </Link>
-        <p className="title">
-        <ul>
-                <li>Picture of your DeGod/DeadGod deeply engraved into the wood using a powerful, high precision CO2 Laser</li>
-                <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
-                </ul>
-        </p>
+        
       </div>
       <div id="content1" className="content">
         <div className="container">
@@ -223,6 +225,7 @@ function SmallPlaques() {
               <p className="textl">
               <ul>
                 <li>Picture of your DeGod/DeadGod deeply engraved into the wood using a powerful, high precision CO2 Laser</li>
+                <li><div>DeGods logo, QR code and attributes etched with a Diode Laser resulting in sharp, high contrast details</div> </li>
                 <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
                 </ul>
             
@@ -257,8 +260,13 @@ function SmallPlaques() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Liberty Square</p>
-              
+              <p className="title">y00ts</p>
+              <p className="textl">
+              <ul>
+                <li>text</li>
+                <li>text</li>
+                </ul>
+              </p>
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $Dust"
@@ -296,6 +304,54 @@ function SmallPlaques() {
         </div>
       </div>
 
+      <div id="content3" className="content">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+              <img
+                className="img-fluid item-img"
+                src={mtcmedplaque}
+                alt="mtcmedplaque"
+                onClick={(e) => {
+                  showItem("section3");
+                }}
+              ></img>
+            </div>
+            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+              <p className="title">MetaTattooClub</p>
+              <p className="textl">
+                <ul>
+                <li>text</li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
+                </ul>
+              </p>
+              <HelioPay
+                cluster={cluster}
+                payButtonTitle="Pay in $Dust"
+                paymentRequestId={paymentRequest3Id}
+                // supportedCurrencies={["SOL"]}
+                // totalAmount={0.01}
+                onSuccess={(e) => {
+                  SuccessPayment(e);
+                }}
+                onError={(e) => {
+                  ErrorPayment(e);
+                }}
+                onPending={(e) => {
+                  PendingPayment(e);
+                }}
+                theme={{
+                  colors: {
+                    primary: "#F100F5",
+                  },
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="about">
         <div className="container">
           <div className="row">
