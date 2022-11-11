@@ -201,7 +201,7 @@ function HomePage() {
               </ul>
               </p>
               <div className="text">
-      <Link to="/home/Keychains">
+      <Link to="/home/SmallPlaques">
         <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
