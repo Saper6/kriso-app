@@ -258,8 +258,7 @@ function SmallPlaques() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">Liberty Square</p>
-              <p className="textl">
-              </p>
+              
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $Dust"
