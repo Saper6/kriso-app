@@ -358,7 +358,7 @@ function MedPlaques() {
             <div className="col">
               <p className="title">Didn't find a design you're interested in?</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom plaque for you or your project! DM's are always open
+                Feel free to contact me on Twitter and I'll be happy to craft a custom plaque for you or your project! DM's are always open!
                 <a
                 className="footer-icon"
                 target="_blank"

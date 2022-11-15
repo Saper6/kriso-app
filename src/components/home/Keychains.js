@@ -385,7 +385,7 @@ function Keychains() {
           <div className="row">
             <div className="col">
               <p className="footer-text">
-                © Kriso's Workshop 2022, All rights reserved
+                © Kriso's Workshop 2022, All rights reserved.
               </p>
               <p className="footer-sub-text">By @kevincaughman</p>
             </div>
