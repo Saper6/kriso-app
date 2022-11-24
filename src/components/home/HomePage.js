@@ -275,7 +275,6 @@ function HomePage() {
             <div className="col">
               <p className="title">About</p>
               <p className="text">
-                I'm just a lucky degen with a passion for DIY
                 <div>All items are designed and carefully crafted by myself and I'm fully open to customizing any product to suit your needs</div>
                 <div>If you have any questions, ideas or custom requests - feel free to shoot me a DM anytime</div>
               </p>
