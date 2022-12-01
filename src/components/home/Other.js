@@ -229,7 +229,7 @@ function Other() {
                 <li>3D printed hanger for your favourite merch</li>
                 <li><div>Available in mulitple colours</div> </li>
                 <li><div>Easy mount with a strong 3M tape...</div> </li>
-                <li><div>or via 2 screws for more secure hold </div> </li>
+                <div>or via 2 screws for more secure hold </div>
                 </ul>
             
               </p>
@@ -268,7 +268,7 @@ function Other() {
               <ul>
               <li>Affordable version of the iconic glasses</li>
                 <li>Interchangable inserts...</li>
-                <li>swap between solid and slotted eye blocks</li>
+                <div>swap between solid and slotted eye blocks</div>
                 <li>Perfect for a party/meetup or as a shelf gadget</li>
                 </ul>
               </p>
@@ -327,9 +327,9 @@ function Other() {
               <p className="textl">
                 <ul>
                 <li>Available in two versions:</li>
-                <li><div>Full - for the most realistic, immersive grip</div></li>
-                <li><div> (perfect for games like Pistol Whip) </div></li>
-                <li><div>Lite - with a thumb cutout allowing button access</div></li>
+                <div>Full - for the most realistic, immersive grip</div>
+                <div> (perfect for games like Pistol Whip) </div>
+                <div>Lite - with a thumb cutout allowing button access</div>
                 <li><div>Fully functional trigger</div></li>
                 <li><div>Fast and easy to use</div></li>
                 <li><div>Magnetic slide to secure the controller in place</div></li>
