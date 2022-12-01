@@ -140,7 +140,6 @@ function HomePage() {
                 <ul>
               <li><div>High quality keychains in a gift box</div></li>
               <li><div>Rep your favourite NFT projects IRL</div></li>
-              <li><div>Perfect for your Lambo keys</div></li>
               </ul>
               </p>
           <div className="text">
@@ -223,7 +222,7 @@ function HomePage() {
               </ul>
               </p>
               <div className="text">
-      <Link to="/home/Keychains">
+      <Link to="/home/NeonSigns">
         <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
@@ -260,7 +259,7 @@ function HomePage() {
               </ul>
               </p>
               <div className="text">
-      <Link to="/home/Keychains">
+      <Link to="/home/Other">
         <Button onClick={refreshPage}>VIEW ALL</Button>
       </Link>
     </div>
