@@ -223,13 +223,13 @@ function Other() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">DeGods</p>
+              <p className="title">y00ts coat hanger</p>
               <p className="textl">
               <ul>
-                <li>3D printed keychains</li>
-                <li><div>Multiple variations available: </div> </li>
-                <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
-                <li><div>Comes in a gift box</div> </li>
+                <li>3D printed hanger for your favourite merch</li>
+                <li><div>Available in mulitple colours</div> </li>
+                <li><div>Easy mount with a strong 3M tape...</div> </li>
+                <li><div>or via 2 screws for more secure hold </div> </li>
                 </ul>
             
               </p>
@@ -263,11 +263,13 @@ function Other() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Liberty Square</p>
+              <p className="title">Nouns Glasses</p>
               <p className="textl">
               <ul>
-                <li>3D printed, then filled with clear epoxy resin</li>
-                <li>Hand polished for a shiny finish</li>
+              <li>Affordable version of the iconic glasses</li>
+                <li>Interchangable inserts...</li>
+                <li>swap between solid and slotted eye blocks</li>
+                <li>Perfect for a party/meetup or as a shelf gadget</li>
                 </ul>
               </p>
               <HelioPay
@@ -321,13 +323,16 @@ function Other() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">y00ts</p>
+              <p className="title">Quest 2 VR controller Gun Grip</p>
               <p className="textl">
                 <ul>
-                <li>3D printed base</li>
-                <li><div>Each letter and background carefully hand filled with different colors of epoxy resin</div></li>
-                <li><div>Every keychain with a unique colour or pattern</div></li>
-                <li><div>Shipped at random - mint style</div></li>
+                <li>Available in two versions:</li>
+                <li><div>Full - for the most realistic, immersive grip</div></li>
+                <li><div> (perfect for games like Pistol Whip) </div></li>
+                <li><div>Lite - with a thumb cutout allowing button access</div></li>
+                <li><div>Fully functional trigger</div></li>
+                <li><div>Fast and easy to use</div></li>
+                <li><div>Magnetic slide to secure the controller in place</div></li>
                 </ul>
               </p>
               <HelioPay
@@ -359,9 +364,9 @@ function Other() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Didn't find a design you're interested in?</p>
+              <p className="title">Have an interesting idea?</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you or your project! DM's are always open
+                Feel free to contact me on Twitter and let's see if I can bring it to life, always happy to try new things and challenges!
                 <a
                 className="footer-icon"
                 target="_blank"

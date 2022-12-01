@@ -205,7 +205,6 @@ function Keychains() {
           className="img-fluid primary-hero"
           alt="hero-bg"
         />
-        <p className="title">Keychain selection</p>
         </Link>
         
       </div>
@@ -230,7 +229,6 @@ function Keychains() {
                 <li>3D printed keychains</li>
                 <li><div>Multiple variations available: </div> </li>
                 <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
-                <li><div>Comes in a gift box</div> </li>
                 </ul>
             
               </p>
