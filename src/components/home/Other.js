@@ -223,7 +223,7 @@ function Other() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">y00ts coat hanger</p>
+              <p className="title">y00ts Hanger</p>
               <p className="textl">
               <ul>
                 <li>3D printed hanger for your favourite merch</li>
@@ -327,9 +327,9 @@ function Other() {
               <p className="textl">
                 <ul>
                 <li>Available in two versions:</li>
-                <div>Full - for the most realistic, immersive grip</div>
+                <div>-Full - for the most realistic, immersive grip</div>
                 <div> (perfect for games like Pistol Whip) </div>
-                <div>Lite - with a thumb cutout allowing button access</div>
+                <div>-Lite - with a thumb cutout allowing button access</div>
                 <li><div>Fully functional trigger</div></li>
                 <li><div>Fast and easy to use</div></li>
                 <li><div>Magnetic slide to secure the controller in place</div></li>
