@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
-import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
-import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
+import nounsglassesmain from "../../images/other/nounsglassesmain.png";
+import sarvrmain from "../../images/other/sarvrmain.png";
+import y00tshangermain from "../../images/other/y00tshangermain.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { HelioPay } from "@heliofi/react";
@@ -214,8 +214,8 @@ function Other() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={DegodsMainPic}
-                alt="DegodsMainPic"
+                src={y00tshangermain}
+                alt="y00tshangermain"
                 onClick={(e) => {
                   showItem("section1");
                 
@@ -229,13 +229,13 @@ function Other() {
                 <li>3D printed hanger for your favourite merch</li>
                 <li><div>Available in mulitple colours</div> </li>
                 <li><div>Easy mount with a strong 3M tape...</div> </li>
-                <div>or via 2 screws for more secure hold </div>
+                <div>or via 2 screws for more rigidity </div>
                 </ul>
             
               </p>
               <HelioPay
                 cluster={cluster}
-                payButtonTitle="Pay in $DUST"
+                payButtonTitle="Place your order"
                 paymentRequestId={paymentRequest1Id}
                 // supportedCurrencies={["SOL"]}
                 // totalAmount={0.01}
@@ -298,8 +298,8 @@ function Other() {
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={LibertySquareMainPic}
-                alt="LibertySquareMainPic"
+                src={nounsglassesmain}
+                alt="nounsglassesmain"
                 onClick={(e) => {
                   showItem("section2");
                 }}
@@ -315,8 +315,8 @@ function Other() {
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={y00tsMainPic}
-                alt="y00tsMainPic"
+                src={sarvrmain}
+                alt="sarvrmain"
                 onClick={(e) => {
                   showItem("section3");
                 }}
