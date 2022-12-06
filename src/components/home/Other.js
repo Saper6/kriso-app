@@ -138,7 +138,7 @@ function Other() {
       <div id="content2" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 align-self-center">
               <p className="title">Nouns Glasses</p>
               <p className="textl">
 
@@ -170,7 +170,7 @@ function Other() {
                 alt="sarvrmain"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">Quest 2 VR controller Gun Grip</p>
               <p className="textl">
 

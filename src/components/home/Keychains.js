@@ -102,7 +102,7 @@ function Keychains() {
       <div id="header1" className="content">
       <div className="container">
       <p className="text">
-        Selection of unique custom keychains you won't find anywhere else
+        Selection of unique, custom keychains
         
         </p>
       </div>
