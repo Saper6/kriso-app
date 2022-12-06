@@ -234,27 +234,15 @@ function MedPlaques() {
                 </ul>
             
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $DUST"
-                paymentRequestId={paymentRequest1Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+
+
+<div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
+
+    
             </div>
           </div>
         </div>
