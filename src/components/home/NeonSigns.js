@@ -6,49 +6,14 @@ import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.pn
 import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
-import { HelioPay } from "@heliofi/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Modal } from "bootstrap";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import degodsmodal1 from "../../images/keychains/modal/degodsmodal1.png";
-import degodsmodal2 from "../../images/keychains/modal/degodsmodal2.png";
-import degodsmodal3 from "../../images/keychains/modal/degodsmodal3.png";
-import libertymodal1 from "../../images/keychains/modal/libertymodal1.png";
-import libertymodal2 from "../../images/keychains/modal/libertymodal2.png";
-import y00tsmodal1 from "../../images/keychains/modal/y00tsmodal1.png";
-import y00tsmodal2 from "../../images/keychains/modal/y00tsmodal2.png";
-import y00tsmodal3 from "../../images/keychains/modal/y00tsmodal3.png";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
-var imgModal;
-const elemImages = {
-  section1: [
-    { id: 0, img: degodsmodal1 },
-    { id: 1, img: degodsmodal2 },
-    { id: 2, img: degodsmodal3 },
-  ],
-  section2: [
-    { id: 0, img: libertymodal1 },
-    { id: 1, img: libertymodal2 },
-  ],
-  section3: [
-    { id: 0, img: y00tsmodal1 },
-    { id: 1, img: y00tsmodal2 },
-    { id: 2, img: y00tsmodal3 },
-  ],
-};
-
-const elemText = {
-  section1:
-    "",
-  section2:
-    "",
-  section3:
-    "",
-};
 
 const toastStyle = {
   position: "top-right",
@@ -62,19 +27,6 @@ const toastStyle = {
 };
 
 function NeonSigns() {
-  const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
-  const [modalText, setModalText] = useState("");
-  const [paymentRequest1Id, setPaymentRequest1Id] = useState(
-    "634031bc2b4b05063fde3cc1"
-  );
-  const [paymentRequest2Id, setPaymentRequest2Id] = useState(
-    "634031cc2b4b05063fdea3b3"
-  );
-  const [paymentRequest3Id, setPaymentRequest3Id] = useState(
-    "635431d30ffed8cd8db6d6e0"
-  );
-  const [cluster, setCluster] = useState("mainnet-beta");
-  const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -114,37 +66,6 @@ function NeonSigns() {
     });
   });
 
-  useEffect(() => {
-    imgModal = new Modal("#imgModal", {
-      backdrop: true,
-    });
-  });
-
-  function showItem(element) {
-    console.log("showItem()");
-    console.log(element);
-    setModalImgs(elemImages[element]);
-    setModalText(elemText[element]);
-    imgModal.show();
-  }
-
-  function carouselItems() {
-    let items = modalImgs.map((item) => (
-      <div
-        className={item.id == 0 ? "carousel-item active" : "carousel-item"}
-        key={item.id}
-      >
-        <img src={item.img} className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p>{modalText}</p>
-        </div>
-      </div>
-    ));
-
-    return items;
-  }
-
  const Button = styled.button`
   background-color: #F100F5;
   color: white;
@@ -163,37 +84,6 @@ function NeonSigns() {
     box-shadow: 4px 4px 4px #e80b07;
   }
 `;
-
-  function carouselBtns() {
-    let btns = modalImgs.map((item) => (
-      <Button
-        key={item.id}
-        type="Button"
-        data-bs-target="#carouselModal"
-        data-bs-slide-to={item.id}
-        className={item.id == 0 ? "active" : ""}
-        aria-current={item.id == 0 ? "true" : "false"}
-        aria-label={`Slide ${item.id + 1}`}
-      ></Button>
-    ));
-    return btns;
-  }
-
-  function SuccessPayment(event) {
-    console.log("onSuccess", event);
-    toast.success(event.content, toastStyle);
-  }
-
-  function PendingPayment(event) {
-    console.log("onPending", event);
-    toast.info(`Pending transaction: ${event.transaction}`, toastStyle);
-  }
-
-  function ErrorPayment(event) {
-    console.log("onError", event);
-    toast.error(event.errorMessage, toastStyle);
-  }
-
   return (
     <>
       <ToastContainer />
@@ -216,10 +106,6 @@ function NeonSigns() {
                 className="img-fluid"
                 src={DegodsMainPic}
                 alt="DegodsMainPic"
-                onClick={(e) => {
-                  showItem("section1");
-                
-                }}
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -233,27 +119,11 @@ function NeonSigns() {
                 </ul>
             
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $DUST"
-                paymentRequestId={paymentRequest1Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
           </div>
         </div>
@@ -270,37 +140,17 @@ function NeonSigns() {
                 <li>Hand polished for a shiny finish</li>
                 </ul>
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest2Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-                
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
                 src={LibertySquareMainPic}
                 alt="LibertySquareMainPic"
-                onClick={(e) => {
-                  showItem("section2");
-                }}
               ></img>
             </div>
           </div>
@@ -315,9 +165,6 @@ function NeonSigns() {
                 className="img-fluid item-img"
                 src={y00tsMainPic}
                 alt="y00tsMainPic"
-                onClick={(e) => {
-                  showItem("section3");
-                }}
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
@@ -330,27 +177,11 @@ function NeonSigns() {
                 <li><div>Shipped at random - mint style</div></li>
                 </ul>
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest3Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
           </div>
         </div>
@@ -392,35 +223,6 @@ function NeonSigns() {
           </div>
         </div>
       </footer>
-      <div className="container-fluid" style={{ padding: 0 }}>
-        <div
-          className="modal fade"
-          id="imgModal"
-          tabIndex="-1"
-          aria-labelledby="modalLabel"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-              <div
-                id="carouselModal"
-                className="carousel slide carousel-fade"
-                data-bs-ride="carousel"
-                data-bs-pause="false"
-              >
-                <div className="carousel-indicators">{carouselBtns()}</div>
-                <div className="carousel-inner">{carouselItems()}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
