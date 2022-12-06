@@ -120,7 +120,7 @@ function Other() {
                 alt="y00tshangermain"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-end">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">y00ts Hanger</p>
               <p className="textl">
             
