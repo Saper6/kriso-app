@@ -67,7 +67,7 @@ function MedPlaques() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
-    "634031bc2b4b05063fde3cc1"
+    "634031cc2b4b05063fdea3b3"
   );
   const [paymentRequest2Id, setPaymentRequest2Id] = useState(
     "634031cc2b4b05063fdea3b3"
