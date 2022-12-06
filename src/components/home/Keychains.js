@@ -118,7 +118,7 @@ function Keychains() {
                 alt="DegodsMainPic"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods</p>
               <p className="textl">
               <ul>
@@ -141,7 +141,7 @@ function Keychains() {
       <div id="content2" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 align-self-center">
               <p className="title">Liberty Square</p>
               <p className="textl">
               <ul>
@@ -176,7 +176,7 @@ function Keychains() {
                 alt="y00tsMainPic"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">y00ts</p>
               <p className="textl">
                 <ul>

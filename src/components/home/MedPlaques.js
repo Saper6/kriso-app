@@ -120,7 +120,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
                 alt="degodsmedplaque"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods/DeadGods</p>
               <p className="textl">
             
@@ -138,7 +138,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
       <div id="content2" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 align-self-center">
               <p className="title">y00ts</p>
               <p className="textl">
 
@@ -170,7 +170,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
                 alt="mtcmedplaque"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">MetaTattooClub</p>
               <p className="textl">
 
