@@ -100,10 +100,10 @@ function Other() {
         </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="title">
+      <p className="text">
         A wide variety of my other creations
         <div>Some NFT related, some not</div>
-        <div>From custom coat hangers, coffee coasters to VR accessories</div>
+        <div>From custom coat hangers, coffee coasters to VR accessories... and more</div>
       
       </p>
       </div>
@@ -123,12 +123,6 @@ function Other() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">y00ts Hanger</p>
               <p className="textl">
-              <ul>
-                <li>3D printed hanger for your favourite merch</li>
-                <li><div>Available in mulitple colours</div> </li>
-                <li><div>Easy mount with a strong 3M tape...</div> </li>
-                <div>or via 2 screws for more rigidity </div>
-                </ul>
             
               </p>
               <div className="text">
@@ -147,12 +141,7 @@ function Other() {
             <div className="col-12 col-lg-6">
               <p className="title">Nouns Glasses</p>
               <p className="textl">
-              <ul>
-              <li>Affordable version of the iconic glasses</li>
-                <li>Interchangable inserts...</li>
-                <div>swap between solid and slotted eye blocks</div>
-                <li>Perfect for a party/meetup or as a shelf gadget</li>
-                </ul>
+
               </p>
               <div className="text">
 <a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
@@ -184,15 +173,7 @@ function Other() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Quest 2 VR controller Gun Grip</p>
               <p className="textl">
-                <ul>
-                <li>Available in two versions:</li>
-                <div>-Full - for the most realistic, immersive grip</div>
-                <div> (perfect for games like Pistol Whip) </div>
-                <div>-Lite - with a thumb cutout allowing button access</div>
-                <li><div>Fully functional trigger</div></li>
-                <li><div>Fast and easy to use</div></li>
-                <li><div>Magnetic slide to secure the controller in place</div></li>
-                </ul>
+
               </p>
               <div className="text">
 <a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
@@ -209,7 +190,7 @@ function Other() {
             <div className="col">
               <p className="title">Have an interesting idea?</p>
               <p className="text">
-                Feel free to contact me on Twitter and let's see if I can bring it to life, always happy to try new things and challenges!
+                Feel free to contact me on Twitter and let's see if I can bring it to life, always happy to take up a new challenge!
                 <a
                 className="footer-icon"
                 target="_blank"
