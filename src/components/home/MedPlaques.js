@@ -233,13 +233,13 @@ function MedPlaques() {
                 <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
                 </ul>
             
-              </p>
+              </p>  
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $DUST"
                 paymentRequestId={paymentRequest1Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
+                supportedCurrencies={["USDC", "SOL", "DUST", "BOO", "HALO"]}
+                totalAmount={0.145}
                 onSuccess={(e) => {
                   SuccessPayment(e);
                 }}
