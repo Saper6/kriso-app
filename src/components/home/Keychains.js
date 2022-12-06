@@ -69,7 +69,7 @@ function Keychains() {
   background-color: #F100F5;
   color: white;
   font-size: 15px;
-  padding: 20px 50px;
+  padding: 10px 100px;
   border-radius: 25px;
   border: none;
   margin: 0px 0px;
