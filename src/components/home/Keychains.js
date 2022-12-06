@@ -31,7 +31,7 @@ function Keychains() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
-    gsap.from("#header1", { duration: 3, y: -400 });
+    gsap.from("#header1", { duration: 2, y: -400 });
     gsap.from("#content1", {
       scrollTrigger: {
         trigger: "#content1",

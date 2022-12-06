@@ -30,7 +30,7 @@ function MedPlaques() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
-    gsap.from("#header1", { duration: 3, y: -400 });
+    gsap.from("#header1", { duration: 2, y: -400 });
     gsap.from("#content1", {
       scrollTrigger: {
         trigger: "#content1",
@@ -101,11 +101,10 @@ function MedPlaques() {
       <div id="header1" className="content">
       <div className="container">
       <p className="title"> 
-      <ul>
-      <li>Selection of high quality, hand crafted wooden plaques of your NFT</li>
-      <li>Medium size: 34x24cm (13.3x9.4 inch)</li>
-      
-      </ul>
+
+Selection of high quality, hand crafted wooden plaques of your NFT
+Medium size: 34x24cm (13.3x9.4 inch)
+
       </p>
       </div>
       </div>
@@ -124,11 +123,6 @@ function MedPlaques() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">DeGods/DeadGods</p>
               <p className="textl">
-              <ul>
-                <li>Picture of your DeGod/DeadGod deeply engraved into the wood using a powerful, high precision CO2 Laser</li>
-                <li><div>DeGods logo, QR code and attributes etched with a Diode Laser resulting in sharp, high contrast details</div> </li>
-                <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
-                </ul>
             
               </p>
 <div className="text">
@@ -147,10 +141,7 @@ function MedPlaques() {
             <div className="col-12 col-lg-6">
               <p className="title">y00ts</p>
               <p className="textl">
-              <ul>
-                <li>text</li>
-                <li>text</li>
-                </ul>
+
               </p>
               <div className="text">
 <a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
@@ -182,12 +173,7 @@ function MedPlaques() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">MetaTattooClub</p>
               <p className="textl">
-                <ul>
-                <li>text</li>
-                <li><div>text</div></li>
-                <li><div>text</div></li>
-                <li><div>text</div></li>
-                </ul>
+
               </p>
               <div className="text">
 <a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
@@ -204,7 +190,7 @@ function MedPlaques() {
             <div className="col">
               <p className="title">Didn't find a design you're interested in?</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom plaque for you or your project! DM's are always open!
+                Feel free to contact me on Twitter and I'll be happy to craft a custom plaque just for you or your project! DM's are always open!
                 <a
                 className="footer-icon"
                 target="_blank"
