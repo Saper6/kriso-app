@@ -100,7 +100,13 @@ function MedPlaques() {
         </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="title">Description here maybe?</p>
+      <p className="title"> 
+      <ul>
+      <li>Selection of high quality, hand crafted wooden plaques of your NFT</li>
+      <li>Medium size: 34x24cm (13.3x9.4 inch)</li>
+      
+      </ul>
+      </p>
       </div>
       </div>
 
