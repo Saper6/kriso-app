@@ -101,7 +101,7 @@ function SmallPlaques() {
         </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="title">
+      <p className="text">
 Selection of high quality, hand crafted wooden plaques of your NFT
 
 

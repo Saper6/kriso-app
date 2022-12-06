@@ -101,7 +101,10 @@ function Keychains() {
       </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="title">Selection of keychains to rep your favourite NFT IRL</p>
+      <p className="text">
+        Selection of unique custom keychains you won't find anywhere else
+        
+        </p>
       </div>
       </div>
 
