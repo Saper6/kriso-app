@@ -31,6 +31,7 @@ function NeonSigns() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
+    gsap.from("#header1", { duration: 3, y: -400 });
     gsap.from("#content1", {
       scrollTrigger: {
         trigger: "#content1",
@@ -97,7 +98,14 @@ function NeonSigns() {
         />
         </Link>
         
+        </div>
+      <div id="header1" className="content">
+      <div className="container">
+      <p className="title">Description here maybe?</p>
       </div>
+      </div>
+
+
       <div id="content1" className="content">
         <div className="container">
           <div className="row" id="keychain">
