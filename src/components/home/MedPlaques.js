@@ -67,7 +67,7 @@ function MedPlaques() {
   const [modalImgs, setModalImgs] = useState(elemImages["section1"]);
   const [modalText, setModalText] = useState("");
   const [paymentRequest1Id, setPaymentRequest1Id] = useState(
-    "634031cc2b4b05063fdea3b3"
+    "634031bc2b4b05063fde3cc1"
   );
   const [paymentRequest2Id, setPaymentRequest2Id] = useState(
     "634031cc2b4b05063fdea3b3"
@@ -233,13 +233,13 @@ function MedPlaques() {
                 <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
                 </ul>
             
-              </p>  
+              </p>
               <HelioPay
                 cluster={cluster}
                 payButtonTitle="Pay in $DUST"
                 paymentRequestId={paymentRequest1Id}
-                supportedCurrencies={["USDC", "SOL", "DUST", "BOO", "HALO"]}
-                totalAmount={0.145}
+                // supportedCurrencies={["SOL"]}
+                // totalAmount={0.01}
                 onSuccess={(e) => {
                   SuccessPayment(e);
                 }}
