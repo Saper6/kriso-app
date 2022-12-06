@@ -6,7 +6,6 @@ import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.pn
 import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
-import { HelioPay } from "@heliofi/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
@@ -28,17 +27,6 @@ const toastStyle = {
 };
 
 function Keychains() {
-  const [paymentRequest1Id, setPaymentRequest1Id] = useState(
-    "634031bc2b4b05063fde3cc1"
-  );
-  const [paymentRequest2Id, setPaymentRequest2Id] = useState(
-    "634031cc2b4b05063fdea3b3"
-  );
-  const [paymentRequest3Id, setPaymentRequest3Id] = useState(
-    "635431d30ffed8cd8db6d6e0"
-  );
-  const [cluster, setCluster] = useState("mainnet-beta");
-  const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -95,22 +83,6 @@ function Keychains() {
     box-shadow: 4px 4px 4px #e80b07;
   }
 `;
-
-  function SuccessPayment(event) {
-    console.log("onSuccess", event);
-    toast.success(event.content, toastStyle);
-  }
-
-  function PendingPayment(event) {
-    console.log("onPending", event);
-    toast.info(`Pending transaction: ${event.transaction}`, toastStyle);
-  }
-
-  function ErrorPayment(event) {
-    console.log("onError", event);
-    toast.error(event.errorMessage, toastStyle);
-  }
-
   return (
     <>
       <ToastContainer />
@@ -145,27 +117,11 @@ function Keychains() {
                 </ul>
             
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $DUST"
-                paymentRequestId={paymentRequest1Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
           </div>
         </div>
@@ -182,28 +138,11 @@ function Keychains() {
                 <li>Hand polished for a shiny finish</li>
                 </ul>
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest2Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-                
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -236,27 +175,11 @@ function Keychains() {
                 <li><div>Shipped at random - mint style</div></li>
                 </ul>
               </p>
-              <HelioPay
-                cluster={cluster}
-                payButtonTitle="Pay in $Dust"
-                paymentRequestId={paymentRequest3Id}
-                // supportedCurrencies={["SOL"]}
-                // totalAmount={0.01}
-                onSuccess={(e) => {
-                  SuccessPayment(e);
-                }}
-                onError={(e) => {
-                  ErrorPayment(e);
-                }}
-                onPending={(e) => {
-                  PendingPayment(e);
-                }}
-                theme={{
-                  colors: {
-                    primary: "#F100F5",
-                  },
-                }}
-              />
+              <div className="text">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
             </div>
           </div>
         </div>
