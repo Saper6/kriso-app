@@ -146,15 +146,16 @@ html {
 .texttop {
   color: rgb(212, 21, 200);
   font-family: 'Trebuchet MS';
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.4em;
   letter-spacing: 0.6px;
-  text-align: left;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
   display: block;
   width: 80%;
+  text-shadow: 4px 4px 4px #d00a0af4;
 }
 
 .text {
