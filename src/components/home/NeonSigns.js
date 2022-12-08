@@ -1,16 +1,15 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
-import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
-import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
+import neondegods1 from "../../images/neonsigns/neondegods1.png";
+import neony00ts1 from "../../images/neonsigns/neony00ts1.png";
+import neoninserts1 from "../../images/neonsigns/neoninserts1.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Modal } from "bootstrap";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
@@ -117,8 +116,8 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={DegodsMainPic}
-                alt="DegodsMainPic"
+                src={neondegods1}
+                alt="neondegods1"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
@@ -161,8 +160,8 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={LibertySquareMainPic}
-                alt="LibertySquareMainPic"
+                src={neony00ts1}
+                alt="neony00ts1"
               ></img>
             </div>
           </div>
@@ -175,12 +174,12 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid item-img"
-                src={y00tsMainPic}
-                alt="y00tsMainPic"
+                src={neoninserts1}
+                alt="neoninserts1"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
-              <p className="title">Additional Acrylic Displays</p>
+              <p className="title">Additional Acrylic Inserts</p>
               <p className="textl">
                 <ul>
                 <li>Traded your NFT for another one?</li>
