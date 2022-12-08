@@ -125,10 +125,9 @@ LED RGB edge lit acrylic signs of your NFT
               <p className="title">DeGods</p>
               <p className="textl">
               <ul>
-                <li>3D printed keychains</li>
-                <li><div>Multiple variations available: </div> </li>
-                <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
-                <li><div>Comes in a gift box</div> </li>
+                <li>Custom LED base</li>
+                <li><div>Backlit Degods logo</div> </li>
+                <li><div>Removable acrylic insert - more can be bought separately and swapped around using the same base</div> </li>
                 </ul>
             
               </p>
@@ -146,11 +145,11 @@ LED RGB edge lit acrylic signs of your NFT
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6 align-self-center">
-              <p className="title">Liberty Square</p>
+              <p className="title">y00ts</p>
               <p className="textl">
               <ul>
-                <li>3D printed, then filled with clear epoxy resin</li>
-                <li>Hand polished for a shiny finish</li>
+                <li>Backlit y00ts logo</li>
+                <li>Removable acrylic insert - more can be bought separately and swapped around using the same base</li>
                 </ul>
               </p>
               <div className="text">
@@ -181,13 +180,12 @@ LED RGB edge lit acrylic signs of your NFT
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
-              <p className="title">y00ts</p>
+              <p className="title">Additional Acrylic Displays</p>
               <p className="textl">
                 <ul>
-                <li>3D printed base</li>
-                <li><div>Each letter and background carefully hand filled with different colors of epoxy resin</div></li>
-                <li><div>Every keychain with a unique colour or pattern</div></li>
-                <li><div>Shipped at random - mint style</div></li>
+                <li>Traded your NFT for another one?</li>
+                <li><div>Or maybe you'd like to showcase another one from your collection?</div></li>
+                <li><div>Choose this option if you already have the LED base</div></li>
                 </ul>
               </p>
               <div className="text">
@@ -205,7 +203,7 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col">
               <p className="title">Didn't find a design you're interested in?</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom sign your project! DM's are always open
+                Feel free to contact me on Twitter and I'll be happy to craft a custom piece for your project! DM's are always open
                 <a
                 className="footer-icon"
                 target="_blank"
