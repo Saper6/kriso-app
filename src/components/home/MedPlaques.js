@@ -165,7 +165,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
           <div className="row">
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
-                className="img-fluid item-img"
+                className="img-fluid"
                 src={mtcmedplaque}
                 alt="mtcmedplaque"
               ></img>
@@ -184,6 +184,8 @@ Medium size: 34x24cm (13.3x9.4 inch)
           </div>
         </div>
       </div>
+
+
       <div id="about">
         <div className="container">
           <div className="row">
