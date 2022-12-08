@@ -173,7 +173,7 @@ LED RGB edge lit acrylic signs of your NFT
           <div className="row">
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
-                className="img-fluid item-img"
+                className="img-fluid"
                 src={neoninserts1}
                 alt="neoninserts1"
               ></img>
