@@ -143,6 +143,20 @@ html {
   width: 80%;
 }
 
+.texttop {
+  color: rgb(212, 21, 200);
+  font-family: 'Trebuchet MS';
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 80%;
+}
+
 .text {
   color: white;
   font-family: Helvetica, sans-serif;

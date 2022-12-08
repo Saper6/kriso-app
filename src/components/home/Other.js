@@ -100,7 +100,7 @@ function Other() {
         </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="text">
+      <p className="texttop">
         A wide variety of my other creations
         <div>Some NFT related, some not</div>
         <div>From custom coat hangers, coffee coasters to VR accessories... and more</div>

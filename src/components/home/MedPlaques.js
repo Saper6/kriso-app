@@ -100,7 +100,7 @@ function MedPlaques() {
         </div>
       <div id="header1" className="content">
       <div className="container">
-      <p className="text"> 
+      <p className="texttop"> 
 
 Selection of high quality, hand crafted wooden plaques of your NFT
 Medium size: 34x24cm (13.3x9.4 inch)
