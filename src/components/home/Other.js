@@ -126,7 +126,7 @@ function Other() {
             
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/y00tshanger" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -144,8 +144,8 @@ function Other() {
 
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
+<a href="" target="_blank" rel="noreferrer">
+        <Button>Coming Soon</Button>
       </a>
     </div>
             </div>
@@ -176,8 +176,8 @@ function Other() {
 
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
+<a href="" target="_blank" rel="noreferrer">
+        <Button>Coming Soon</Button>
       </a>
     </div>
             </div>
