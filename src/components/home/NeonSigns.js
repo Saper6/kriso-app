@@ -152,7 +152,7 @@ LED RGB edge lit acrylic signs of your NFT
                 </ul>
               </p>
               <div className="text">
-//<a href="" target="_blank" rel="noreferrer">
+<a href="" target="_blank" rel="noreferrer">
         <Button>Coming Soon</Button>
       </a>
     </div>
@@ -188,7 +188,7 @@ LED RGB edge lit acrylic signs of your NFT
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/neoninserts" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
