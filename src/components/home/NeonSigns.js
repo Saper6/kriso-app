@@ -166,7 +166,7 @@ function NeonSigns() {
               </p>
               <div className="text">
               <a
-                  //href=""
+                  //href="disabled, link here"
                   //target="_blank"
                   //rel="noreferrer"
                 >
