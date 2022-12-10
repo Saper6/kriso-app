@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import degodssmallplaque from "../../images/smalllaques/degodssmallplaque.png";
-import y00tssmallplaque from "../../images/smalllaques/y00tssmallplaque.png";
-import libertysmallplaque from "../../images/smalllaques/libertysmallplaque.png";
+import degodsmedplaque from "../../images/medplaques/degodsmedplaque.png";
+import y00tsmedplaque from "../../images/medplaques/y00tsmedplaque.png";
+import mtcmedplaque from "../../images/medplaques/mtcmedplaque.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -116,17 +116,22 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={degodssmallplaque}
-                alt="degodssmallplaque"
+                src={degodsmedplaque}
+                alt="degodsmedplaque"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods/DeadGods</p>
               <p className="textl">
+              <ul>
+                <li>Picture of your DeGod/DeadGod deeply engraved into the wood using a powerful, high precision CO2 Laser</li>
+                <li><div>DeGods logo, QR code and attributes etched with a Diode Laser resulting in sharp, high contrast details</div> </li>
+                <li><div>Finished with multiple coats of clear wood varnish to preserve the engraving</div> </li>
+                </ul>
             
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/degodssmallplaque" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -141,10 +146,13 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             <div className="col-12 col-lg-6 align-self-center">
               <p className="title">y00ts</p>
               <p className="textl">
-
+              <ul>
+                <li>text</li>
+                <li>text</li>
+                </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/y00tssmallplaque" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -152,8 +160,8 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             <div className="col-12 col-lg-6 align-self-start">
               <img
                 className="img-fluid "
-                src={y00tssmallplaque}
-                alt="y00tssmallplaque"
+                src={y00tsmedplaque}
+                alt="y00tsmedplaque"
               ></img>
             </div>
           </div>
@@ -166,18 +174,23 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
               <img
                 className="img-fluid"
-                src={libertysmallplaque}
-                alt="libertysmallplaque"
+                src={mtcmedplaque}
+                alt="mtcmedplaque"
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
-              <p className="title">Liberty Square</p>
+              <p className="title">MetaTattooClub</p>
               <p className="textl">
-
+                <ul>
+                <li>text</li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
+                <li><div>text</div></li>
+                </ul>
               </p>
               <div className="text">
-<a href="" target="_blank" rel="noreferrer">
-        <Button>Coming Soon</Button>
+<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
       </a>
     </div>
             </div>
