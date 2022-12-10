@@ -139,7 +139,6 @@ function HomePage() {
               <p className="textl">
                 <ul>
               <li><div>High quality keychains in a gift box</div></li>
-              <li><div>Rep your favourite NFT projects IRL</div></li>
               </ul>
               </p>
           <div className="text">
