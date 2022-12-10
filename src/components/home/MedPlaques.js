@@ -4,6 +4,7 @@ import logo from "../../images/logo.png";
 import degodsmedplaque from "../../images/medplaques/degodsmedplaque.png";
 import y00tsmedplaque from "../../images/medplaques/y00tsmedplaque.png";
 import mtcmedplaque from "../../images/medplaques/mtcmedplaque.png";
+import libertymedplaque from "../../images/medplaques/libertymedplaque.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -54,6 +55,14 @@ function MedPlaques() {
       },
       duration: 1,
       x: -200,
+    });
+    gsap.from("#content4", {
+      scrollTrigger: {
+        trigger: "#content4",
+        toggleActions: "restart none restart none",
+      },
+      duration: 1,
+      x: 200,
     });
     gsap.from("#about", {
       scrollTrigger: {
@@ -126,7 +135,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
             
               </p>
 <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/degodsmedplaque" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -144,7 +153,7 @@ Medium size: 34x24cm (13.3x9.4 inch)
 
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/y00tsmedplaque" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -176,10 +185,36 @@ Medium size: 34x24cm (13.3x9.4 inch)
 
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/mtcmedplaque" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="content4" className="content">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-6 align-self-center">
+              <p className="title">Liberty Square</p>
+              <p className="textl">
+
+              </p>
+              <div className="text">
+<a href="https://www.hel.io/x/libertymedplaque" target="_blank" rel="noreferrer">
+        <Button>MORE DETAILS</Button>
+      </a>
+    </div>
+            </div>
+            <div className="col-12 col-lg-6 align-self-start">
+              <img
+                className="img-fluid "
+                src={libertymedplaque}
+                alt="libertymedplaque"
+              ></img>
             </div>
           </div>
         </div>
