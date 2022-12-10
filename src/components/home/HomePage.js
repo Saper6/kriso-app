@@ -194,8 +194,8 @@ function HomePage() {
               <p className="title">Small Wooden Plaques</p>
               <p className="textl">
               <ul>
-              <li><div>size here</div></li>
-              <li><div>Choose any picture and text</div></li>
+              <li><div>Size: 13x17cm</div></li>
+              <li><div>Frame with a stand</div></li>
               </ul>
               </p>
               <div className="text">
