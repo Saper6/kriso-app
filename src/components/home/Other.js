@@ -148,7 +148,11 @@ function Other() {
               <p className="title">Nouns Glasses</p>
               <p className="textl"></p>
               <div className="text">
-                <a href="" target="_blank" rel="noreferrer">
+              <a
+                  //href=""
+                  //target="_blank"
+                  //rel="noreferrer"
+                >
                   <Button>Coming Soon</Button>
                 </a>
               </div>
@@ -174,7 +178,11 @@ function Other() {
               <p className="title">Quest 2 VR controller Gun Grip</p>
               <p className="textl"></p>
               <div className="text">
-                <a href="" target="_blank" rel="noreferrer">
+              <a
+                  //href=""
+                  //target="_blank"
+                  //rel="noreferrer"
+                >
                   <Button>Coming Soon</Button>
                 </a>
               </div>

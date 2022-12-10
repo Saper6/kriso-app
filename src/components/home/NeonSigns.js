@@ -165,7 +165,11 @@ function NeonSigns() {
                 </ul>
               </p>
               <div className="text">
-                <a href="" target="_blank" rel="noreferrer">
+              <a
+                  //href=""
+                  //target="_blank"
+                  //rel="noreferrer"
+                >
                   <Button>Coming Soon</Button>
                 </a>
               </div>

@@ -179,7 +179,11 @@ function SmallPlaques() {
               <p className="title">Liberty Square</p>
               <p className="textl"></p>
               <div className="text">
-                <a href="" target="_blank" rel="noreferrer">
+              <a
+                  //href=""
+                  //target="_blank"
+                  //rel="noreferrer"
+                >
                   <Button>Coming Soon</Button>
                 </a>
               </div>
