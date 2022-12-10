@@ -195,8 +195,7 @@ function HomePage() {
               <p className="title">Small Wooden Plaques</p>
               <p className="textl">
               <ul>
-              <li><div>size here</div></li>
-              <li><div>Choose any picture and text</div></li>
+              <li><div>Size: 13x17cm (5.11x6.7 inch)</div></li>
               </ul>
               </p>
               <div className="text">
