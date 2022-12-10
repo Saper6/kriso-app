@@ -150,7 +150,7 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/libertykeychain" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
@@ -187,7 +187,7 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/plaque30x20" target="_blank" rel="noreferrer">
+<a href="https://www.hel.io/x/y00tchains" target="_blank" rel="noreferrer">
         <Button>MORE DETAILS</Button>
       </a>
     </div>
