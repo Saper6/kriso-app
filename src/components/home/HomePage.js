@@ -13,12 +13,11 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-
 const Button = styled.button`
-  background-color: #F100F5;
+  background-color: #f100f5;
   color: white;
   font-size: 15px;
   padding: 10px 60px;
@@ -28,17 +27,13 @@ const Button = styled.button`
   cursor: pointer;
   font-family: Trebuchet MS;
   font-weight: 800;
-  box-shadow: 0px 3px 3px #F100F5;
+  box-shadow: 0px 3px 3px #f100f5;
   transition: ease background-color 250ms;
   &:hover {
     background-color: #e80b07;
     box-shadow: 0px 3px 3px #e80b07;
   }
 `;
-
-function refreshPage() {
-  window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-}
 
 const toastStyle = {
   position: "top-right",
@@ -51,11 +46,19 @@ const toastStyle = {
   theme: "dark",
 };
 
-
 function HomePage() {
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
+  const navigate = useNavigate();
+
+  function pageNav(page) {
+    navigate(page);
+  }
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
@@ -108,22 +111,22 @@ function HomePage() {
       opacity: 0,
       y: 200,
     });
-  });
-  
+  }, []);
+
   return (
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/">
-        <img
-          src={logo}
-          id="bgHeroImage"
-          className="img-fluid primary-hero"
-          alt="hero-bg"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            id="bgHeroImage"
+            className="img-fluid primary-hero"
+            alt="hero-bg"
+          />
         </Link>
       </div>
-    <div></div>
+      <div></div>
       <div id="content1" className="content">
         <div className="container">
           <div className="row" id="keychain">
@@ -138,14 +141,20 @@ function HomePage() {
               <p className="title">Custom Keychains</p>
               <p className="textl">
                 <ul>
-              <li><div>High quality keychains in a gift box</div></li>
-              </ul>
+                  <li>
+                    <div>High quality keychains in a gift box</div>
+                  </li>
+                </ul>
               </p>
-          <div className="text">
-      <Link to="/home/Keychains">
-        <Button onClick={refreshPage}>VIEW ALL</Button>
-      </Link>
-    </div>
+              <div className="text">
+                <Button
+                  onClick={(e) => {
+                    return pageNav("/home/Keychains");
+                  }}
+                >
+                  VIEW ALL
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -157,17 +166,27 @@ function HomePage() {
             <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques of Your NFT</p>
               <p className="textl">
-              <ul>
-              <li><div>Size: 34x24cm (13.3x9.4 inch)</div></li>
-              <li><div>Handcrafted from high quality birch wood</div></li>
-              <li><div>Easy to hang frame</div></li>
-              </ul>
+                <ul>
+                  <li>
+                    <div>Size: 34x24cm (13.3x9.4 inch)</div>
+                  </li>
+                  <li>
+                    <div>Handcrafted from high quality birch wood</div>
+                  </li>
+                  <li>
+                    <div>Easy to hang frame</div>
+                  </li>
+                </ul>
               </p>
               <div className="text">
-      <Link to="/home/MedPlaques">
-        <Button onClick={refreshPage}>VIEW ALL</Button>
-      </Link>
-    </div>
+                <Button
+                  onClick={(e) => {
+                    return pageNav("/home/MedPlaques");
+                  }}
+                >
+                  VIEW ALL
+                </Button>
+              </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -193,16 +212,24 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Small Wooden Plaques</p>
               <p className="textl">
-              <ul>
-              <li><div>Size: 13x17cm</div></li>
-              <li><div>Frame with a stand</div></li>
-              </ul>
+                <ul>
+                  <li>
+                    <div>Size: 13x17cm</div>
+                  </li>
+                  <li>
+                    <div>Frame with a stand</div>
+                  </li>
+                </ul>
               </p>
               <div className="text">
-      <Link to="/home/SmallPlaques">
-        <Button onClick={refreshPage}>VIEW ALL</Button>
-      </Link>
-    </div>
+                <Button
+                  onClick={(e) => {
+                    return pageNav("/home/SmallPlaques");
+                  }}
+                >
+                  VIEW ALL
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -214,17 +241,27 @@ function HomePage() {
             <div className="col-12 col-lg-6">
               <p className="title">LED Edge Lit Signs</p>
               <p className="textl">
-              <ul>
-              <li><div>Custom RGB neon sign of your NFT</div></li>
-              <li><div>Controlled with a wireless remote</div></li>
-              <li><div>Multiple preprogrammed lighting modes</div></li>
-              </ul>
+                <ul>
+                  <li>
+                    <div>Custom RGB neon sign of your NFT</div>
+                  </li>
+                  <li>
+                    <div>Controlled with a wireless remote</div>
+                  </li>
+                  <li>
+                    <div>Multiple preprogrammed lighting modes</div>
+                  </li>
+                </ul>
               </p>
               <div className="text">
-      <Link to="/home/NeonSigns">
-        <Button onClick={refreshPage}>VIEW ALL</Button>
-      </Link>
-    </div>
+                <Button
+                  onClick={(e) => {
+                    return pageNav("/home/NeonSigns");
+                  }}
+                >
+                  VIEW ALL
+                </Button>
+              </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -251,17 +288,29 @@ function HomePage() {
               <p className="title">Other Gadgets</p>
               <p className="textl">
                 <ul>
-              <li><div>Pistol adapters for Quest 2 controller</div></li>
-              <li><div>Personalised wooden coasters</div></li>
-              <li><div>Custom 3D letters and logos</div></li>
-              <li><div>And many more...</div></li>
-              </ul>
+                  <li>
+                    <div>Pistol adapters for Quest 2 controller</div>
+                  </li>
+                  <li>
+                    <div>Personalised wooden coasters</div>
+                  </li>
+                  <li>
+                    <div>Custom 3D letters and logos</div>
+                  </li>
+                  <li>
+                    <div>And many more...</div>
+                  </li>
+                </ul>
               </p>
               <div className="text">
-      <Link to="/home/Other">
-        <Button onClick={refreshPage}>VIEW ALL</Button>
-      </Link>
-    </div>
+                <Button
+                  onClick={(e) => {
+                    return pageNav("/home/Other");
+                  }}
+                >
+                  VIEW ALL
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -273,8 +322,14 @@ function HomePage() {
             <div className="col">
               <p className="title">About</p>
               <p className="text">
-                <div>All items are designed and carefully crafted by myself and can be fully customized to suit your needs</div>
-                <div>If you have any questions, ideas or custom requests - feel free to shoot me a DM anytime</div>
+                <div>
+                  All items are designed and carefully crafted by myself and can
+                  be fully customized to suit your needs
+                </div>
+                <div>
+                  If you have any questions, ideas or custom requests - feel
+                  free to shoot me a DM anytime
+                </div>
               </p>
             </div>
           </div>

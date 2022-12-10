@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const toastStyle = {
@@ -27,6 +27,10 @@ const toastStyle = {
 
 function NeonSigns() {
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
@@ -66,49 +70,45 @@ function NeonSigns() {
     });
   });
 
- const Button = styled.button`
-  background-color: #F100F5;
-  color: white;
-  font-size: 15px;
-  padding: 10px 100px;
-  border-radius: 25px;
-  border: none;
-  margin: 0px 0px;
-  cursor: pointer;
-  font-family: Trebuchet MS;
-  font-weight: 800;
-  box-shadow: 4px 4px 4px #F100F5;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #e80b07;
-    box-shadow: 4px 4px 4px #e80b07;
-  }
-`;
+  const Button = styled.button`
+    background-color: #f100f5;
+    color: white;
+    font-size: 15px;
+    padding: 10px 100px;
+    border-radius: 25px;
+    border: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    box-shadow: 4px 4px 4px #f100f5;
+    transition: ease background-color 250ms;
+    &:hover {
+      background-color: #e80b07;
+      box-shadow: 4px 4px 4px #e80b07;
+    }
+  `;
   return (
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/">
-        <img
-          src={logo}
-          id="bgHeroImage"
-          className="img-fluid primary-hero"
-          alt="hero-bg"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            id="bgHeroImage"
+            className="img-fluid primary-hero"
+            alt="hero-bg"
+          />
         </Link>
-        
-        </div>
+      </div>
       <div id="header1" className="content">
-      <div className="container">
-      <p className="texttop">
-  
-LED RGB edge lit acrylic signs of your NFT
- Controlled via remote with multiple pre-programmed lighting modes
-      
-      </p>
+        <div className="container">
+          <p className="texttop">
+            LED RGB edge lit acrylic signs of your NFT Controlled via remote
+            with multiple pre-programmed lighting modes
+          </p>
+        </div>
       </div>
-      </div>
-
 
       <div id="content1" className="content">
         <div className="container">
@@ -123,18 +123,28 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods</p>
               <p className="textl">
-              <ul>
-                <li>Custom LED base</li>
-                <li><div>Backlit Degods logo</div> </li>
-                <li><div>Removable acrylic insert - more can be bought separately and swapped around using the same base</div> </li>
+                <ul>
+                  <li>Custom LED base</li>
+                  <li>
+                    <div>Backlit Degods logo</div>{" "}
+                  </li>
+                  <li>
+                    <div>
+                      Removable acrylic insert - more can be bought separately
+                      and swapped around using the same base
+                    </div>{" "}
+                  </li>
                 </ul>
-            
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/degodsneon" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/degodsneon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -146,16 +156,19 @@ LED RGB edge lit acrylic signs of your NFT
             <div className="col-12 col-lg-6 align-self-center">
               <p className="title">y00ts</p>
               <p className="textl">
-              <ul>
-                <li>Backlit y00ts logo</li>
-                <li>Removable acrylic insert - more can be bought separately and swapped around using the same base</li>
+                <ul>
+                  <li>Backlit y00ts logo</li>
+                  <li>
+                    Removable acrylic insert - more can be bought separately and
+                    swapped around using the same base
+                  </li>
                 </ul>
               </p>
               <div className="text">
-<a href="" target="_blank" rel="noreferrer">
-        <Button>Coming Soon</Button>
-      </a>
-    </div>
+                <a href="" target="_blank" rel="noreferrer">
+                  <Button>Coming Soon</Button>
+                </a>
+              </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -182,16 +195,29 @@ LED RGB edge lit acrylic signs of your NFT
               <p className="title">Additional Acrylic Inserts</p>
               <p className="textl">
                 <ul>
-                <li>Traded your NFT for another one?</li>
-                <li><div>Or maybe you'd like to showcase another one from your collection?</div></li>
-                <li><div>Choose this option if you already have the LED base</div></li>
+                  <li>Traded your NFT for another one?</li>
+                  <li>
+                    <div>
+                      Or maybe you'd like to showcase another one from your
+                      collection?
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Choose this option if you already have the LED base
+                    </div>
+                  </li>
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/neoninserts" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/neoninserts"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -200,17 +226,20 @@ LED RGB edge lit acrylic signs of your NFT
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Didn't find a design you're interested in?</p>
+              <p className="title">
+                Didn't find a design you're interested in?
+              </p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom piece for your project! DM's are always open
+                Feel free to contact me on Twitter and I'll be happy to craft a
+                custom piece for your project! DM's are always open
                 <a
-                className="footer-icon"
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/Kriso3D"
+                  className="footer-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/Kriso3D"
                 >
                   <FaTwitter />
-                  </a>
+                </a>
               </p>
             </div>
           </div>

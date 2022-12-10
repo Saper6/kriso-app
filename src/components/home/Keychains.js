@@ -1,4 +1,4 @@
-import { useState, useEffect, } from "react";
+import { useState, useEffect } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
@@ -11,9 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 
 const toastStyle = {
   position: "top-right",
@@ -28,6 +27,10 @@ const toastStyle = {
 
 function Keychains() {
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
@@ -66,46 +69,41 @@ function Keychains() {
       y: 200,
     });
   });
- const Button = styled.button`
-  background-color: #F100F5;
-  color: white;
-  font-size: 15px;
-  padding: 10px 100px;
-  border-radius: 25px;
-  border: none;
-  margin: 0px 0px;
-  cursor: pointer;
-  font-family: Trebuchet MS;
-  font-weight: 800;
-  box-shadow: 4px 4px 4px #F100F5;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #e80b07;
-    box-shadow: 4px 4px 4px #e80b07;
-  }
-`;
+  const Button = styled.button`
+    background-color: #f100f5;
+    color: white;
+    font-size: 15px;
+    padding: 10px 100px;
+    border-radius: 25px;
+    border: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    box-shadow: 4px 4px 4px #f100f5;
+    transition: ease background-color 250ms;
+    &:hover {
+      background-color: #e80b07;
+      box-shadow: 4px 4px 4px #e80b07;
+    }
+  `;
   return (
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/">
-        <img
-          src={logo}
-          id="bgHeroImage"
-          className="img-fluid primary-hero"
-          alt="hero-bg"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            id="bgHeroImage"
+            className="img-fluid primary-hero"
+            alt="hero-bg"
+          />
         </Link>
-        
-
       </div>
       <div id="header1" className="content">
-      <div className="container">
-      <p className="texttop">
-        Selection of handcrafted, custom keychains
-        
-        </p>
-      </div>
+        <div className="container">
+          <p className="texttop">Selection of handcrafted, custom keychains</p>
+        </div>
       </div>
 
       <div id="content1" className="content">
@@ -121,18 +119,25 @@ function Keychains() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods</p>
               <p className="textl">
-              <ul>
-                <li>3D printed keychains</li>
-                <li><div>Multiple variations available: </div> </li>
-                <li><div>OG DeGods, MickeyDeGods, DeGods Anniversary</div> </li>
+                <ul>
+                  <li>3D printed keychains</li>
+                  <li>
+                    <div>Multiple variations available: </div>{" "}
+                  </li>
+                  <li>
+                    <div>OG DeGods, MickeyDeGods, DeGods Anniversary</div>{" "}
+                  </li>
                 </ul>
-            
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/degodskeychains" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/degodskeychains"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -144,16 +149,20 @@ function Keychains() {
             <div className="col-12 col-lg-6 align-self-center">
               <p className="title">Liberty Square</p>
               <p className="textl">
-              <ul>
-                <li>3D printed, then filled with clear epoxy resin</li>
-                <li>Hand polished for a shiny finish</li>
+                <ul>
+                  <li>3D printed, then filled with clear epoxy resin</li>
+                  <li>Hand polished for a shiny finish</li>
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/libertykeychain" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/libertykeychain"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -180,17 +189,30 @@ function Keychains() {
               <p className="title">y00ts</p>
               <p className="textl">
                 <ul>
-                <li>3D printed base</li>
-                <li><div>Each letter and background carefully hand filled with different colors of epoxy resin</div></li>
-                <li><div>Every keychain with a unique colour or pattern</div></li>
-                <li><div>Shipped at random - mint style</div></li>
+                  <li>3D printed base</li>
+                  <li>
+                    <div>
+                      Each letter and background carefully hand filled with
+                      different colors of epoxy resin
+                    </div>
+                  </li>
+                  <li>
+                    <div>Every keychain with a unique colour or pattern</div>
+                  </li>
+                  <li>
+                    <div>Shipped at random - mint style</div>
+                  </li>
                 </ul>
               </p>
               <div className="text">
-<a href="https://www.hel.io/x/y00tchains" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/y00tchains"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -199,17 +221,21 @@ function Keychains() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Didn't find a design you're interested in?</p>
+              <p className="title">
+                Didn't find a design you're interested in?
+              </p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom keychain just for you or your project! DM's are always open
+                Feel free to contact me on Twitter and I'll be happy to craft a
+                custom keychain just for you or your project! DM's are always
+                open
                 <a
-                className="footer-icon"
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/Kriso3D"
+                  className="footer-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/Kriso3D"
                 >
                   <FaTwitter />
-                  </a>
+                </a>
               </p>
             </div>
           </div>

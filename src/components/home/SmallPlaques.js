@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const toastStyle = {
@@ -27,6 +27,10 @@ const toastStyle = {
 
 function SmallPlaques() {
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
@@ -66,49 +70,46 @@ function SmallPlaques() {
     });
   });
 
- const Button = styled.button`
-  background-color: #F100F5;
-  color: white;
-  font-size: 15px;
-  padding: 10px 100px;
-  border-radius: 25px;
-  border: none;
-  margin: 0px 0px;
-  cursor: pointer;
-  font-family: Trebuchet MS;
-  font-weight: 800;
-  box-shadow: 4px 4px 4px #F100F5;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #e80b07;
-    box-shadow: 4px 4px 4px #e80b07;
-  }
-`;
+  const Button = styled.button`
+    background-color: #f100f5;
+    color: white;
+    font-size: 15px;
+    padding: 10px 100px;
+    border-radius: 25px;
+    border: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    box-shadow: 4px 4px 4px #f100f5;
+    transition: ease background-color 250ms;
+    &:hover {
+      background-color: #e80b07;
+      box-shadow: 4px 4px 4px #e80b07;
+    }
+  `;
 
   return (
     <>
       <ToastContainer />
       <div className="hero" id="home">
-      <Link to="/">
-        <img
-          src={logo}
-          id="bgHeroImage"
-          className="img-fluid primary-hero"
-          alt="hero-bg"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            id="bgHeroImage"
+            className="img-fluid primary-hero"
+            alt="hero-bg"
+          />
         </Link>
-        
-        </div>
+      </div>
       <div id="header1" className="content">
-      <div className="container">
-      <p className="texttop">
-Selection of high quality, hand crafted wooden plaques of your NFT in a more compact size making it a perfect desk gadget
-
-
-      </p>
+        <div className="container">
+          <p className="texttop">
+            Selection of high quality, hand crafted wooden plaques of your NFT
+            in a more compact size making it a perfect desk gadget
+          </p>
+        </div>
       </div>
-      </div>
-
 
       <div id="content1" className="content">
         <div className="container">
@@ -122,14 +123,16 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods/DeadGods</p>
-              <p className="textl">
-
-              </p>
+              <p className="textl"></p>
               <div className="text">
-<a href="https://www.hel.io/x/degodssmallplaque" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/degodssmallplaque"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -140,14 +143,16 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
           <div className="row">
             <div className="col-12 col-lg-6 align-self-center">
               <p className="title">y00ts</p>
-              <p className="textl">
-
-              </p>
+              <p className="textl"></p>
               <div className="text">
-<a href="https://www.hel.io/x/y00tssmallplaque" target="_blank" rel="noreferrer">
-        <Button>MORE DETAILS</Button>
-      </a>
-    </div>
+                <a
+                  href="https://www.hel.io/x/y00tssmallplaque"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
@@ -172,14 +177,12 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">Liberty Square</p>
-              <p className="textl">
-
-              </p>
+              <p className="textl"></p>
               <div className="text">
-<a href="" target="_blank" rel="noreferrer">
-        <Button>Coming Soon</Button>
-      </a>
-    </div>
+                <a href="" target="_blank" rel="noreferrer">
+                  <Button>Coming Soon</Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -188,17 +191,20 @@ Selection of high quality, hand crafted wooden plaques of your NFT in a more com
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Didn't find a design you're interested in?</p>
+              <p className="title">
+                Didn't find a design you're interested in?
+              </p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a custom plaque for you or your project! DM's are always open!
+                Feel free to contact me on Twitter and I'll be happy to craft a
+                custom plaque for you or your project! DM's are always open!
                 <a
-                className="footer-icon"
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/Kriso3D"
+                  className="footer-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/Kriso3D"
                 >
                   <FaTwitter />
-                  </a>
+                </a>
               </p>
             </div>
           </div>
