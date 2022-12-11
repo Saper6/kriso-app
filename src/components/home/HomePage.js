@@ -327,7 +327,7 @@ function HomePage() {
                   be fully customized to suit your needs
                 </div>
                 <div>
-                  If you have any questions, ideas or custom requests - feel
+                  If you have any questions, ideas or requests - feel
                   free to shoot me a DM anytime
                 </div>
               </p>

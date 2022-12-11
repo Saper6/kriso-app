@@ -104,7 +104,7 @@ function NeonSigns() {
       <div id="header1" className="content">
         <div className="container">
           <p className="texttop">
-            LED RGB edge lit acrylic signs of your NFT Controlled via remote
+            LED RGB edge lit acrylic displays of your NFT Controlled via remote
             with multiple pre-programmed lighting modes
           </p>
         </div>
