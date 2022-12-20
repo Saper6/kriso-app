@@ -208,11 +208,11 @@ function MedPlaques() {
               <p className="textl"></p>
               <div className="text">
                 <a
-                  //href="disabled, link here"
-                  //target="_blank"
-                  //rel="noreferrer"
+                  href="https://www.hel.io/x/libertymedplaque"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <Button>Coming Soon</Button>
+                  <Button>MORE DETAILS</Button>
                 </a>
               </div>
             </div>
