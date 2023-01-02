@@ -4,6 +4,7 @@ import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
 import LibertySquareMainPic from "../../images/keychains/LibertySquareMainPic.png";
 import y00tsMainPic from "../../images/keychains/y00tsMainPic.png";
+import n00unskeychains from "../../images/keychains/n00unskeychains.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -59,6 +60,15 @@ function Keychains() {
       duration: 1,
       x: -200,
     });
+    gsap.from("#content4", {
+      scrollTrigger: {
+        trigger: "#content4",
+        toggleActions: "restart none restart none",
+      },
+      duration: 1,
+      x: 200,
+    });
+    
     gsap.from("#about", {
       scrollTrigger: {
         trigger: "#about",
@@ -217,6 +227,41 @@ function Keychains() {
           </div>
         </div>
       </div>
+
+
+      <div id="content4" className="content">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-6 align-self-center">
+              <p className="title">n00uns</p>
+              <p className="textl">
+                <ul>
+                  <li>3D printed keychains</li>
+                  <li>Rep the fastest growing y00ts club IRL!</li>
+                </ul>
+              </p>
+              <div className="text">
+                <a
+                  href="https://www.hel.io/x/n00unchains"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>MORE DETAILS</Button>
+                </a>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 align-self-start">
+              <img
+                className="img-fluid "
+                src={n00unskeychains}
+                alt="n00unskeychains"
+              ></img>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div id="about">
         <div className="container">
           <div className="row">
