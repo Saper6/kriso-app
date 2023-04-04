@@ -142,7 +142,7 @@ function NeonSigns() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>
@@ -219,7 +219,7 @@ function NeonSigns() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>

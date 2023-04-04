@@ -138,7 +138,7 @@ function MedPlaques() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>
@@ -158,7 +158,7 @@ function MedPlaques() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ function MedPlaques() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>
@@ -212,7 +212,7 @@ function MedPlaques() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>Currently Unavailable</Button>
                 </a>
               </div>
             </div>
