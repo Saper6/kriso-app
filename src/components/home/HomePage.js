@@ -128,7 +128,7 @@ function HomePage() {
       </div>
       <div id="header1" className="content">
         <div className="container">
-          <p className="texttop">All pay links on the website are disabled, I'm currently working abroad and won't be accepting any orders for the next couple of months, feel free to look around the site and if you like something - I'll be more than happy to make it when I'm back!</p>
+          <p className="texttop">I recently moved to Ireland and don't have access to a laser engraver at the moment so some product paylinks are currently disabled. If you have any questions, feel free to DM me @Kriso3D   </p>
         </div>
       </div>
       <div></div>
