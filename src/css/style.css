@@ -116,7 +116,7 @@ html {
 }
 
 .textr {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: 'Trebuchet MS';
   font-size: 1.6rem;
   font-weight: 400;
@@ -130,7 +130,7 @@ html {
 }
 
 .textl {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: 'Trebuchet MS';
   font-size: 1.6rem;
   font-weight: 600;
@@ -144,7 +144,7 @@ html {
 }
 
 .texttop {
-  color: rgb(222, 222, 222);
+  color: rgb(15, 14, 14);
   font-family: 'Trebuchet MS';
   font-size: 2.4rem;
   font-weight: 600;
@@ -159,7 +159,7 @@ html {
 }
 
 .text {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -202,7 +202,7 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: rgb(15, 14, 14);
   font-size: 60px;
   font-weight: 600;
   line-height: 1.2em;
@@ -280,7 +280,7 @@ html {
 }
 
 .footer-title {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3.2rem;
   font-weight: 600;
@@ -290,14 +290,14 @@ html {
 }
 
 .footer-text {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin-top: 10px;
 }
 
 .footer-sub-text {
-  color: white;
+  color: rgb(15, 14, 14);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
@@ -313,7 +313,7 @@ html {
 .footer-icon {
   font-size: 30px;
   margin: 20px;
-  color: white;
+  color: rgb(15, 14, 14);
   text-transform: capitalize;
   text-decoration: none;
   scale: 1;
