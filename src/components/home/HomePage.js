@@ -169,11 +169,13 @@ function HomePage() {
 
 <div id="content2" className="content">
   <div className="container">
-    <div className="row align-items-center">
+    <div className="row">
       <div className="col-12 col-lg-6 align-self-start">
-        <p className="title">Personalized Wooden Plaques</p>
-        <div className="text d-flex justify-content-center">
-          <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
+        <p className="title">Personalized Wooden Plaques - 30x20cm</p>
+        <div className="d-flex align-items-center justify-content-center">
+          <div className="text">
+            <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
+          </div>
         </div>
       </div>
       <div className="col-12 col-lg-6 align-self-start">
@@ -182,6 +184,7 @@ function HomePage() {
     </div>
   </div>
 </div>
+
 
 
 <div id="content3" className="content">
