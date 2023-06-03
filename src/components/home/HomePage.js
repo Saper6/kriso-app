@@ -141,7 +141,7 @@ function HomePage() {
                 alt="HomeKeychains"
               ></img>
             </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 center">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Keychains</p>
 
               <div className="text">
