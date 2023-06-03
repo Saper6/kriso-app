@@ -15,7 +15,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { useScrollPosition } from "react-use-scroll-position";
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -35,6 +34,25 @@ const Button = styled.button`
   }
 `;
 
+const HoverButton = styled.button`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5c52;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+  
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
+
+
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -49,7 +67,6 @@ const toastStyle = {
 function HomePage() {
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isButtonVisible, setIsButtonVisible] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
@@ -61,14 +78,6 @@ function HomePage() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      const isScrollingDown = currPos.y > prevPos.y;
-      setIsButtonVisible(isScrollingDown);
-    },
-    [isButtonVisible]
-  );
-  
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
     gsap.from("#content1", {
@@ -125,8 +134,10 @@ function HomePage() {
 
   return (
     <>
-
+    
       <ToastContainer />
+
+
       <div className="hero" id="home">
         <Link to="/">
           <img
