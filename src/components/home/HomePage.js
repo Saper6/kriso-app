@@ -34,6 +34,15 @@ const Button = styled.button`
   }
 `;
 
+const [showFloatingButton, setShowFloatingButton] = useState(false);
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  setShowFloatingButton(scrollPosition > 200);
+});
+
+
+
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -114,6 +123,7 @@ function HomePage() {
 
   return (
     <>
+    
       <ToastContainer />
       <div className="hero" id="home">
         <Link to="/">
@@ -310,7 +320,13 @@ function HomePage() {
           </div>
         </div>
       </footer>
+      {showFloatingButton && (
+        <FloatingButton onClick={() => console.log("Floating button clicked!")}>
+          <span style={{ fontSize: "20px" }}>+</span>
+        </FloatingButton>
+      )}
     </>
+    
   );
 }
 
