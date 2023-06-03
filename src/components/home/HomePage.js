@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
-import logo from "../../images/logo.png";
+import logo1 from "../../images/logo1.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
 import HomeSmallPlaques from "../../images/HomePage/HomeSmallPlaques.png";
@@ -122,7 +122,7 @@ function HomePage() {
       <div className="hero" id="home">
         <Link to="/">
           <img
-            src={logo}
+            src={logo1}
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
