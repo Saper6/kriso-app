@@ -123,6 +123,7 @@ function HomePage() {
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
+            style={{ width: '80%' }} // Adjust the percentage value as desired
           />
         </Link>
       </div>
