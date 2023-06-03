@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
 import HomeSmallPlaques from "../../images/HomePage/HomeSmallPlaques.png";
