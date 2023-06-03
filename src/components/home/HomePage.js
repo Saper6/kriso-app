@@ -367,7 +367,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      <ScrollToTopButton />
     </>
   );
 }
