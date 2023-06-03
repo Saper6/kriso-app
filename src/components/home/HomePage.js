@@ -15,7 +15,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import ScrollToTopButton from "src\components\common\scrolltotop.js"
 
 
 const Button = styled.button`
