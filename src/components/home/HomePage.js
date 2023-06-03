@@ -34,14 +34,6 @@ const Button = styled.button`
   }
 `;
 
-const [showFloatingButton, setShowFloatingButton] = useState(false);
-
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  setShowFloatingButton(scrollPosition > 200);
-});
-
-
 
 const toastStyle = {
   position: "top-right",
