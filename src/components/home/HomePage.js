@@ -172,7 +172,7 @@ function HomePage() {
     <div className="row align-items-center">
       <div className="col-12 col-lg-6 align-self-start">
         <p className="title">Personalized Wooden Plaques - 30x20cm</p>
-        <div className="text">
+        <div className="text d-flex justify-content-center">
           <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
         </div>
       </div>
@@ -182,6 +182,7 @@ function HomePage() {
     </div>
   </div>
 </div>
+
 
 <div id="content3" className="content">
   <div className="container">
