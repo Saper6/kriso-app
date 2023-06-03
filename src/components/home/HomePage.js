@@ -15,6 +15,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { useScrollPosition } from "react-use-scroll-position";
 
 const Button = styled.button`
   background-color: #ff5c52;
