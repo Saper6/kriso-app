@@ -131,15 +131,15 @@ function HomePage() {
     });
   }, []);
 
-  <HoverButton>
-  Hovering Button
-</HoverButton>
-
 
   return (
     <>
     
       <ToastContainer />
+      <HoverButton>
+  Hovering Button
+</HoverButton>
+
       <div className="hero" id="home">
         <Link to="/">
           <img
