@@ -348,3 +348,20 @@ html {
 .scroll-button:hover {
   background-color: #ff8452;
 }
+
+
+@media (max-width: 768px) {
+  .content .row {
+    flex-direction: column;
+  }
+  .content .col-12,
+  .content .col-lg-6 {
+    align-self: center;
+  }
+  .content .col-12.order-1,
+  .content .col-12.order-2,
+  .content .col-lg-6.order-lg-1,
+  .content .col-lg-6.order-lg-2 {
+    order: initial;
+  }
+}
