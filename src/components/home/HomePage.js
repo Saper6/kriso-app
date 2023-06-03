@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { FaTwitter } from "react-icons/fa";
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
 import HomeSmallPlaques from "../../images/HomePage/HomeSmallPlaques.png";
@@ -123,7 +123,7 @@ function HomePage() {
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
-            style={{ height: '60%', width: 'auto'  }} // Adjust the percentage value as desired
+            style={{ height: '100%', width: 'auto'  }} // Adjust the percentage value as desired
           />
         </Link>
       </div>
