@@ -153,13 +153,13 @@ function HomePage() {
 
       <div id="content1" className="content">
   <div className="container">
-    <div className="row" id="keychain">
+    <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
         <img className="img-fluid" src={HomeKeychains} alt="HomeKeychains" />
       </div>
       <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
         <p className="title">Keychains</p>
-        <div className="text text-center"> {/* Added 'text-center' class */}
+        <div className="text">
           <Button onClick={() => pageNav("/home/Keychains")}>VIEW ALL</Button>
         </div>
       </div>
@@ -169,10 +169,10 @@ function HomePage() {
 
 <div id="content2" className="content">
   <div className="container">
-    <div className="row">
+    <div className="row align-items-center">
       <div className="col-12 col-lg-6 align-self-start">
-        <p className="title">Personalized Wooden Plaques</p>
-        <div className="text text-center"> {/* Added 'text-center' class */}
+        <p className="title">Personalized Wooden Plaques - 30x20cm</p>
+        <div className="text">
           <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
         </div>
       </div>
@@ -185,20 +185,19 @@ function HomePage() {
 
 <div id="content3" className="content">
   <div className="container">
-    <div className="row">
+    <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
         <img className="img-fluid item-img" src={HomeSmallPlaques} alt="HomeSmallPlaques" />
       </div>
       <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">Small Wooden Plaques</p>
-        <div className="text text-center"> {/* Added 'text-center' class */}
+        <p className="title">Small Wooden Plaques - 13x17cm</p>
+        <div className="text">
           <Button onClick={() => pageNav("/home/SmallPlaques")}>VIEW ALL</Button>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <div id="content4" className="content">
   <div className="container">
@@ -216,17 +215,16 @@ function HomePage() {
   </div>
 </div>
 
-
 <div id="content5" className="content">
   <div className="container">
-    <div className="row">
+    <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
         <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
       </div>
       <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">Other Gadgets</p>
-        <div className="text text-center"> {/* Added 'text-center' class */}
-          <Button onClick={() => pageNav("/home/Other")}>VIEW ALL</Button>
+        <p className="title">Other Items</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
         </div>
       </div>
     </div>
