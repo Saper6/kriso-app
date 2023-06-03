@@ -19,8 +19,8 @@ import styled from "styled-components";
 const Button = styled.button`
   background-color: #ff5c52;
   color: white;
-  font-size: 15px;
-  padding: 10px 60px;
+  font-size: 30px;
+  padding: 20px 120px;
   border-radius: 9px;
   border: none;
   margin: 10px 0px;
@@ -122,7 +122,7 @@ function HomePage() {
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
-            style={{ maxHeight: '400px', maxWidth: '100%' }}
+            style={{ maxHeight: '300px', maxWidth: '100%' }}
           />
         </Link>
       </div>
