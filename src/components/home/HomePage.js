@@ -1,5 +1,11 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { FaTwitter } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import styled from "styled-components";
+
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
@@ -8,13 +14,8 @@ import HomeNeon from "../../images/HomePage/HomeNeon.png";
 import HomeOther from "../../images/HomePage/HomeOther.png";
 import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link, useNavigate } from "react-router-dom";
-import styled from "styled-components";
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -28,9 +29,9 @@ const Button = styled.button`
   font-family: Trebuchet MS;
   font-weight: 800;
   transition: ease background-color 250ms;
+
   &:hover {
     background-color: #ff8452;
-
   }
 `;
 
@@ -46,12 +47,11 @@ const HoverButton = styled.button`
   border: none;
   cursor: pointer;
   transition: background-color 250ms ease;
-  
+
   &:hover {
     background-color: #ff8452;
   }
 `;
-
 
 const toastStyle = {
   position: "top-right",
@@ -131,12 +131,9 @@ function HomePage() {
     });
   }, []);
 
-
   return (
     <>
-    
       <ToastContainer />
-
 
       <div className="hero" id="home">
         <Link to="/">
@@ -149,11 +146,11 @@ function HomePage() {
           />
         </Link>
       </div>
+
       <div id="header1" className="content">
-        <div className="container">
-        </div>
+        <div className="container"></div>
       </div>
-      <div></div>
+
       <div id="content1" className="content">
         <div className="container">
           <div className="row" id="keychain">
@@ -162,17 +159,12 @@ function HomePage() {
                 className="img-fluid"
                 src={HomeKeychains}
                 alt="HomeKeychains"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Keychains</p>
-
               <div className="text">
-                <Button
-                  onClick={(e) => {
-                    return pageNav("/home/Keychains");
-                  }}
-                >
+                <Button onClick={() => pageNav("/home/Keychains")}>
                   VIEW ALL
                 </Button>
               </div>
@@ -186,23 +178,18 @@ function HomePage() {
           <div className="row">
             <div className="col-12 col-lg-6 align-self-start">
               <p className="title">Personalized Wooden Plaques - 30x20cm</p>
-
               <div className="text">
-                <Button
-                  onClick={(e) => {
-                    return pageNav("/home/MedPlaques");
-                  }}
-                >
+                <Button onClick={() => pageNav("/home/MedPlaques")}>
                   VIEW ALL
                 </Button>
               </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
               <img
-                className="img-fluid "
+                className="img-fluid"
                 src={Home3020Plaques}
                 alt="Home3020Plaques"
-              ></img>
+              />
             </div>
           </div>
         </div>
@@ -216,17 +203,12 @@ function HomePage() {
                 className="img-fluid item-img"
                 src={HomeSmallPlaques}
                 alt="HomeSmallPlaques"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Small Wooden Plaques - 13x17cm</p>
-
               <div className="text">
-                <Button
-                  onClick={(e) => {
-                    return pageNav("/home/SmallPlaques");
-                  }}
-                >
+                <Button onClick={() => pageNav("/home/SmallPlaques")}>
                   VIEW ALL
                 </Button>
               </div>
@@ -240,23 +222,14 @@ function HomePage() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">LED Edge Lit Signs</p>
-
               <div className="text">
-                <Button
-                  onClick={(e) => {
-                    return pageNav("/home/NeonSigns");
-                  }}
-                >
+                <Button onClick={() => pageNav("/home/NeonSigns")}>
                   VIEW ALL
                 </Button>
               </div>
             </div>
             <div className="col-12 col-lg-6 align-self-start">
-              <img
-                className="img-fluid item-img"
-                src={HomeNeon}
-                alt="HomeNeon"
-              ></img>
+              <img className="img-fluid item-img" src={HomeNeon} alt="HomeNeon" />
             </div>
           </div>
         </div>
@@ -270,19 +243,12 @@ function HomePage() {
                 className="img-fluid item-img"
                 src={HomeOther}
                 alt="HomeOther"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Other Gadgets</p>
-
               <div className="text">
-                <Button
-                  onClick={(e) => {
-                    return pageNav("/home/Other");
-                  }}
-                >
-                  VIEW ALL
-                </Button>
+                <Button onClick={() => pageNav("/home/Other")}>VIEW ALL</Button>
               </div>
             </div>
           </div>
@@ -295,19 +261,14 @@ function HomePage() {
             <div className="col">
               <p className="title">About</p>
               <p className="text">
-                <div>
-                  All items are designed and carefully crafted by myself and can
-                  be fully customized to suit your needs
-                </div>
-                <div>
-                  If you have any questions, ideas or requests - feel
-                  free to shoot me a DM anytime
-                </div>
+                All items are designed and carefully crafted by myself and can be fully customized to suit your needs.
+                If you have any questions, ideas, or requests, feel free to shoot me a DM anytime.
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <footer className="footer">
         <img
           src={footerline}
@@ -334,7 +295,6 @@ function HomePage() {
         </div>
       </footer>
     </>
-    
   );
 }
 
