@@ -128,7 +128,6 @@ function HomePage() {
       </div>
       <div id="header1" className="content">
         <div className="container">
-          <p className="texttop">I recently moved to Ireland and don't have access to a laser engraver at the moment so some product paylinks are currently disabled. If you have any questions, feel free to DM me @Kriso3D   </p>
         </div>
       </div>
       <div></div>
