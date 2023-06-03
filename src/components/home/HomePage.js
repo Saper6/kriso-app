@@ -15,7 +15,38 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { FaTwitter, FaArrowCircleUp } from "react-icons/fa";
 
+
+const [showScrollButton, setShowScrollButton] = useState(false);
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.pageYOffset > 200) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
+{showScrollButton && (
+  <button className="scroll-button" onClick={scrollToTop}>
+    <FaArrowCircleUp />
+  </button>
+)}
 
 
 
