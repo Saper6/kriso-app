@@ -202,13 +202,11 @@ function HomePage() {
 
 <div id="content4" className="content">
   <div className="container">
-    <div className="row">
-      <div className="col-12 col-lg-6 align-self-start d-flex flex-column justify-content-center">
-        <div className="d-flex flex-column align-items-center justify-content-center h-100">
-          <p className="title">LED Edge Lit Signs</p>
-          <div className="text">
-            <Button onClick={() => pageNav("/home/NeonSigns")}>VIEW ALL</Button>
-          </div>
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6">
+        <p className="title">LED Edge Lit Signs</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/NeonSigns")}>VIEW ALL</Button>
         </div>
       </div>
       <div className="col-12 col-lg-6 align-self-start">
