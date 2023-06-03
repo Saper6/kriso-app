@@ -17,7 +17,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Button = styled.button`
-  background-color: #f100f5;
+  background-color: #ff5c52;
   color: white;
   font-size: 15px;
   padding: 10px 60px;
@@ -30,7 +30,7 @@ const Button = styled.button`
   box-shadow: 0px 3px 3px #f100f5;
   transition: ease background-color 250ms;
   &:hover {
-    background-color: #e80b07;
+    background-color: #ff8452;
     box-shadow: 0px 3px 3px #e80b07;
   }
 `;
@@ -349,12 +349,12 @@ function HomePage() {
           <div className="row">
             <div className="col">
               <p className="footer-text">
-                © Kriso's Workshop 2022, All rights reserved
+                © 291crafter 2022, All rights reserved
                 <a
                   className="footer-icon"
                   target="_blank"
                   rel="noreferrer"
-                  href="https://twitter.com/Kriso3D"
+                  href="https://twitter.com/291crafter"
                 >
                   <FaTwitter />
                 </a>
