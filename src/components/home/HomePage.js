@@ -161,7 +161,7 @@ function HomePage() {
       <div id="content2" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-12 col-lg-6">
               <p className="title">Personalized Wooden Plaques - 30x20cm</p>
 
               <div className="text">
@@ -215,7 +215,7 @@ function HomePage() {
       <div id="content4" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-12 col-lg-6">
               <p className="title">LED Edge Lit Signs</p>
 
               <div className="text">
