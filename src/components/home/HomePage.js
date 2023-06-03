@@ -320,11 +320,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      {showFloatingButton && (
-        <FloatingButton onClick={() => console.log("Floating button clicked!")}>
-          <span style={{ fontSize: "20px" }}>+</span>
-        </FloatingButton>
-      )}
     </>
     
   );
