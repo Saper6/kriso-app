@@ -142,14 +142,8 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Custom Keychains</p>
-              <p className="textl">
-                <ul>
-                  <li>
-                    <div>High quality keychains in a gift box</div>
-                  </li>
-                </ul>
-              </p>
+              <p className="title">Keychains</p>
+
               <div className="text">
                 <Button
                   onClick={(e) => {
@@ -168,20 +162,8 @@ function HomePage() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <p className="title">Personalized Wooden Plaques of Your NFT</p>
-              <p className="textl">
-                <ul>
-                  <li>
-                    <div>Size: 34x24cm (13.3x9.4 inch)</div>
-                  </li>
-                  <li>
-                    <div>Handcrafted from high quality birch wood</div>
-                  </li>
-                  <li>
-                    <div>Easy to hang frame</div>
-                  </li>
-                </ul>
-              </p>
+              <p className="title">Personalized Wooden Plaques - 30x20cm</p>
+
               <div className="text">
                 <Button
                   onClick={(e) => {
@@ -214,17 +196,8 @@ function HomePage() {
               ></img>
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
-              <p className="title">Small Wooden Plaques</p>
-              <p className="textl">
-                <ul>
-                  <li>
-                    <div>Size: 13x17cm</div>
-                  </li>
-                  <li>
-                    <div>Frame with a stand</div>
-                  </li>
-                </ul>
-              </p>
+              <p className="title">Small Wooden Plaques - 13x17cm</p>
+
               <div className="text">
                 <Button
                   onClick={(e) => {
@@ -244,19 +217,7 @@ function HomePage() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <p className="title">LED Edge Lit Signs</p>
-              <p className="textl">
-                <ul>
-                  <li>
-                    <div>Custom RGB neon sign of your NFT</div>
-                  </li>
-                  <li>
-                    <div>Controlled with a wireless remote</div>
-                  </li>
-                  <li>
-                    <div>Multiple preprogrammed lighting modes</div>
-                  </li>
-                </ul>
-              </p>
+
               <div className="text">
                 <Button
                   onClick={(e) => {
@@ -290,22 +251,7 @@ function HomePage() {
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 center">
               <p className="title">Other Gadgets</p>
-              <p className="textl">
-                <ul>
-                  <li>
-                    <div>Pistol adapters for Quest 2 controller</div>
-                  </li>
-                  <li>
-                    <div>Personalised wooden coasters</div>
-                  </li>
-                  <li>
-                    <div>Custom 3D letters and logos</div>
-                  </li>
-                  <li>
-                    <div>And many more...</div>
-                  </li>
-                </ul>
-              </p>
+
               <div className="text">
                 <Button
                   onClick={(e) => {
