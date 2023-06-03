@@ -35,26 +35,6 @@ const Button = styled.button`
   }
 `;
 
-const HoverButton = styled.button`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff5c52;
-  color: white;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms ease;
-  opacity: ${({ visible }) => (visible ? 1 : 0)};
-  pointer-events: ${({ visible }) => (visible ? "auto" : "none")};
-
-  &:hover {
-    background-color: #ff8452;
-  }
-`;
-
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -145,11 +125,8 @@ function HomePage() {
 
   return (
     <>
- <HoverButton visible={isButtonVisible}>UP</HoverButton>
 
       <ToastContainer />
-
-
       <div className="hero" id="home">
         <Link to="/">
           <img
