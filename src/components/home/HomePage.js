@@ -163,7 +163,7 @@ function HomePage() {
       <div id="content2" className="content">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Personalized Wooden Plaques - 30x20cm</p>
 
               <div className="text">
@@ -230,7 +230,7 @@ function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="col-12 col-lg-6 align-self-start">
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <img
                 className="img-fluid item-img"
                 src={HomeNeon}
