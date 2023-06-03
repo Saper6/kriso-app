@@ -31,7 +31,7 @@ const Button = styled.button`
   transition: ease background-color 250ms;
   &:hover {
     background-color: #ff8452;
-    box-shadow: 0px 3px 3px #e80b07;
+
   }
 `;
 
