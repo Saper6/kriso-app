@@ -15,6 +15,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+<<<<<<< HEAD
 import { FaTwitter, FaArrowCircleUp } from "react-icons/fa";
 
 
@@ -49,6 +50,9 @@ useEffect(() => {
 )}
 
 
+=======
+import ScrollToTopButton from "src\components\common\scrolltotop.js"
+>>>>>>> parent of 23bde2e (s)
 
 
 const Button = styled.button`
