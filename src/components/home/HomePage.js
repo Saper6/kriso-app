@@ -17,6 +17,15 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import ScrollToTopButton from "src\components\common\scrolltotop.js"
 
+const HomePage = () => {
+  return (
+    <div>
+      {/* Your homepage content */}
+      <ScrollToTopButton />
+    </div>
+  );
+};
+
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -115,7 +124,6 @@ function HomePage() {
     });
   }, []);
 
-  
   return (
     <>
       <ToastContainer />
@@ -367,7 +375,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      <ScrollToTopButton />
     </>
   );
 }
