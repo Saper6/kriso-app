@@ -46,12 +46,13 @@ const HoverButton = styled.button`
   border: none;
   cursor: pointer;
   transition: background-color 250ms ease;
-  
+  opacity: ${({ visible }) => (visible ? 1 : 0)};
+  pointer-events: ${({ visible }) => (visible ? "auto" : "none")};
+
   &:hover {
     background-color: #ff8452;
   }
 `;
-
 
 const toastStyle = {
   position: "top-right",
@@ -67,6 +68,7 @@ const toastStyle = {
 function HomePage() {
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
@@ -78,6 +80,14 @@ function HomePage() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const isScrollingDown = currPos.y > prevPos.y;
+      setIsButtonVisible(isScrollingDown);
+    },
+    [isButtonVisible]
+  );
+  
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
     gsap.from("#content1", {
@@ -134,11 +144,10 @@ function HomePage() {
 
   return (
     <>
-    
+ <HoverButton visible={isButtonVisible}>UP</HoverButton>
+
       <ToastContainer />
-      <HoverButton>
-  Hovering Button
-</HoverButton>
+
 
       <div className="hero" id="home">
         <Link to="/">
