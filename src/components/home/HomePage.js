@@ -169,7 +169,7 @@ function HomePage() {
 
 <div id="content2" className="content">
   <div className="container">
-    <div className="row">
+    <div className="row align-items-center">
       <div className="col-12 col-lg-6 align-self-start d-flex flex-column justify-content-center">
         <p className="title">Personalized Wooden Plaques - 30x20cm</p>
         <div className="text d-flex justify-content-center">
@@ -182,9 +182,6 @@ function HomePage() {
     </div>
   </div>
 </div>
-
-
-
 
 <div id="content3" className="content">
   <div className="container">
@@ -233,6 +230,7 @@ function HomePage() {
     </div>
   </div>
 </div>
+
 
       <div id="about">
         <div className="container">
