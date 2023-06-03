@@ -15,7 +15,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { FiMessageSquare } from "react-icons/fi";
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -34,42 +33,6 @@ const Button = styled.button`
 
   }
 `;
-
-const FloatingButton = styled.button`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff5c52;
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms;
-  &:hover {
-    background-color: #ff8452;
-  }
-`;
-
-const [showFloatingButton, setShowFloatingButton] = useState(false);
-
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
-  setShowFloatingButton(scrollPosition > windowHeight / 2);
-});
-
-{showFloatingButton && (
-  <FloatingButton onClick={() => console.log("Floating button clicked!")}>
-    <FiMessageSquare />
-  </FloatingButton>
-)}
-
 
 const toastStyle = {
   position: "top-right",
