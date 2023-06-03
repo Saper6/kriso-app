@@ -27,7 +27,6 @@ const Button = styled.button`
   cursor: pointer;
   font-family: Trebuchet MS;
   font-weight: 800;
-  box-shadow: 0px 3px 3px #f100f5;
   transition: ease background-color 250ms;
   &:hover {
     background-color: #ff8452;
@@ -123,7 +122,7 @@ function HomePage() {
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
-            style={{ height: '100%', width: 'auto'  }} // Adjust the percentage value as desired
+            style={{ height: '300px', width: 'auto'  }} // Adjust the percentage value as desired
           />
         </Link>
       </div>
