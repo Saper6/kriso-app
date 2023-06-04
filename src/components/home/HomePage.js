@@ -99,33 +99,28 @@ function HomePage() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
+    gsap.from("#header1", { duration: 2, y: -400 });
   
-    const contentElements = ["#content1", "#content2", "#content3", "#content4", "#content5"];
-    const staggerOptions = {
-      duration: 1,
-      x: -200,
-      opacity: 0,
-      ease: "power2.out",
-      stagger: 0.2,
-    };
+    const contentElements = [
+      "#content1",
+      "#content2",
+      "#content3",
+      "#content4",
+      "#content5",
+      "#about",
+    ];
   
-    gsap.from(contentElements, {
-      scrollTrigger: {
-        trigger: contentElements,
-        toggleActions: "restart none restart none",
-      },
-      ...staggerOptions,
-    });
-  
-    gsap.from("#about", {
-      scrollTrigger: {
-        trigger: "#about",
-        toggleActions: "restart none none none",
-      },
-      duration: 1,
-      opacity: 0,
-      y: 200,
-      ease: "power2.out",
+    contentElements.forEach((element, index) => {
+      gsap.from(element, {
+        scrollTrigger: {
+          trigger: element,
+          toggleActions: "restart none restart none",
+        },
+        duration: 1,
+        x: index % 2 === 0 ? -200 : 200,
+        opacity: 0,
+        ease: "power2.out",
+      });
     });
   }, []);
   
