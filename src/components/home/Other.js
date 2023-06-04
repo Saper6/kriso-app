@@ -71,23 +71,23 @@ function Other() {
   });
 
   const Button = styled.button`
-    background-color: #f100f5;
-    color: white;
-    font-size: 15px;
-    padding: 10px 100px;
-    border-radius: 25px;
-    border: none;
-    margin: 0px 0px;
-    cursor: pointer;
-    font-family: Trebuchet MS;
-    font-weight: 800;
-    box-shadow: 4px 4px 4px #f100f5;
-    transition: ease background-color 250ms;
-    &:hover {
-      background-color: #e80b07;
-      box-shadow: 4px 4px 4px #e80b07;
-    }
-  `;
+  background-color: #ff5c52;
+  color: white;
+  font-size: 20px;
+  padding: 16px 80px;
+  border-radius: 18px;
+  border: none;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-weight: 800;
+  transition: ease background-color 250ms;
+
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
+
   return (
     <>
       <ToastContainer />
@@ -194,23 +194,16 @@ function Other() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">Have an interesting idea?</p>
+              <p className="title">About</p>
               <p className="text">
-                Feel free to contact me on Twitter and let's see if I can bring
-                it to life, always happy to take up a new challenge!
-                <a
-                  className="footer-icon"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://twitter.com/Kriso3D"
-                >
-                  <FaTwitter />
-                </a>
+                All items are designed and carefully crafted by myself and can be fully customized to suit your needs.
+                If you have any questions, ideas, or requests, feel free to shoot me a DM anytime.
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <footer className="footer">
         <img
           src={footerline}
@@ -221,7 +214,15 @@ function Other() {
           <div className="row">
             <div className="col">
               <p className="footer-text">
-                © Kriso's Workshop 2022, All rights reserved.
+                © 291crafter 2022, All rights reserved
+                <a
+                  className="footer-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/291crafter"
+                >
+                  <FaTwitter />
+                </a>
               </p>
               <p className="footer-sub-text">By @kevincaughman</p>
             </div>

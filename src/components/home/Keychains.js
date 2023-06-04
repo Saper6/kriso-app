@@ -68,7 +68,7 @@ function Keychains() {
       duration: 1,
       x: 200,
     });
-    
+
     gsap.from("#about", {
       scrollTrigger: {
         trigger: "#about",
@@ -79,27 +79,29 @@ function Keychains() {
       y: 200,
     });
   });
+
   const Button = styled.button`
-    background-color: #f100f5;
+    background-color: #ff5c52;
     color: white;
-    font-size: 15px;
-    padding: 10px 100px;
-    border-radius: 25px;
+    font-size: 20px;
+    padding: 16px 80px;
+    border-radius: 18px;
     border: none;
-    margin: 0px 0px;
+    margin: 10px 0px;
     cursor: pointer;
     font-family: Trebuchet MS;
     font-weight: 800;
-    box-shadow: 4px 4px 4px #f100f5;
     transition: ease background-color 250ms;
+
     &:hover {
-      background-color: #e80b07;
-      box-shadow: 4px 4px 4px #e80b07;
+      background-color: #ff8452;
     }
   `;
+
   return (
     <>
       <ToastContainer />
+
       <div className="hero" id="home">
         <Link to="/">
           <img
@@ -110,6 +112,7 @@ function Keychains() {
           />
         </Link>
       </div>
+
       <div id="header1" className="content">
         <div className="container">
           <p className="texttop">Selection of handcrafted, custom keychains</p>
@@ -124,7 +127,7 @@ function Keychains() {
                 className="img-fluid"
                 src={DegodsMainPic}
                 alt="DegodsMainPic"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods</p>
@@ -132,10 +135,10 @@ function Keychains() {
                 <ul>
                   <li>3D printed keychains</li>
                   <li>
-                    <div>Multiple variations available: </div>{" "}
+                    <div>Multiple variations available: </div>
                   </li>
                   <li>
-                    <div>OG DeGods, MickeyDeGods, DeGods Anniversary</div>{" "}
+                    <div>OG DeGods, MickeyDeGods, DeGods Anniversary</div>
                   </li>
                 </ul>
               </p>
@@ -179,7 +182,7 @@ function Keychains() {
                 className="img-fluid "
                 src={LibertySquareMainPic}
                 alt="LibertySquareMainPic"
-              ></img>
+              />
             </div>
           </div>
         </div>
@@ -193,7 +196,7 @@ function Keychains() {
                 className="img-fluid item-img"
                 src={y00tsMainPic}
                 alt="y00tsMainPic"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">y00ts</p>
@@ -228,7 +231,6 @@ function Keychains() {
         </div>
       </div>
 
-
       <div id="content4" className="content">
         <div className="container">
           <div className="row">
@@ -255,37 +257,26 @@ function Keychains() {
                 className="img-fluid "
                 src={n00unskeychains}
                 alt="n00unskeychains"
-              ></img>
+              />
             </div>
           </div>
         </div>
       </div>
-
 
       <div id="about">
         <div className="container">
           <div className="row">
             <div className="col">
-              <p className="title">
-                Didn't find a design you're interested in?
-              </p>
+              <p className="title">About</p>
               <p className="text">
-                Feel free to contact me on Twitter and I'll be happy to craft a
-                custom keychain just for you or your project! DM's are always
-                open
-                <a
-                  className="footer-icon"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://twitter.com/Kriso3D"
-                >
-                  <FaTwitter />
-                </a>
+                All items are designed and carefully crafted by myself and can be fully customized to suit your needs.
+                If you have any questions, ideas, or requests, feel free to shoot me a DM anytime.
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <footer className="footer">
         <img
           src={footerline}
@@ -296,7 +287,15 @@ function Keychains() {
           <div className="row">
             <div className="col">
               <p className="footer-text">
-                © Kriso's Workshop 2022, All rights reserved.
+                © 291crafter 2022, All rights reserved
+                <a
+                  className="footer-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/291crafter"
+                >
+                  <FaTwitter />
+                </a>
               </p>
               <p className="footer-sub-text">By @kevincaughman</p>
             </div>
