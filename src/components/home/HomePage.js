@@ -79,8 +79,6 @@ const toastStyle = {
 };
 
 function HomePage() {
-  const [isLoading, setIsLoading] = useState(true); // Add a loading state
-
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -92,9 +90,6 @@ function HomePage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    setTimeout(() => {
-      setIsLoading(false); // Set isLoading to false after 2 seconds
-    }, 2000);
   }, []);
   
   useEffect(() => {
@@ -150,13 +145,6 @@ function HomePage() {
     });
   }, []);
 
-  if (isLoading) {
-    return (
-      <div className="spinner-container">
-        <div className="spinner" />
-      </div>
-    );
-  }
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
