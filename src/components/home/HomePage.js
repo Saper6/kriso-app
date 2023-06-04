@@ -172,8 +172,8 @@ function HomePage() {
 <div id="content2" className="content">
   <div className="container">
     <div className="row align-items-center">
-      <div className="col-12 col-lg-6 align-self-start d-flex flex-column justify-content-center">
-        <p className="title">Personalized Wooden Plaques - 30x20cm</p>
+      <div className="col-12 col-lg-6">
+        <p className="title">Personalized Wooden Plaques</p>
         <div className="text d-flex justify-content-center">
           <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
         </div>
