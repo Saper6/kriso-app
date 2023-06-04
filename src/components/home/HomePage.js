@@ -21,8 +21,8 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 const Button = styled.button`
   background-color: #ff5c52;
   color: white;
-  font-size: 30px;
-  padding: 20px 120px;
+  font-size: 20px;
+  padding: 16px 80px;
   border-radius: 18px;
   border: none;
   margin: 10px 0px;
