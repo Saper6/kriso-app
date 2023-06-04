@@ -55,7 +55,7 @@ const HoverButton = styled.button`
 `;
 
 const ContentWrapper = styled.div`
-  background: linear-gradient(45deg, #faf8e6, #f8f7e3);
+  background: linear-gradient(45deg, #ffe5d1, #ff8452);
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

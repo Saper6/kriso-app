@@ -10,7 +10,24 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   overflow: hidden;
+
+  /* Cool Background Effects */
+  animation: gradientFlow 10s infinite linear;
+  transform: rotate(3deg) scale(1.02);
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* Modal Styles */
 .modal-dialog {
