@@ -99,17 +99,17 @@ function Keychains() {
   `;
 
   const ContentWrapper = styled.div`
-  background: linear-gradient(45deg, #ffe5d1, #ff8452);
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+    background: linear-gradient(45deg, #ffe5d1, #ff8452);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
   
-  &:hover {
-    transform: translateY(-5px);
-  }
-`;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  `;
 
   return (
     <>
@@ -167,7 +167,7 @@ function Keychains() {
             </div>
           </div>
         </div>
-        </ContentWrapper>
+      </ContentWrapper>
 
       <ContentWrapper id="content2" className="content">
         <div className="container">
@@ -199,7 +199,7 @@ function Keychains() {
             </div>
           </div>
         </div>
-        </ContentWrapper>
+      </ContentWrapper>
 
       <ContentWrapper id="content3" className="content">
         <div className="container">
@@ -242,7 +242,7 @@ function Keychains() {
             </div>
           </div>
         </div>
-        </ContentWrapper>
+      </ContentWrapper>
 
       <ContentWrapper id="content4" className="content">
         <div className="container">
@@ -274,7 +274,7 @@ function Keychains() {
             </div>
           </div>
         </div>
-        </ContentWrapper>
+      </ContentWrapper>
 
       <div id="about">
         <div className="container">
