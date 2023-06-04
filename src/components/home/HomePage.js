@@ -55,7 +55,7 @@ const HoverButton = styled.button`
 `;
 
 const ContentWrapper = styled.div`
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #faf8e6;
   padding: 20px;
   margin: 20px 0;
 `;
