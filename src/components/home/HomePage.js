@@ -314,6 +314,7 @@ function HomePage() {
       </footer>
       {showScrollToTop && (
         <ScrollToTopArrow onClick={scrollToTop}>
+          style={{ opacity: showScrollToTop ? 1 : 0, visibility: showScrollToTop ? "visible" : "hidden" }}
           <FaArrowUp />
         </ScrollToTopArrow>
       )}
