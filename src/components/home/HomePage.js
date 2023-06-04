@@ -81,12 +81,7 @@ function HomePage() {
     simulateLoading(); // Simulate loading process
   }, []);
 
-  // Simulate loading process for 2 seconds
-  const simulateLoading = () => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  };
+
 
 
   useEffect(() => {
