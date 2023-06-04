@@ -89,6 +89,18 @@ function HomePage() {
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowHomepage(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!showHomepage) {
+    return null; // Display nothing until the delay is over
+  }
+
   function pageNav(page) {
     navigate(page);
   }
