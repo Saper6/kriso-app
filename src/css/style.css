@@ -305,17 +305,6 @@ html {
   color: white;
   padding-top: 10px;
   padding-bottom: 30px;
-  
-}
-
-.footer-title {
-  color: rgb(92,127,248);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: 600;
-  line-height: 1.2em;
-  letter-spacing: 0.5px;
-  margin: 10px;
 }
 
 .footer-text {
@@ -323,47 +312,6 @@ html {
   font-weight: 400;
   text-align: center;
   margin-top: 15px;
-}
-
-.footer-sub-text {
-  color: #ff5c52;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 10px;
-}
-
-.footer-icon {
-  font-size: 30px;
-  margin: 20px;
-  color: rgb(92,127,248);
-  text-transform: capitalize;
-  text-decoration: none;
-  scale: 1;
-}
-
-.scroll-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  background-color: #ff5c52;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .footer-link {
