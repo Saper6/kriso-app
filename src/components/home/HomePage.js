@@ -87,8 +87,10 @@ const toastStyle = {
 function HomePage() {
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isImagesLoaded, setIsImagesLoaded] = useState(false); // Added state for image loading
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
+
   function pageNav(page) {
     navigate(page);
   }
@@ -149,19 +151,40 @@ function HomePage() {
       y: -200,
     });
   }, []);
-
+  
+  // Check if all the images are loaded
   useEffect(() => {
-    const img = new Image();
-    img.src = logo;
-    img.onload = () => {
-      setIsLogoLoaded(true);
+    const images = [
+      logo,
+      HomeKeychains,
+      Home3020Plaques,
+      HomeSmallPlaques,
+      HomeNeon,
+      HomeOther,
+      footerline,
+    ];
+    let loadedImages = 0;
+
+    const handleImageLoad = () => {
+      loadedImages++;
+      if (loadedImages === images.length) {
+        setIsImagesLoaded(true);
+      }
     };
+
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+      img.onload = handleImageLoad;
+    });
   }, []);
 
-  if (!isLogoLoaded) {
-    return <div>Loading...</div>;
+  if (!isImagesLoaded) {
+    return <div>Loading...</div>; // Render a loading indicator until all images are loaded
   }
-  
+
+
+
   return (
     <>
       <ToastContainer />
