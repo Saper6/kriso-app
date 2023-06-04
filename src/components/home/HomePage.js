@@ -150,6 +150,18 @@ function HomePage() {
     });
   }, []);
 
+  useEffect(() => {
+    const img = new Image();
+    img.src = logo;
+    img.onload = () => {
+      setIsLogoLoaded(true);
+    };
+  }, []);
+
+  if (!isLogoLoaded) {
+    return <div>Loading...</div>;
+  }
+  
   return (
     <>
       <ToastContainer />
