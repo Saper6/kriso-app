@@ -266,11 +266,23 @@ html {
     font-size: 1rem !important;
   }
   .text {
+    color: rgb(92, 127, 248);
+    font-family: Helvetica, sans-serif;
     font-size: 1rem;
-    width: 90%;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 80%;
   }
   .content {
     padding-bottom: 10px;
+  }
+  .item-img {
+    flex-direction: column-reverse;
   }
 }
 
