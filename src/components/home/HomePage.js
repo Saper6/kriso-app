@@ -17,7 +17,6 @@ import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
-
 const Button = styled.button`
   background-color: #ff5c52;
   color: white;
@@ -36,7 +35,6 @@ const Button = styled.button`
     background-color: #ff8452;
   }
 `;
-
 
 const HoverButton = styled.button`
   position: fixed;
@@ -69,9 +67,6 @@ const ContentWrapper = styled.div`
   }
 `;
 
-
-
-
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -84,6 +79,8 @@ const toastStyle = {
 };
 
 function HomePage() {
+  const [isLoading, setIsLoading] = useState(true); // Add a loading state
+
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -95,8 +92,11 @@ function HomePage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    setTimeout(() => {
+      setIsLoading(false); // Set isLoading to false after 2 seconds
+    }, 2000);
   }, []);
-
+  
   useEffect(() => {
     const contentElements = [
       "#content1",
@@ -149,13 +149,18 @@ function HomePage() {
       y: -200,
     });
   }, []);
-  
-  
 
+  if (isLoading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner" />
+      </div>
+    );
+  }
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer {...toastStyle} />
 
       <div className="hero" id="home">
         <Link to="/">
@@ -174,86 +179,84 @@ function HomePage() {
       </div>
 
       <ContentWrapper id="content1" className="content">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-        <img className="img-fluid" src={HomeKeychains} alt="HomeKeychains" />
-      </div>
-      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">Keychains</p>
-        <div className="text">
-          <Button onClick={() => pageNav("/home/Keychains")}>VIEW ALL</Button>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+              <img className="img-fluid" src={HomeKeychains} alt="HomeKeychains" />
+            </div>
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+              <p className="title">Keychains</p>
+              <div className="text">
+                <Button onClick={() => pageNav("/home/Keychains")}>VIEW ALL</Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </ContentWrapper>
+      </ContentWrapper>
 
-  <ContentWrapper id="content2" className="content">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12 col-lg-6">
-        <p className="title">A4 prints and engravings</p>
-        <div className="text d-flex justify-content-center">
-          <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
+      <ContentWrapper id="content2" className="content">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6">
+              <p className="title">A4 prints and engravings</p>
+              <div className="text d-flex justify-content-center">
+                <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 align-self-start">
+              <img className="img-fluid" src={Home3020Plaques} alt="Home3020Plaques" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="col-12 col-lg-6 align-self-start">
-        <img className="img-fluid" src={Home3020Plaques} alt="Home3020Plaques" />
-      </div>
-    </div>
-  </div>
-  </ContentWrapper>
+      </ContentWrapper>
 
-<ContentWrapper id="content3" className="content">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-        <img className="img-fluid item-img" src={HomeSmallPlaques} alt="HomeSmallPlaques" />
-      </div>
-      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">A5 prints and engravings</p>
-        <div className="text">
-          <Button onClick={() => pageNav("/home/SmallPlaques")}>VIEW ALL</Button>
+      <ContentWrapper id="content3" className="content">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+              <img className="img-fluid item-img" src={HomeSmallPlaques} alt="HomeSmallPlaques" />
+            </div>
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+              <p className="title">A5 prints and engravings</p>
+              <div className="text">
+                <Button onClick={() => pageNav("/home/SmallPlaques")}>VIEW ALL</Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </ContentWrapper>
+      </ContentWrapper>
 
-<ContentWrapper id="content4" className="content">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12 col-lg-6">
-        <p className="title">LED Edge Lit Signs</p>
-        <div className="text">
-          <Button onClick={() => pageNav("/home/NeonSigns")}>VIEW ALL</Button>
+      <ContentWrapper id="content4" className="content">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6">
+              <p className="title">LED Edge Lit Signs</p>
+              <div className="text">
+                <Button onClick={() => pageNav("/home/NeonSigns")}>VIEW ALL</Button>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 align-self-start">
+              <img className="img-fluid item-img" src={HomeNeon} alt="HomeNeon" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="col-12 col-lg-6 align-self-start">
-        <img className="img-fluid item-img" src={HomeNeon} alt="HomeNeon" />
-      </div>
-    </div>
-  </div>
-  </ContentWrapper>
+      </ContentWrapper>
 
-<ContentWrapper id="content5" className="content">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-        <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
-      </div>
-      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">Other Items</p>
-        <div className="text">
-          <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
+      <ContentWrapper id="content5" className="content">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+              <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
+            </div>
+            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+              <p className="title">Other Items</p>
+              <div className="text">
+                <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </ContentWrapper>
-
-
+      </ContentWrapper>
 
       <div id="about">
         <div className="container">
@@ -298,4 +301,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage
