@@ -66,7 +66,6 @@ const toastStyle = {
 };
 
 function HomePage() {
-  const [isLoading, setIsLoading] = useState(true); // Loading state
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -78,11 +77,7 @@ function HomePage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    simulateLoading(); // Simulate loading process
   }, []);
-
-
-
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
