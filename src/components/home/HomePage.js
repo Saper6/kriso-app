@@ -30,11 +30,13 @@ const Button = styled.button`
   font-family: Trebuchet MS;
   font-weight: 800;
   transition: ease background-color 250ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add box shadow */
 
   &:hover {
     background-color: #ff8452;
   }
 `;
+
 
 const HoverButton = styled.button`
   position: fixed;

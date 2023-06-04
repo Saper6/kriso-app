@@ -80,26 +80,27 @@ function MedPlaques() {
   });
 
   const Button = styled.button`
-  background-color: #ff5c52;
-  color: white;
-  font-size: 20px;
-  padding: 16px 80px;
-  border-radius: 18px;
-  border: none;
-  margin: 10px 0px;
-  cursor: pointer;
-  font-family: Trebuchet MS;
-  font-weight: 800;
-  transition: ease background-color 250ms;
+    background-color: #ff5c52;
+    color: white;
+    font-size: 20px;
+    padding: 16px 80px;
+    border-radius: 18px;
+    border: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    transition: ease background-color 250ms;
 
-  &:hover {
-    background-color: #ff8452;
-  }
-`;
+    &:hover {
+      background-color: #ff8452;
+    }
+  `;
 
   return (
     <>
       <ToastContainer />
+
       <div className="hero" id="home">
         <Link to="/">
           <img
@@ -110,6 +111,7 @@ function MedPlaques() {
           />
         </Link>
       </div>
+
       <div id="header1" className="content">
         <div className="container">
           <p className="texttop">
@@ -127,7 +129,7 @@ function MedPlaques() {
                 className="img-fluid"
                 src={degodsmedplaque}
                 alt="degodsmedplaque"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">DeGods/DeadGods</p>
@@ -167,7 +169,7 @@ function MedPlaques() {
                 className="img-fluid "
                 src={y00tsmedplaque}
                 alt="y00tsmedplaque"
-              ></img>
+              />
             </div>
           </div>
         </div>
@@ -181,7 +183,7 @@ function MedPlaques() {
                 className="img-fluid"
                 src={mtcmedplaque}
                 alt="mtcmedplaque"
-              ></img>
+              />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
               <p className="title">MetaTattooClub</p>
@@ -221,7 +223,7 @@ function MedPlaques() {
                 className="img-fluid "
                 src={libertymedplaque}
                 alt="libertymedplaque"
-              ></img>
+              />
             </div>
           </div>
         </div>
