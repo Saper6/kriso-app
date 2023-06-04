@@ -88,13 +88,7 @@ function HomePage() {
     }, 2000);
   };
 
-  useEffect(() => {
-    // ... Rest of your code ...
-  }, []);
 
-  if (isLoading) {
-    return <LoadingScreen />; // Render the loading screen
-  }
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
     gsap.from("#content1", {
@@ -148,6 +142,10 @@ function HomePage() {
     });
   }, []);
 
+  if (isLoading) {
+    return <LoadingScreen />; // Render the loading screen
+  }
+  
   return (
     <>
       <ToastContainer />
