@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styled from "styled-components";
-
+import { FaArrowUp } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
@@ -288,6 +288,10 @@ function HomePage() {
           </div>
         </div>
       </footer>
+          {/* Render the scroll-to-top arrow */}
+    <ScrollToTopArrow onClick={scrollToTop}>
+      <FaArrowUp />
+    </ScrollToTopArrow>
     </>
   );
 }
