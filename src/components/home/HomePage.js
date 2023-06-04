@@ -142,9 +142,6 @@ function HomePage() {
     });
   }, []);
 
-  if (isLoading) {
-    return <Spinner />; // Render the loading screen
-  }
 
   return (
     <>
