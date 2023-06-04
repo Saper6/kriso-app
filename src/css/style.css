@@ -411,17 +411,6 @@ html {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in 0.5s ease forwards; /* Add fade-in animation */
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .spinner {
