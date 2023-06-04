@@ -54,6 +54,13 @@ const HoverButton = styled.button`
   }
 `;
 
+const ContentWrapper = styled.div`
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px 0;
+`;
+
+
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -153,7 +160,7 @@ function HomePage() {
         <div className="container"></div>
       </div>
 
-      <div id="content1" className="content">
+      <ContentWrapper id="content1" className="content">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
@@ -167,7 +174,7 @@ function HomePage() {
       </div>
     </div>
   </div>
-</div>
+  </ContentWrapper>
 
 <div id="content2" className="content">
   <div className="container">
