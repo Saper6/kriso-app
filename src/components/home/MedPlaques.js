@@ -133,24 +133,6 @@ function MedPlaques() {
   }
 `;
 
-const ScrollToTopArrow = styled.button`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff5c52;
-  color: white;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms ease;
-
-  &:hover {
-    background-color: #ff8452;
-  }
-`;
-
   return (
     <>
       <ToastContainer />
