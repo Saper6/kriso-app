@@ -173,7 +173,7 @@ function HomePage() {
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6">
-        <p className="title">Personalized Wooden Plaques</p>
+        <p className="title">A4 prints and engravings</p>
         <div className="text d-flex justify-content-center">
           <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
         </div>
@@ -192,7 +192,7 @@ function HomePage() {
         <img className="img-fluid item-img" src={HomeSmallPlaques} alt="HomeSmallPlaques" />
       </div>
       <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-        <p className="title">Small Wooden Plaques</p>
+        <p className="title">A5 prints and engravings</p>
         <div className="text">
           <Button onClick={() => pageNav("/home/SmallPlaques")}>VIEW ALL</Button>
         </div>
