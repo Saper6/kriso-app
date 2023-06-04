@@ -55,10 +55,12 @@ const HoverButton = styled.button`
 `;
 
 const ContentWrapper = styled.div`
-  background-color: rgba(250, 248, 230, 0.8);
+  background: linear-gradient(45deg, #faf8e6, #f8f7e3);
   padding: 20px;
   margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
+
 
 
 const toastStyle = {
