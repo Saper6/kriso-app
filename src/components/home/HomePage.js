@@ -176,7 +176,7 @@ function HomePage() {
   </div>
   </ContentWrapper>
 
-<div id="content2" className="content">
+  <ContentWrapper id="content2" className="content">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6">
@@ -190,9 +190,9 @@ function HomePage() {
       </div>
     </div>
   </div>
-</div>
+  </ContentWrapper>
 
-<div id="content3" className="content">
+<ContentWrapper id="content3" className="content">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
@@ -206,9 +206,9 @@ function HomePage() {
       </div>
     </div>
   </div>
-</div>
+  </ContentWrapper>
 
-<div id="content4" className="content">
+<ContentWrapper id="content4" className="content">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6">
@@ -222,9 +222,9 @@ function HomePage() {
       </div>
     </div>
   </div>
-</div>
+  </ContentWrapper>
 
-<div id="content5" className="content">
+<ContentWrapper id="content5" className="content">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
@@ -238,7 +238,7 @@ function HomePage() {
       </div>
     </div>
   </div>
-</div>
+  </ContentWrapper>
 
 
 
