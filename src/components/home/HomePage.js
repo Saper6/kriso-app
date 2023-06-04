@@ -288,10 +288,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
- {/* Render the scroll-to-top arrow */}
-      <ScrollToTopArrow onClick={scrollToTop}>
-        <FaArrowUp />
-      </ScrollToTopArrow>
     </>
   );
 }
