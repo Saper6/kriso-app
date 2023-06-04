@@ -91,48 +91,6 @@ function HomePage() {
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
-  const logoImage = useImage({
-    src: logo,
-  });
-
-  const homeKeychainsImage = useImage({
-    src: HomeKeychains,
-  });
-
-  const home3020PlaquesImage = useImage({
-    src: Home3020Plaques,
-  });
-
-  const homeSmallPlaquesImage = useImage({
-    src: HomeSmallPlaques,
-  });
-
-  const homeNeonImage = useImage({
-    src: HomeNeon,
-  });
-
-  const homeOtherImage = useImage({
-    src: HomeOther,
-  });
-
-  const footerlineImage = useImage({
-    src: footerline,
-  });
-
-  const imagesLoaded =
-    logoImage.loaded &&
-    homeKeychainsImage.loaded &&
-    home3020PlaquesImage.loaded &&
-    homeSmallPlaquesImage.loaded &&
-    homeNeonImage.loaded &&
-    homeOtherImage.loaded &&
-    footerlineImage.loaded;
-
-  if (!imagesLoaded) {
-    return null; // Display nothing until the images are loaded
-  }
-
-  
   function pageNav(page) {
     navigate(page);
   }
