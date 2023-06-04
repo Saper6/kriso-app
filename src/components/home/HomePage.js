@@ -78,20 +78,44 @@ const toastStyle = {
   theme: "dark",
 };
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+
 function HomePage() {
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   function pageNav(page) {
     navigate(page);
   }
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 200) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    
   }, []);
   
+
+
   useEffect(() => {
     const contentElements = [
       "#content1",
@@ -288,10 +312,11 @@ function HomePage() {
           </div>
         </div>
       </footer>
-          {/* Render the scroll-to-top arrow */}
-    <ScrollToTopArrow onClick={scrollToTop}>
-      <FaArrowUp />
-    </ScrollToTopArrow>
+      {showScrollToTop && (
+        <ScrollToTopArrow onClick={scrollToTop}>
+          <FaArrowUp />
+        </ScrollToTopArrow>
+      )}
     </>
   );
 }
