@@ -152,7 +152,7 @@ function HomePage() {
 
   if (isLoading) {
     return (
-      <div className="loading-screen">
+      <div className="spinner-container">
         <div className="spinner" />
       </div>
     );
