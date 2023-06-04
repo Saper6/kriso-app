@@ -246,7 +246,7 @@ html {
 }
 
 .item-img {
-  /* -webkit-filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); */
   border-radius: 15px;
   margin-left: auto;
@@ -367,7 +367,7 @@ html {
 
 /* Mobile Scaling Fix */
 @media (max-width: 767.98px) {
-  html {
-    zoom: 0.8;
+  .item-img {
+    flex-direction: column-reverse;
   }
 }
