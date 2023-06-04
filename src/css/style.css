@@ -11,9 +11,6 @@ html {
   position: relative;
   overflow: hidden;
 
-  /* Cool Background Effects */
-  animation: gradientFlow 10s infinite linear;
-  transform: rotate(3deg) scale(1.02);
 }
 
 @keyframes gradientFlow {

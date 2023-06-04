@@ -60,6 +60,10 @@ const ContentWrapper = styled.div`
   margin: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-5px);
   }
 `;
 
