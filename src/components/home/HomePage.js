@@ -116,6 +116,7 @@ function HomePage() {
         x: index % 2 === 0 ? "80%" : "100%",
         opacity: 0,
         ease: "power2.out",
+        delay: 0.2 * index, // Adjust the delay based on the index
       });
     });
 
@@ -127,6 +128,7 @@ function HomePage() {
       duration: 1,
       opacity: 0,
       y: 200,
+      delay: 0.2 * contentElements.length, // Adjust the delay based on the number of content elements
     });
 
     gsap.from("#header1", {
@@ -137,6 +139,7 @@ function HomePage() {
       duration: 2,
       opacity: 0,
       y: -400,
+      delay: 0.2 * contentElements.length, // Adjust the delay based on the number of content elements
     });
 
     gsap.from("#bgHeroImage", {
@@ -147,6 +150,7 @@ function HomePage() {
       duration: 1,
       opacity: 0,
       y: -200,
+      delay: 0.2 * contentElements.length, // Adjust the delay based on the number of content elements
     });
   }, []);
 
@@ -251,7 +255,7 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Other Items</p>
               <div className="text">
-                <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
+                <Button onClick={() => pageNav("/home/Other")}>VIEW ALL</Button>
               </div>
             </div>
           </div>
