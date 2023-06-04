@@ -90,17 +90,37 @@ function HomePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowHomepage(true);
-    }, 3000);
+    const images = [
+      logo,
+      HomeKeychains,
+      Home3020Plaques,
+      HomeSmallPlaques,
+      HomeNeon,
+      HomeOther,
+      footerline,
+    ];
 
-    return () => clearTimeout(timer);
+    const imagePromises = images.map((imageSrc) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = imageSrc;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(imagePromises)
+      .then(() => {
+        setShowHomepage(true);
+      })
+      .catch((error) => {
+        console.error("Error loading images:", error);
+      });
   }, []);
 
   if (!showHomepage) {
-    return null; // Display nothing until the delay is over
+    return null; // Display nothing until the images are loaded
   }
-
   function pageNav(page) {
     navigate(page);
   }
