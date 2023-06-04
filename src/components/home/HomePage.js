@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaTwitter } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styled from "styled-components";
+import { useImage } from "react-image"; // Import useImage hook
 
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
@@ -16,6 +17,7 @@ import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
+
 
 
 const Button = styled.button`
@@ -89,38 +91,48 @@ function HomePage() {
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const images = [
-      logo,
-      HomeKeychains,
-      Home3020Plaques,
-      HomeSmallPlaques,
-      HomeNeon,
-      HomeOther,
-      footerline,
-    ];
+  const logoImage = useImage({
+    src: logo,
+  });
 
-    const imagePromises = images.map((imageSrc) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = imageSrc;
-        img.onload = resolve;
-        img.onerror = reject;
-      });
-    });
+  const homeKeychainsImage = useImage({
+    src: HomeKeychains,
+  });
 
-    Promise.all(imagePromises)
-      .then(() => {
-        setShowHomepage(true);
-      })
-      .catch((error) => {
-        console.error("Error loading images:", error);
-      });
-  }, []);
+  const home3020PlaquesImage = useImage({
+    src: Home3020Plaques,
+  });
 
-  if (!showHomepage) {
+  const homeSmallPlaquesImage = useImage({
+    src: HomeSmallPlaques,
+  });
+
+  const homeNeonImage = useImage({
+    src: HomeNeon,
+  });
+
+  const homeOtherImage = useImage({
+    src: HomeOther,
+  });
+
+  const footerlineImage = useImage({
+    src: footerline,
+  });
+
+  const imagesLoaded =
+    logoImage.loaded &&
+    homeKeychainsImage.loaded &&
+    home3020PlaquesImage.loaded &&
+    homeSmallPlaquesImage.loaded &&
+    homeNeonImage.loaded &&
+    homeOtherImage.loaded &&
+    footerlineImage.loaded;
+
+  if (!imagesLoaded) {
     return null; // Display nothing until the images are loaded
   }
+
+  
   function pageNav(page) {
     navigate(page);
   }
