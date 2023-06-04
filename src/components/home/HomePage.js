@@ -99,67 +99,36 @@ function HomePage() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
-    gsap.to("#content1", {
-      scrollTrigger: {
-        trigger: "#content1",
-        toggleActions: "restart none restart none",
-      },
+  
+    const contentElements = ["#content1", "#content2", "#content3", "#content4", "#content5"];
+    const staggerOptions = {
       duration: 1,
       x: -200,
-      opacity: 1,
+      opacity: 0,
       ease: "power2.out",
-    });
-    gsap.to("#content2", {
+      stagger: 0.2,
+    };
+  
+    gsap.from(contentElements, {
       scrollTrigger: {
-        trigger: "#content2",
+        trigger: contentElements,
         toggleActions: "restart none restart none",
       },
-      duration: 1,
-      x: 200,
-      opacity: 1,
-      ease: "power2.out",
+      ...staggerOptions,
     });
-    gsap.to("#content3", {
-      scrollTrigger: {
-        trigger: "#content3",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: -200,
-      opacity: 1,
-      ease: "power2.out",
-    });
-    gsap.to("#content4", {
-      scrollTrigger: {
-        trigger: "#content4",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: 200,
-      opacity: 1,
-      ease: "power2.out",
-    });
-    gsap.to("#content5", {
-      scrollTrigger: {
-        trigger: "#content5",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: -200,
-      opacity: 1,
-      ease: "power2.out",
-    });
-    gsap.to("#about", {
+  
+    gsap.from("#about", {
       scrollTrigger: {
         trigger: "#about",
         toggleActions: "restart none none none",
       },
       duration: 1,
-      opacity: 1,
-      y: 0,
+      opacity: 0,
+      y: 200,
       ease: "power2.out",
     });
   }, []);
+  
 
 
   return (
