@@ -17,16 +17,6 @@ import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
-const ContentWrapper = styled.div`
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-`;
-
-const Title = styled.p`
-  font-weight: bold;
-  font-size: 20px;
-`;
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -63,7 +53,6 @@ const HoverButton = styled.button`
     background-color: #ff8452;
   }
 `;
-
 
 const toastStyle = {
   position: "top-right",
@@ -143,6 +132,7 @@ function HomePage() {
     });
   }, []);
 
+
   return (
     <>
       <ToastContainer />
@@ -154,7 +144,7 @@ function HomePage() {
             id="bgHeroImage"
             className="img-fluid primary-hero"
             alt="hero-bg"
-            style={{ maxHeight: "300px", maxWidth: "100%" }}
+            style={{ maxHeight: '300px', maxWidth: '100%' }}
           />
         </Link>
       </div>
@@ -163,125 +153,103 @@ function HomePage() {
         <div className="container"></div>
       </div>
 
-      <ContentWrapper id="content1" className="content">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img
-                className="img-fluid"
-                src={HomeKeychains}
-                alt="HomeKeychains"
-              />
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-              <Title>Keychains</Title>
-              <div className="text">
-                <Button onClick={() => pageNav("/home/Keychains")}>
-                  VIEW ALL
-                </Button>
-              </div>
-            </div>
-          </div>
+      <div id="content1" className="content">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+        <img className="img-fluid" src={HomeKeychains} alt="HomeKeychains" />
+      </div>
+      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+        <p className="title">Keychains</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/Keychains")}>VIEW ALL</Button>
         </div>
-      </ContentWrapper>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <ContentWrapper id="content2" className="content">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-lg-6">
-              <Title>A4 prints and engravings</Title>
-              <div className="text d-flex justify-content-center">
-                <Button onClick={() => pageNav("/home/MedPlaques")}>
-                  VIEW ALL
-                </Button>
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 align-self-start">
-              <img
-                className="img-fluid"
-                src={Home3020Plaques}
-                alt="Home3020Plaques"
-              />
-            </div>
-          </div>
+<div id="content2" className="content">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6">
+        <p className="title">A4 prints and engravings</p>
+        <div className="text d-flex justify-content-center">
+          <Button onClick={() => pageNav("/home/MedPlaques")}>VIEW ALL</Button>
         </div>
-      </ContentWrapper>
+      </div>
+      <div className="col-12 col-lg-6 align-self-start">
+        <img className="img-fluid" src={Home3020Plaques} alt="Home3020Plaques" />
+      </div>
+    </div>
+  </div>
+</div>
 
-      <ContentWrapper id="content3" className="content">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img
-                className="img-fluid item-img"
-                src={HomeSmallPlaques}
-                alt="HomeSmallPlaques"
-              />
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-              <Title>A5 prints and engravings</Title>
-              <div className="text">
-                <Button onClick={() => pageNav("/home/SmallPlaques")}>
-                  VIEW ALL
-                </Button>
-              </div>
-            </div>
-          </div>
+<div id="content3" className="content">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+        <img className="img-fluid item-img" src={HomeSmallPlaques} alt="HomeSmallPlaques" />
+      </div>
+      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+        <p className="title">A5 prints and engravings</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/SmallPlaques")}>VIEW ALL</Button>
         </div>
-      </ContentWrapper>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <ContentWrapper id="content4" className="content">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-lg-6">
-              <Title>LED Edge Lit Signs</Title>
-              <div className="text">
-                <Button onClick={() => pageNav("/home/NeonSigns")}>
-                  VIEW ALL
-                </Button>
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 align-self-start">
-              <img className="img-fluid item-img" src={HomeNeon} alt="HomeNeon" />
-            </div>
-          </div>
+<div id="content4" className="content">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6">
+        <p className="title">LED Edge Lit Signs</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/NeonSigns")}>VIEW ALL</Button>
         </div>
-      </ContentWrapper>
+      </div>
+      <div className="col-12 col-lg-6 align-self-start">
+        <img className="img-fluid item-img" src={HomeNeon} alt="HomeNeon" />
+      </div>
+    </div>
+  </div>
+</div>
 
-      <ContentWrapper id="content5" className="content">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-              <Title>Other Items</Title>
-              <div className="text">
-                <Button onClick={() => pageNav("/home/OtherItems")}>
-                  VIEW ALL
-                </Button>
-              </div>
-            </div>
-          </div>
+<div id="content5" className="content">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+        <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
+      </div>
+      <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
+        <p className="title">Other Items</p>
+        <div className="text">
+          <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
         </div>
-      </ContentWrapper>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
       <div id="about">
         <div className="container">
           <div className="row">
             <div className="col">
-              <Title>About</Title>
+              <p className="title">About</p>
               <p className="text">
-                All items are designed and carefully crafted by myself and can
-                be fully customized to suit your needs. If you have any
-                questions, ideas, or requests, feel free to shoot me a DM
-                anytime.
+                All items are designed and carefully crafted by myself and can be fully customized to suit your needs.
+                If you have any questions, ideas, or requests, feel free to shoot me a DM anytime.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Footer className="footer">
+      <footer className="footer">
         <img
           src={footerline}
           className="img-fluid contentheader"
@@ -305,10 +273,9 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </Footer>
+      </footer>
     </>
   );
 }
 
 export default HomePage;
-
