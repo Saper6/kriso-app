@@ -16,7 +16,7 @@ import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import LoadingScreen from "./src\components\common\LoadingScreen.js";
+import Spinner from "./src\components\common\Spinner.js";
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -143,9 +143,9 @@ function HomePage() {
   }, []);
 
   if (isLoading) {
-    return <LoadingScreen />; // Render the loading screen
+    return <Spinner />; // Render the loading screen
   }
-  
+
   return (
     <>
       <ToastContainer />
