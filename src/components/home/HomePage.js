@@ -16,6 +16,7 @@ import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
+import LoadingScreen from "./src\components\common\LoadingScreen.js";
 
 const Button = styled.button`
   background-color: #ff5c52;
@@ -65,6 +66,7 @@ const toastStyle = {
 };
 
 function HomePage() {
+  const [isLoading, setIsLoading] = useState(true); // Loading state
   const [cluster, setCluster] = useState("mainnet-beta");
   const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -76,8 +78,23 @@ function HomePage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    simulateLoading(); // Simulate loading process
   }, []);
 
+  // Simulate loading process for 2 seconds
+  const simulateLoading = () => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    // ... Rest of your code ...
+  }, []);
+
+  if (isLoading) {
+    return <LoadingScreen />; // Render the loading screen
+  }
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
     gsap.from("#content1", {
