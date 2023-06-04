@@ -113,7 +113,7 @@ function HomePage() {
           toggleActions: "restart none restart none",
         },
         duration: 1,
-        x: index % 2 === 0 ? "20%" : "100%",
+        x: index % 2 === 0 ? "80%" : "100%",
         opacity: 0,
         ease: "power2.out",
       });
