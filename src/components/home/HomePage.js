@@ -100,6 +100,7 @@ function HomePage() {
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
     gsap.from("#header1", { duration: 2, y: -400 });
+    gsap.from("#about", { duration: 2, y: 200 });
   
     const contentElements = [
       "#content1",
@@ -107,7 +108,6 @@ function HomePage() {
       "#content3",
       "#content4",
       "#content5",
-      "#about",
     ];
   
     contentElements.forEach((element, index) => {
@@ -117,7 +117,7 @@ function HomePage() {
           toggleActions: "restart none restart none",
         },
         duration: 1,
-        x: index % 2 === 0 ? "-100%" : "100%",
+        x: index % 2 === 0 ? "-50%" : "100%",
         opacity: 0,
         ease: "power2.out",
       });
