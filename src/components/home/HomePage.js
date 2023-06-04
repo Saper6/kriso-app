@@ -288,9 +288,6 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      <ScrollToTopArrow onClick={scrollToTop}>
-      <FaArrowUp />
-    </ScrollToTopArrow>
     </>
   );
 }
