@@ -99,54 +99,65 @@ function HomePage() {
 
   useEffect(() => {
     gsap.from("#bgHeroImage", { duration: 2, y: -200 });
-    gsap.from("#content1", {
+    gsap.to("#content1", {
       scrollTrigger: {
         trigger: "#content1",
         toggleActions: "restart none restart none",
       },
       duration: 1,
       x: -200,
+      opacity: 1,
+      ease: "power2.out",
     });
-    gsap.from("#content2", {
+    gsap.to("#content2", {
       scrollTrigger: {
         trigger: "#content2",
         toggleActions: "restart none restart none",
       },
       duration: 1,
       x: 200,
+      opacity: 1,
+      ease: "power2.out",
     });
-    gsap.from("#content3", {
+    gsap.to("#content3", {
       scrollTrigger: {
         trigger: "#content3",
         toggleActions: "restart none restart none",
       },
       duration: 1,
       x: -200,
+      opacity: 1,
+      ease: "power2.out",
     });
-    gsap.from("#content4", {
+    gsap.to("#content4", {
       scrollTrigger: {
         trigger: "#content4",
         toggleActions: "restart none restart none",
       },
       duration: 1,
       x: 200,
+      opacity: 1,
+      ease: "power2.out",
     });
-    gsap.from("#content5", {
+    gsap.to("#content5", {
       scrollTrigger: {
         trigger: "#content5",
         toggleActions: "restart none restart none",
       },
       duration: 1,
       x: -200,
+      opacity: 1,
+      ease: "power2.out",
     });
-    gsap.from("#about", {
+    gsap.to("#about", {
       scrollTrigger: {
         trigger: "#about",
         toggleActions: "restart none none none",
       },
       duration: 1,
-      opacity: 0,
-      y: 200,
+      opacity: 1,
+      y: 0,
+      ease: "power2.out",
     });
   }, []);
 
