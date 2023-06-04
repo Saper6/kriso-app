@@ -97,6 +97,19 @@ function MedPlaques() {
     }
   `;
 
+  const ContentWrapper = styled.div`
+  background: linear-gradient(45deg, #ffe5d1, #ff8452);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
   return (
     <>
       <ToastContainer />
@@ -121,7 +134,7 @@ function MedPlaques() {
         </div>
       </div>
 
-      <div id="content1" className="content">
+      <ContentWrapper id="content1" className="content">
         <div className="container">
           <div className="row" id="keychain">
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
@@ -146,9 +159,9 @@ function MedPlaques() {
             </div>
           </div>
         </div>
-      </div>
+        </ContentWrapper>
 
-      <div id="content2" className="content">
+      <ContentWrapper id="content2" className="content">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6 align-self-center">
@@ -173,9 +186,9 @@ function MedPlaques() {
             </div>
           </div>
         </div>
-      </div>
+        </ContentWrapper>
 
-      <div id="content3" className="content">
+      <ContentWrapper id="content3" className="content">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
@@ -200,9 +213,9 @@ function MedPlaques() {
             </div>
           </div>
         </div>
-      </div>
+        </ContentWrapper>
 
-      <div id="content4" className="content">
+      <ContentWrapper id="content4" className="content">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6 align-self-center">
@@ -227,7 +240,7 @@ function MedPlaques() {
             </div>
           </div>
         </div>
-      </div>
+        </ContentWrapper>
 
       <div id="about">
         <div className="container">
