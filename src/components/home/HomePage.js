@@ -36,7 +36,7 @@ const Button = styled.button`
   }
 `;
 
-const HoverButton = styled.button`
+const ScrollToTopArrow = styled.button`
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -158,6 +158,9 @@ function HomePage() {
     );
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <ToastContainer {...toastStyle} />
@@ -297,6 +300,10 @@ function HomePage() {
           </div>
         </div>
       </footer>
+ {/* Render the scroll-to-top arrow */}
+      <ScrollToTopArrow onClick={scrollToTop}>
+        <FaArrowUp />
+      </ScrollToTopArrow>
     </>
   );
 }
