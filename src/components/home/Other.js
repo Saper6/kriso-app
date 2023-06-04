@@ -13,7 +13,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import { FaArrowUp } from "react-icons/fa";
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -26,10 +26,34 @@ const toastStyle = {
 };
 
 function Other() {
+  const [cluster, setCluster] = useState("mainnet-beta");
+  const [isSuccess, setIsSuccess] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
+  const navigate = useNavigate();
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  function pageNav(page) {
+    navigate(page);
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 200) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    
   }, []);
 
   useEffect(() => {
@@ -241,7 +265,12 @@ const ContentWrapper = styled.div`
             </div>
           </div>
         </div>
-      </footer>
+        </footer>
+      {showScrollToTop && (
+        <ScrollToTopArrow onClick={scrollToTop}>
+          <FaArrowUp />
+        </ScrollToTopArrow>
+      )}
     </>
   );
 }
