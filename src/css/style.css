@@ -288,6 +288,7 @@ html {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
   }
   
 
@@ -303,6 +304,7 @@ html {
     margin-left: auto;
     display: block;
     width: 80%;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .textl {
@@ -317,6 +319,7 @@ html {
     margin-left: auto;
     display: block;
     width: 80%;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .textr {
@@ -331,6 +334,7 @@ html {
     margin-left: auto;
     display: block;
     width: 80%;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .content {
