@@ -261,7 +261,7 @@ function HomePage() {
               <img className="img-fluid item-img" src={HomeOther} alt="HomeOther" />
             </div>
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
-              <p className="title">Other Items</p>
+              <p className="title">Other Accessories</p>
               <div className="text">
                 <Button onClick={() => pageNav("/home/OtherItems")}>VIEW ALL</Button>
               </div>
