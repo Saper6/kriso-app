@@ -78,9 +78,6 @@ const toastStyle = {
   theme: "dark",
 };
 
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
 
 
 function HomePage() {
