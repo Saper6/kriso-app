@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom'; // Updated import
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -47,7 +47,7 @@ const CheckoutButton = styled.button`
 
 function CheckoutPage() {
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate(); // Updated hook
   const cart = location.state?.cart || [];
 
   // Calculate total amount
@@ -79,7 +79,7 @@ function CheckoutPage() {
           <CheckoutButton onClick={handlePayment}>Proceed to Payment</CheckoutButton>
         </>
       )}
-      <button onClick={() => history.push('/')}>Continue Shopping</button>
+      <button onClick={() => navigate('/')}>Continue Shopping</button> {/* Updated navigation */}
     </Container>
   );
 }

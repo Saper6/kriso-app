@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Updated import
 import styled from "styled-components";
 
 const toastStyle = {
@@ -81,7 +81,7 @@ const FloatingCartButton = styled.button`
 
 function MedPlaques() {
   gsap.registerPlugin(ScrollTrigger);
-  const history = useHistory();
+  const navigate = useNavigate(); // Updated hook
 
   const [cart, setCart] = useState([]);
 
@@ -141,7 +141,7 @@ function MedPlaques() {
   };
 
   const handleCheckout = () => {
-    history.push("/checkout", { cart });
+    navigate("/checkout", { state: { cart } }); // Updated navigation
   };
 
   // Random prices for demonstration purposes
