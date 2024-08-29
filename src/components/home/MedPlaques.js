@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link, useNavigate } from "react-router-dom"; // Updated import
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const toastStyle = {
@@ -81,9 +81,13 @@ const FloatingCartButton = styled.button`
 
 function MedPlaques() {
   gsap.registerPlugin(ScrollTrigger);
-  const navigate = useNavigate(); // Updated hook
+  const navigate = useNavigate();
 
-  const [cart, setCart] = useState([]);
+  // Load cart from local storage or initialize as empty array
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -135,13 +139,18 @@ function MedPlaques() {
     });
   }, []);
 
+  // Save cart to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   const handleAddToCart = (item) => {
     setCart([...cart, item]);
     toast.success(`${item.name} added to cart!`, toastStyle);
   };
 
   const handleCheckout = () => {
-    navigate("/checkout", { state: { cart } }); // Properly pass state using navigate
+    navigate("/checkout", { state: { cart } });
   };
 
   // Random prices for demonstration purposes
