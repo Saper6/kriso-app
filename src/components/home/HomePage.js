@@ -263,7 +263,7 @@ function HomePage() {
             <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column align-items-center justify-content-center">
               <p className="title">Other Accessories</p>
               <div className="text">
-                <Button onClick={() => pageNav("/home/Other")}>VIEW ALL</Button>
+                <Button onClick={() => pageNav("/home/TestHelio")}>VIEW ALL</Button>
               </div>
             </div>
           </div>
