@@ -52,23 +52,24 @@ function CheckoutPage() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    // Try to get cart from location state, if available
+    console.log('Location state:', location.state); // Debugging line
     if (location.state?.cart) {
+      console.log('Cart from location state:', location.state.cart); // Debugging line
       setCart(location.state.cart);
     } else {
-      // Fallback: Load cart from local storage if not passed via state
       const savedCart = localStorage.getItem('cart');
       if (savedCart) {
+        console.log('Cart from local storage:', JSON.parse(savedCart)); // Debugging line
         setCart(JSON.parse(savedCart));
+      } else {
+        console.log('No cart found in location state or local storage'); // Debugging line
       }
     }
   }, [location.state]);
 
-  // Calculate total amount
   const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   const handlePayment = () => {
-    // Logic for handling payment - ensure no use of eval or similar
     alert('Proceeding to payment...');
   };
 
