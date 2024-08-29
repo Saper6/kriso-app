@@ -1,11 +1,10 @@
 {
     "version": 2,
-    "public": "public",
     "builds": [
       { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
     ],
     "routes": [
-      { "src": "/manifest.json", "dest": "/manifest.json", "methods": ["GET"] }
+      { "src": "/manifest.json", "dest": "/manifest.json" }
     ],
     "headers": [
       {
