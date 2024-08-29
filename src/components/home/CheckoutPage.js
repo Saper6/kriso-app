@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom'; // Updated import
+import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -47,13 +47,11 @@ const CheckoutButton = styled.button`
 
 function CheckoutPage() {
   const location = useLocation();
-  const navigate = useNavigate(); // Updated hook
-  const cart = location.state?.cart || [];
+  const navigate = useNavigate();
+  const cart = location.state?.cart || []; // Access cart from location state
 
   // Calculate total amount
-  const totalAmount = cart
-    .reduce((total, item) => total + item.price, 0)
-    .toFixed(2);
+  const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   const handlePayment = () => {
     // Logic for handling payment goes here
@@ -63,8 +61,11 @@ function CheckoutPage() {
   return (
     <Container>
       <h1>Checkout</h1>
-      {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
+      {cart.length === 0 ? ( // Check if cart is empty
+        <>
+          <p>Your cart is empty.</p> {/* Message for empty cart */}
+          <button onClick={() => navigate('/')}>Continue Shopping</button> {/* Button to go back */}
+        </>
       ) : (
         <>
           <ItemList>
@@ -79,7 +80,6 @@ function CheckoutPage() {
           <CheckoutButton onClick={handlePayment}>Proceed to Payment</CheckoutButton>
         </>
       )}
-      <button onClick={() => navigate('/')}>Continue Shopping</button> {/* Updated navigation */}
     </Container>
   );
 }

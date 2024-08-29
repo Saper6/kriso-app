@@ -141,7 +141,7 @@ function MedPlaques() {
   };
 
   const handleCheckout = () => {
-    navigate("/checkout", { state: { cart } }); // Updated navigation
+    navigate("/checkout", { state: { cart } }); // Properly pass state using navigate
   };
 
   // Random prices for demonstration purposes
