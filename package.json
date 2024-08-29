@@ -3,9 +3,9 @@
   "description": "kriso workshop app",
   "version": "1.0.1",
   "dependencies": {
-    "@heliofi/checkout-react": "1.5.1",
     "@alch/alchemy-web3": "^1.4.2",
     "@babel/core": "^7.16.0",
+    "@heliofi/checkout-react": "^1.5.1",
     "@heliofi/react": "^2.1.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@popperjs/core": "^2.11.4",
