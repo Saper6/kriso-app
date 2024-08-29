@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
+// Styled components for UI
 const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
@@ -48,23 +49,25 @@ const CheckoutButton = styled.button`
 function CheckoutPage() {
   const location = useLocation();
   const navigate = useNavigate();
-  const cart = location.state?.cart || []; // Access cart from location state
+
+  // Retrieve cart from state or set it to an empty array if not provided
+  const cart = location.state?.cart || [];
 
   // Calculate total amount
   const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   const handlePayment = () => {
-    // Logic for handling payment goes here
+    // Logic for handling payment - ensure no use of eval or similar
     alert('Proceeding to payment...');
   };
 
   return (
     <Container>
       <h1>Checkout</h1>
-      {cart.length === 0 ? ( // Check if cart is empty
+      {cart.length === 0 ? (
         <>
-          <p>Your cart is empty.</p> {/* Message for empty cart */}
-          <button onClick={() => navigate('/')}>Continue Shopping</button> {/* Button to go back */}
+          <p>Your cart is empty.</p>
+          <button onClick={() => navigate('/')}>Continue Shopping</button>
         </>
       ) : (
         <>
