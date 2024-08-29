@@ -9,12 +9,10 @@ import footerline from "../../images/footer.png";
 import "../common/Spinner.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+// Toast notification style
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -26,6 +24,7 @@ const toastStyle = {
   theme: "dark",
 };
 
+// Styled components for UI elements
 const Button = styled.button`
   background-color: #ff5c52;
   color: white;
@@ -80,72 +79,21 @@ const FloatingCartButton = styled.button`
 `;
 
 function MedPlaques() {
-  gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
 
-  // Load cart from local storage or initialize as empty array
+  // Load cart from local storage or initialize as an empty array
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem("cart");
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
-
-  useEffect(() => {
-    gsap.from("#bgHeroImage", { duration: 2, y: -200 });
-    gsap.from("#header1", { duration: 2, y: -400 });
-    gsap.from("#content1", {
-      scrollTrigger: {
-        trigger: "#content1",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: -200,
-    });
-    gsap.from("#content2", {
-      scrollTrigger: {
-        trigger: "#content2",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: 200,
-    });
-    gsap.from("#content3", {
-      scrollTrigger: {
-        trigger: "#content3",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: -200,
-    });
-    gsap.from("#content4", {
-      scrollTrigger: {
-        trigger: "#content4",
-        toggleActions: "restart none restart none",
-      },
-      duration: 1,
-      x: 200,
-    });
-    gsap.from("#about", {
-      scrollTrigger: {
-        trigger: "#about",
-        toggleActions: "restart none none none",
-      },
-      duration: 1,
-      opacity: 0,
-      y: 200,
-    });
-  }, []);
-
-  // Save cart to local storage whenever it changes
-  useEffect(() => {
+    // Save cart to local storage whenever it changes
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   const handleAddToCart = (item) => {
-    setCart([...cart, item]);
+    setCart((prevCart) => [...prevCart, item]);
     toast.success(`${item.name} added to cart!`, toastStyle);
   };
 
@@ -153,7 +101,7 @@ function MedPlaques() {
     navigate("/checkout", { state: { cart } });
   };
 
-  // Random prices for demonstration purposes
+  // Product data with random prices for demonstration purposes
   const products = [
     { name: "DeGods/DeadGods", image: degodsmedplaque, price: 29.99 },
     { name: "y00ts", image: y00tsmedplaque, price: 24.99 },
@@ -165,11 +113,13 @@ function MedPlaques() {
     <>
       <ToastContainer />
 
+      {/* Floating Cart Button */}
       <FloatingCartButton onClick={handleCheckout}>
         <FaShoppingCart style={{ marginRight: "10px" }} />
         {cart.length} Items
       </FloatingCartButton>
 
+      {/* Hero section with logo */}
       <div className="hero" id="home">
         <Link to="/">
           <img
@@ -181,15 +131,17 @@ function MedPlaques() {
         </Link>
       </div>
 
+      {/* Header section */}
       <div id="header1" className="content">
         <div className="container">
           <p className="texttop">
-            Selection of high quality, hand crafted wooden plaques of your NFT
+            Selection of high quality, handcrafted wooden plaques of your NFT
             Medium size: 34x24cm (13.3x9.4 inch)
           </p>
         </div>
       </div>
 
+      {/* Product display section */}
       {products.map((product, index) => (
         <ContentWrapper key={index} id={`content${index + 1}`} className="content">
           <div className="container">
@@ -209,6 +161,7 @@ function MedPlaques() {
         </ContentWrapper>
       ))}
 
+      {/* About section */}
       <div id="about">
         <div className="container">
           <div className="row">
@@ -223,6 +176,7 @@ function MedPlaques() {
         </div>
       </div>
 
+      {/* Footer section */}
       <footer className="footer">
         <img
           src={footerline}

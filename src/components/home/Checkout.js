@@ -46,31 +46,48 @@ const CheckoutButton = styled.button`
   }
 `;
 
-function CheckoutPage() {
+const ContinueShoppingButton = styled.button`
+  background-color: #008CBA;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-weight: 600;
+  margin-top: 20px;
+  width: 100%;
+
+  &:hover {
+    background-color: #005f7a;
+  }
+`;
+
+function Checkout() {
   const location = useLocation();
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    console.log('Location state:', location.state); // Debugging line
+    // Try to get the cart from location state or fallback to localStorage
     if (location.state?.cart) {
-      console.log('Cart from location state:', location.state.cart); // Debugging line
       setCart(location.state.cart);
     } else {
       const savedCart = localStorage.getItem('cart');
       if (savedCart) {
-        console.log('Cart from local storage:', JSON.parse(savedCart)); // Debugging line
         setCart(JSON.parse(savedCart));
-      } else {
-        console.log('No cart found in location state or local storage'); // Debugging line
       }
     }
   }, [location.state]);
 
+  // Calculate the total amount in the cart
   const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
 
+  // Handle payment action
   const handlePayment = () => {
     alert('Proceeding to payment...');
+    // Add payment logic here
   };
 
   return (
@@ -79,7 +96,9 @@ function CheckoutPage() {
       {cart.length === 0 ? (
         <>
           <p>Your cart is empty.</p>
-          <button onClick={() => navigate('/')}>Continue Shopping</button>
+          <ContinueShoppingButton onClick={() => navigate('/')}>
+            Continue Shopping
+          </ContinueShoppingButton>
         </>
       ) : (
         <>
@@ -99,4 +118,4 @@ function CheckoutPage() {
   );
 }
 
-export default CheckoutPage;
+export default Checkout;
