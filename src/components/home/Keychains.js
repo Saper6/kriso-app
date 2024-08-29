@@ -250,7 +250,7 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-      <Button onClick={handleClick}>BUY</Button>
+      <Button onClick={YourCheckoutComponent}>BUY</Button>
     </div>
             </div>
           </div>
