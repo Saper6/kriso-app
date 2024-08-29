@@ -33,19 +33,18 @@ const toastStyle = {
 
 const helioConfig = {
   paylinkId: "66d084a023e9eb4fa8b3bc15",
-  theme: {"themeMode":"dark"},
+  theme: { themeMode: "dark" },
   primaryColor: "#F76C1B",
   neutralColor: "#E1E6EC",
-  primaryPaymentMethod: "fiat"
 };
 
-function YourCheckoutComponent() {
-return <HelioCheckout config={helioConfig} />;
-}
-
-function handleClick() {
-  // Render or trigger the checkout component
-  return YourCheckoutComponent();
+function loadHelioCheckout() {
+  const Helio = window.Helio;
+  if (Helio) {
+      Helio.open(helioConfig);
+  } else {
+      console.error("Helio Checkout script not loaded");
+  }
 }
 
       
@@ -254,8 +253,8 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-      <Button onClick={Helio1}>BUY</Button>
-    </div>
+    <Button onClick={loadHelioCheckout}>MORE DETAILS</Button>
+  </div>
             </div>
           </div>
         </div>
