@@ -18,10 +18,10 @@ import { HelioCheckout } from '@heliofi/checkout-react';
 
 // Helio Config
 const helioConfig = {
-    paylinkId: "66d084a023e9eb4fa8b3bc15",
-    theme: { "themeMode": "dark" },
-    primaryColor: "#F76C1B",
-    neutralColor: "#E1E6EC",
+  paylinkId: "66d084a023e9eb4fa8b3bc15",
+  theme: { "themeMode": "dark" },
+  primaryColor: "#F76C1B",
+  neutralColor: "#E1E6EC",
 };
 
 const toastStyle = {
@@ -69,6 +69,11 @@ const ContentWrapper = styled.div`
 function Keychains() {
   // State to toggle checkout
   const [showCheckout, setShowCheckout] = useState(false);
+
+  // Handle Buy button click
+  const handleBuyClick = () => {
+    setShowCheckout(true);
+  };
 
   // Register GSAP plugins
   useEffect(() => {
@@ -125,11 +130,6 @@ function Keychains() {
       y: 200,
     });
   }, []);
-
-  // Function to handle the BUY button click
-  const handleBuyClick = () => {
-    setShowCheckout(true);
-  };
 
   return (
     <>
