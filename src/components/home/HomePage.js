@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaArrowUp, FaShoppingCart } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { ToastContainer, toast } from "react-toastify";
 import styled from "styled-components";
-import { FaArrowUp } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import HomeKeychains from "../../images/HomePage/HomeKeychains.png";
 import Home3020Plaques from "../../images/HomePage/Home3020Plaques.png";
@@ -17,6 +14,7 @@ import "../common/Spinner.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
+// Styled components for UI
 const Button = styled.button`
   background-color: #ff5c52;
   color: white;
@@ -29,7 +27,7 @@ const Button = styled.button`
   font-family: Trebuchet MS;
   font-weight: 800;
   transition: ease background-color 250ms;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
   &:hover {
     background-color: #ff8452;
@@ -67,6 +65,28 @@ const ContentWrapper = styled.div`
   }
 `;
 
+const FloatingCartButton = styled.button`
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5c52;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
+
 const toastStyle = {
   position: "top-right",
   autoClose: 5000,
@@ -78,26 +98,22 @@ const toastStyle = {
   theme: "dark",
 };
 
-
-
 function HomePage() {
-  const [cluster, setCluster] = useState("mainnet-beta");
-  const [isSuccess, setIsSuccess] = useState(false);
-  gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   function pageNav(page) {
     navigate(page);
   }
 
+  // Show "Scroll to Top" button only when user scrolls down
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 200) {
-        setShowScrollToTop(true);
-      } else {
-        setShowScrollToTop(false);
-      }
+      setShowScrollToTop(window.pageYOffset > 200);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -106,73 +122,33 @@ function HomePage() {
     };
   }, []);
 
+  // Persist cart state to localStorage whenever it changes
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    
-  }, []);
-  
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
+  const handleAddToCart = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+    toast.success(`${item.name} added to cart!`, toastStyle);
+  };
 
-  useEffect(() => {
-    const contentElements = [
-      "#content1",
-      "#content2",
-      "#content3",
-      "#content4",
-      "#content5",
-    ];
-  
-    contentElements.forEach((element, index) => {
-      gsap.from(element, {
-        scrollTrigger: {
-          trigger: element,
-          toggleActions: "restart none restart none",
-        },
-        duration: 1,
-        x: index % 2 === 0 ? "80%" : "100%",
-        opacity: 0,
-        ease: "power2.out",
-      });
-    });
-
-    gsap.from("#about", {
-      scrollTrigger: {
-        trigger: "#about",
-        toggleActions: "restart none none none",
-      },
-      duration: 1,
-      opacity: 0,
-      y: 200,
-    });
-
-    gsap.from("#header1", {
-      scrollTrigger: {
-        trigger: "#header1",
-        toggleActions: "restart none none none",
-      },
-      duration: 2,
-      opacity: 0,
-      y: -400,
-    });
-
-    gsap.from("#bgHeroImage", {
-      scrollTrigger: {
-        trigger: "#bgHeroImage",
-        toggleActions: "restart none none none",
-      },
-      duration: 1,
-      opacity: 0,
-      y: -200,
-    });
-  }, []);
-
+  const handleCheckout = () => {
+    navigate("/checkout", { state: { cart } });
+  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <>
       <ToastContainer {...toastStyle} />
+
+      {/* Floating Cart Button */}
+      <FloatingCartButton onClick={handleCheckout}>
+        <FaShoppingCart style={{ marginRight: "10px" }} />
+        {cart.length} Items
+      </FloatingCartButton>
 
       <div className="hero" id="home">
         <Link to="/">
@@ -184,10 +160,6 @@ function HomePage() {
             style={{ maxHeight: '300px', maxWidth: '100%' }}
           />
         </Link>
-      </div>
-
-      <div id="header1" className="content">
-        <div className="container"></div>
       </div>
 
       <ContentWrapper id="content1" className="content">
@@ -309,6 +281,7 @@ function HomePage() {
           </div>
         </div>
       </footer>
+
       {showScrollToTop && (
         <ScrollToTopArrow onClick={scrollToTop}>
           <FaArrowUp />
@@ -318,4 +291,4 @@ function HomePage() {
   );
 }
 
-export default HomePage
+export default HomePage;
