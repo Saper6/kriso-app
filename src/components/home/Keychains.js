@@ -27,27 +27,24 @@ const toastStyle = {
   theme: "dark",
 };
 
-
+// Helio Config
 const helioConfig = {
   paylinkId: "66d084a023e9eb4fa8b3bc15",
-  theme: {"themeMode":"dark"},
+  theme: { "themeMode": "dark" },
   primaryColor: "#F76C1B",
   neutralColor: "#E1E6EC",
 };
 
-function YourCheckoutComponent() {
-return <HelioCheckout config={helioConfig} />;
-}
-
-function handleClick() {
-  // Render or trigger the checkout component
-  return YourCheckoutComponent();
-}
+// Function to handle the BUY button click
+  const handleBuyClick = () => {
+    setShowCheckout(true);
+  };
 
       
 function Keychains() {
   gsap.registerPlugin(ScrollTrigger);
-
+  // State to toggle checkout
+  const [showCheckout, setShowCheckout] = useState(false);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -250,8 +247,9 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-      <Button onClick={YourCheckoutComponent}>BUY</Button>
-    </div>
+                <Button onClick={handleBuyClick}>BUY</Button>
+                {showCheckout && <HelioCheckout config={helioConfig} />}
+              </div>
             </div>
           </div>
         </div>
