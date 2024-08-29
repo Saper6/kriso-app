@@ -15,6 +15,9 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {HelioCheckout} from '@heliofi/checkout-react'
+import {Helio1} from '@src\redux\actions\Heliobutton1.js'
+
+
 
 const toastStyle = {
   position: "top-right",
@@ -33,6 +36,7 @@ const helioConfig = {
   theme: {"themeMode":"dark"},
   primaryColor: "#F76C1B",
   neutralColor: "#E1E6EC",
+  primaryPaymentMethod: "fiat"
 };
 
 function YourCheckoutComponent() {
@@ -250,7 +254,7 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-      <Button onClick={YourCheckoutComponent}>BUY</Button>
+      <Button onClick={Helio1}>BUY</Button>
     </div>
             </div>
           </div>
