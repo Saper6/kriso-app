@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
@@ -14,7 +14,15 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import {HelioCheckout} from '@heliofi/checkout-react'
+import { HelioCheckout } from '@heliofi/checkout-react';
+
+// Helio Config
+const helioConfig = {
+    paylinkId: "66d084a023e9eb4fa8b3bc15",
+    theme: { "themeMode": "dark" },
+    primaryColor: "#F76C1B",
+    neutralColor: "#E1E6EC",
+};
 
 const toastStyle = {
   position: "top-right",
@@ -27,24 +35,46 @@ const toastStyle = {
   theme: "dark",
 };
 
-// Helio Config
-const helioConfig = {
-  paylinkId: "66d084a023e9eb4fa8b3bc15",
-  theme: { "themeMode": "dark" },
-  primaryColor: "#F76C1B",
-  neutralColor: "#E1E6EC",
-};
+const Button = styled.button`
+  background-color: #ff5c52;
+  color: white;
+  font-size: 20px;
+  padding: 16px 80px;
+  border-radius: 18px;
+  border: none;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-weight: 800;
+  transition: ease background-color 250ms;
 
-// Function to handle the BUY button click
-  const handleBuyClick = () => {
-    setShowCheckout(true);
-  };
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
 
-      
+const ContentWrapper = styled.div`
+  background: linear-gradient(45deg, #ffe5d1, #ff8452);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
 function Keychains() {
-  gsap.registerPlugin(ScrollTrigger);
   // State to toggle checkout
   const [showCheckout, setShowCheckout] = useState(false);
+
+  // Register GSAP plugins
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  }, []);
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -94,38 +124,12 @@ function Keychains() {
       opacity: 0,
       y: 200,
     });
-  });
+  }, []);
 
-  const Button = styled.button`
-    background-color: #ff5c52;
-    color: white;
-    font-size: 20px;
-    padding: 16px 80px;
-    border-radius: 18px;
-    border: none;
-    margin: 10px 0px;
-    cursor: pointer;
-    font-family: Trebuchet MS;
-    font-weight: 800;
-    transition: ease background-color 250ms;
-
-    &:hover {
-      background-color: #ff8452;
-    }
-  `;
-
-  const ContentWrapper = styled.div`
-    background: linear-gradient(45deg, #ffe5d1, #ff8452);
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-  
-    &:hover {
-      transform: translateY(-5px);
-    }
-  `;
+  // Function to handle the BUY button click
+  const handleBuyClick = () => {
+    setShowCheckout(true);
+  };
 
   return (
     <>
