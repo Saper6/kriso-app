@@ -1,5 +1,5 @@
-import { useState, useEffect, useContext } from "react";
-import { FaTwitter } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { FaTwitter, FaShoppingCart } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import degodsmedplaque from "../../images/medplaques/degodsmedplaque.png";
 import y00tsmedplaque from "../../images/medplaques/y00tsmedplaque.png";
@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const toastStyle = {
@@ -26,8 +26,64 @@ const toastStyle = {
   theme: "dark",
 };
 
+const Button = styled.button`
+  background-color: #ff5c52;
+  color: white;
+  font-size: 20px;
+  padding: 16px 80px;
+  border-radius: 18px;
+  border: none;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-weight: 800;
+  transition: ease background-color 250ms;
+
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  background: linear-gradient(45deg, #ffe5d1, #ff8452);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
+const FloatingCartButton = styled.button`
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5c52;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  &:hover {
+    background-color: #ff8452;
+  }
+`;
+
 function MedPlaques() {
   gsap.registerPlugin(ScrollTrigger);
+  const history = useHistory();
+
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -77,42 +133,33 @@ function MedPlaques() {
       opacity: 0,
       y: 200,
     });
-  });
+  }, []);
 
-  const Button = styled.button`
-    background-color: #ff5c52;
-    color: white;
-    font-size: 20px;
-    padding: 16px 80px;
-    border-radius: 18px;
-    border: none;
-    margin: 10px 0px;
-    cursor: pointer;
-    font-family: Trebuchet MS;
-    font-weight: 800;
-    transition: ease background-color 250ms;
+  const handleAddToCart = (item) => {
+    setCart([...cart, item]);
+    toast.success(`${item.name} added to cart!`, toastStyle);
+  };
 
-    &:hover {
-      background-color: #ff8452;
-    }
-  `;
+  const handleCheckout = () => {
+    history.push("/checkout", { cart });
+  };
 
-  const ContentWrapper = styled.div`
-  background: linear-gradient(45deg, #ffe5d1, #ff8452);
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  
-  &:hover {
-    transform: translateY(-5px);
-  }
-`;
+  // Random prices for demonstration purposes
+  const products = [
+    { name: "DeGods/DeadGods", image: degodsmedplaque, price: 29.99 },
+    { name: "y00ts", image: y00tsmedplaque, price: 24.99 },
+    { name: "MetaTattooClub", image: mtcmedplaque, price: 19.99 },
+    { name: "Liberty Square", image: libertymedplaque, price: 34.99 },
+  ];
 
   return (
     <>
       <ToastContainer />
+
+      <FloatingCartButton onClick={handleCheckout}>
+        <FaShoppingCart style={{ marginRight: "10px" }} />
+        {cart.length} Items
+      </FloatingCartButton>
 
       <div className="hero" id="home">
         <Link to="/">
@@ -134,113 +181,24 @@ function MedPlaques() {
         </div>
       </div>
 
-      <ContentWrapper id="content1" className="content">
-        <div className="container">
-          <div className="row" id="keychain">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img
-                className="img-fluid"
-                src={degodsmedplaque}
-                alt="degodsmedplaque"
-              />
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
-              <p className="title">DeGods/DeadGods</p>
-              <p className="textl"></p>
-              <div className="text">
-                <a
-                  href="https://www.hel.io/x/degodsmedplaque"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Currently Unavailable</Button>
-                </a>
+      {products.map((product, index) => (
+        <ContentWrapper key={index} id={`content${index + 1}`} className="content">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
+                <img className="img-fluid" src={product.image} alt={product.name} />
+              </div>
+              <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
+                <p className="title">{product.name}</p>
+                <p className="textl">Price: ${product.price.toFixed(2)}</p>
+                <div className="text">
+                  <Button onClick={() => handleAddToCart(product)}>Add to Cart</Button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </ContentWrapper>
-
-      <ContentWrapper id="content2" className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6 align-self-center">
-              <p className="title">y00ts</p>
-              <p className="textl"></p>
-              <div className="text">
-                <a
-                  href="https://www.hel.io/x/y00tsmedplaque"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Currently Unavailable</Button>
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 align-self-start">
-              <img
-                className="img-fluid "
-                src={y00tsmedplaque}
-                alt="y00tsmedplaque"
-              />
-            </div>
-          </div>
-        </div>
-        </ContentWrapper>
-
-      <ContentWrapper id="content3" className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6 order-2 order-lg-1 align-self-end">
-              <img
-                className="img-fluid"
-                src={mtcmedplaque}
-                alt="mtcmedplaque"
-              />
-            </div>
-            <div className="col-12 col-lg-6 order-1 order-lg-2 align-self-center">
-              <p className="title">MetaTattooClub</p>
-              <p className="textl"></p>
-              <div className="text">
-                <a
-                  href="https://www.hel.io/x/mtcmedplaque"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Currently Unavailable</Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </ContentWrapper>
-
-      <ContentWrapper id="content4" className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6 align-self-center">
-              <p className="title">Liberty Square</p>
-              <p className="textl"></p>
-              <div className="text">
-                <a
-                  href="https://www.hel.io/x/libertymedplaque"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Currently Unavailable</Button>
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 align-self-start">
-              <img
-                className="img-fluid "
-                src={libertymedplaque}
-                alt="libertymedplaque"
-              />
-            </div>
-          </div>
-        </div>
-        </ContentWrapper>
+      ))}
 
       <div id="about">
         <div className="container">
