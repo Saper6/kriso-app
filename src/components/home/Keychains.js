@@ -14,6 +14,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import {HelioCheckout} from '@heliofi/checkout-react'
 
 const toastStyle = {
   position: "top-right",
@@ -26,6 +27,24 @@ const toastStyle = {
   theme: "dark",
 };
 
+
+const helioConfig = {
+  paylinkId: "66d084a023e9eb4fa8b3bc15",
+  theme: {"themeMode":"dark"},
+  primaryColor: "#F76C1B",
+  neutralColor: "#E1E6EC",
+};
+
+function YourCheckoutComponent() {
+return <HelioCheckout config={helioConfig} />;
+}
+
+function handleClick() {
+  // Render or trigger the checkout component
+  return YourCheckoutComponent();
+}
+
+      
 function Keychains() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -161,7 +180,7 @@ function Keychains() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button>MORE DETAILS</Button>
+                  <Button>BUY</Button>
                 </a>
               </div>
             </div>
@@ -231,14 +250,8 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-                <a
-                  href="https://www.hel.io/x/y00tchains"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>MORE DETAILS</Button>
-                </a>
-              </div>
+      <Button onClick={handleClick}>BUY</Button>
+    </div>
             </div>
           </div>
         </div>
