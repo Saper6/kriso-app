@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -49,9 +49,20 @@ const CheckoutButton = styled.button`
 function CheckoutPage() {
   const location = useLocation();
   const navigate = useNavigate();
+  const [cart, setCart] = useState([]);
 
-  // Retrieve cart from state or set it to an empty array if not provided
-  const cart = location.state?.cart || [];
+  useEffect(() => {
+    // Try to get cart from location state, if available
+    if (location.state?.cart) {
+      setCart(location.state.cart);
+    } else {
+      // Fallback: Load cart from local storage if not passed via state
+      const savedCart = localStorage.getItem('cart');
+      if (savedCart) {
+        setCart(JSON.parse(savedCart));
+      }
+    }
+  }, [location.state]);
 
   // Calculate total amount
   const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
