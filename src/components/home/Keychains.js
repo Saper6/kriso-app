@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Modal from "react-modal";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import DegodsMainPic from "../../images/keychains/DegodsMainPic.png";
@@ -67,27 +66,11 @@ const ContentWrapper = styled.div`
   }
 `;
 
-// Modal styles
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    transform: 'translate(-50%, -50%)',
-    padding: '20px',
-    borderRadius: '10px',
-    maxWidth: '500px',
-  },
-};
-
-Modal.setAppElement('#root');
-
 function Keychains() {
+  // State to toggle checkout
   const [showCheckout, setShowCheckout] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
-  const [modalIsOpen, setIsOpen] = useState(false);
 
+  // Register GSAP plugins
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
   }, []);
@@ -143,13 +126,9 @@ function Keychains() {
     });
   }, []);
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
+  // Function to handle the BUY button click
+  const handleBuyClick = () => {
     setShowCheckout(true);
-    closeModal();
   };
 
   return (
@@ -197,25 +176,18 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-                <Button onClick={openModal}>BUY</Button>
+                <a
+                  href="https://www.hel.io/x/degodskeychains"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>BUY</Button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </ContentWrapper>
-
-      {/* Modal for selecting options */}
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Select Product Option"
-      >
-        <h2>Select a Product Option</h2>
-        <button onClick={() => handleOptionSelect('OG DeGods')}>OG DeGods</button>
-        <button onClick={() => handleOptionSelect('MickeyDeGods')}>MickeyDeGods</button>
-        <button onClick={() => handleOptionSelect('DeGods Anniversary')}>DeGods Anniversary</button>
-      </Modal>
 
       <ContentWrapper id="content2" className="content">
         <div className="container">
@@ -279,7 +251,7 @@ function Keychains() {
                 </ul>
               </p>
               <div className="text">
-                <Button onClick={openModal}>BUY</Button>
+                <Button onClick={handleBuyClick}>BUY</Button>
                 {showCheckout && <HelioCheckout config={helioConfig} />}
               </div>
             </div>
